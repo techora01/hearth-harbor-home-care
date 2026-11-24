@@ -27,8 +27,9 @@ h2 { font-size: clamp(1.9rem, 3.4vw, 2.8rem); }
 .hero .eyebrow { background: var(--accent2); color: #16233A; border: 2px solid #16233A; border-radius: 6px; padding: .3rem .6rem; letter-spacing: .08em; font-size: .66rem; }
 .hero .eyebrow::before { display: none; }
 .hero-art { position: absolute; right: clamp(1rem, 3vw, 2.5rem); top: 50%; transform: translateY(-50%); width: clamp(12rem, 22vw, 20rem); z-index: 2; opacity: 1; }
-.hero-badge { border-radius: 12px; border: 2px solid #16233A; box-shadow: 5px 5px 0 rgba(22,35,58,.18); }
-.hero-badge strong { font-weight: 800; }
+.hero-badge { position: absolute; top: 1rem; left: 1rem; z-index: 3; border-radius: 12px; border: 2px solid #16233A; box-shadow: 5px 5px 0 rgba(22,35,58,.18); max-width: 14rem; font-size: .72rem; line-height: 1.2; }
+.hero-badge strong { font-weight: 800; font-size: .72rem; display: block; }
+.hero-badge span { font-size: .62rem; }
 .hero-proof { border-top: 2px dashed #C9D5E6; }
 .hero-proof strong { font-weight: 800; color: var(--primary); }
 .hero-actions .btn:first-child { background: var(--primary); color: #fff; }

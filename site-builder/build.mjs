@@ -235,10 +235,10 @@ function hero(t) {
         <div><strong>Weekly</strong>written family brief</div>
       </div>
     </div>`;
-  const art = `<div class="hero-art reveal">${scene(t.scene)}${badge}</div>`;
+  const art = `<div class="hero-art reveal">${scene(t.scene)}</div>`;
   return `<section class="hero hero-${variant}">
     <div class="hero-glow" aria-hidden="true"></div>
-    <div class="container hero-inner">${copy}${art}</div>
+    <div class="container hero-inner">${badge}${copy}${art}</div>
   </section>`;
 }
 
