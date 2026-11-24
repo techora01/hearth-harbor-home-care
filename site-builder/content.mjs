@@ -418,7 +418,7 @@ export const locations = [
     blurb:
       "Our home base. Woodbridge families often juggle commutes on I-95 with an aging parent who should not be alone all day. We build visits around the actual commute, not a call-center schedule.",
     landmarks: ["Potomac Mills", "Occoquan Bay", "Sentara Northern Virginia Medical Center", "Prince William Area Agency on Aging offices"],
-    note: "Higher-density neighborhoods mean shorter travel times between clients — which makes consistent caregiver assignments more achievable.",
+    note: "Shorter travel times between clients mean more reliable start times and consistent caregiver assignments.",
   },
   {
     slug: "manassas",
@@ -436,7 +436,7 @@ export const locations = [
     blurb:
       "A small, walkable city where neighbors often look out for one another. Our role is to make that informal support more reliable, with scheduled visits and a written record.",
     landmarks: ["Manassas Park Community Center", "VRE Manassas Park Station", "Blooms Park"],
-    note: "Small-city referrals travel fast. Reputation management matters more here than paid advertising.",
+    note: "In a small community, reputation is earned one family at a time. We focus on consistent, documented care.",
   },
   {
     slug: "gainesville",
@@ -454,7 +454,7 @@ export const locations = [
     blurb:
       "Haymarket and the surrounding semi-rural areas need caregivers who are comfortable with longer driveways, wells, and pets. We confirm travel expectations before the first visit.",
     landmarks: ["Haymarket Town Hall", "James Long Regional Park", "Town of Haymarket farmers market"],
-    note: "Rural routes add windshield time. We price travel transparently rather than hiding it in the hourly rate.",
+    note: "Longer rural routes mean we confirm travel expectations and scheduling before the first visit.",
   },
   {
     slug: "dumfries",
@@ -499,7 +499,7 @@ export const locations = [
     blurb:
       "Bristow families are often balancing two working adults, children, and an aging parent. Respite and after-school-hours care are common needs.",
     landmarks: ["Bristow Village", "Brawner Farm", "Victory Elementary corridor"],
-    note: "Evening and weekend visits carry a premium. Publish it up front.",
+    note: "Evening and weekend visits are available by request and confirmed in writing.",
   },
 ];
 
@@ -715,6 +715,6 @@ export const navLinks = [
 ];
 
 export const serviceCategories = {
-  core: "Launch services",
-  growth: "Phase 2–3 services",
+  core: "Core services",
+  growth: "Specialized support",
 };
