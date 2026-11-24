@@ -421,7 +421,7 @@ function homePage(t) {
   <main id="main">
     ${hero(t)}
     <div class="trust-strip"><div class="container trust-inner">
-      <div>${icon("shield", 16)} Clear scope — we say what we can and cannot do</div>
+      <div>${icon("shield", 16)} Scope transparency always</div>
       <div>${icon("clock", 16)} Inquiry response within 1 business hour</div>
       <div>${icon("users", 16)} Named coordinator + trained backup</div>
       <div>${icon("pin", 16)} Prince William County only</div>
