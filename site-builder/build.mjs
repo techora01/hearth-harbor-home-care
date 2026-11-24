@@ -70,7 +70,8 @@ function head(t, { title, description, page, depth = 0, schema = [] }) {
 <link rel="stylesheet" href="${rel("assets/css/theme.css", depth)}">
 <style>${vars}</style>
 ${ld}
-</head><body class="theme-${t.id} layout-${t.hero}" data-theme="${t.id}">`;
+</head><body class="theme-${t.id} layout-${t.hero}" data-theme="${t.id}">
+<a class="skip-link" href="#main">Skip to main content</a>`;
 }
 
 function brand(t, depth = 0, opts = {}) {
