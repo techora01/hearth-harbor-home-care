@@ -115,9 +115,9 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
 .brand { flex: 0 0 auto; }
 .nav { flex: 1 1 auto; justify-content: center; }
 .brand { display: inline-flex; align-items: center; gap: .4rem; text-decoration: none; color: var(--ink); flex: 0 0 auto; }
-.brand-text { display: inline-flex; flex-direction: row; align-items: baseline; gap: .3rem; line-height: 1.1; flex-wrap: nowrap; }
-.brand-name { font-family: var(--font-display); font-weight: 700; font-size: .72rem; letter-spacing: -.01em; white-space: nowrap; }
-.brand-tag, .brand-county { font-size: .55rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-top: 0; white-space: nowrap; }
+.brand-text { display: flex; flex-direction: column; line-height: 1.05; }
+.brand-name { font-family: var(--font-display); font-weight: 700; font-size: .92rem; letter-spacing: -.01em; white-space: nowrap; }
+.brand-tag, .brand-county { font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: .25rem; white-space: nowrap; }
 .brand-county { color: var(--accent, var(--primary)); font-weight: 700; letter-spacing: .08em; }
 .nav { display: flex; align-items: center; gap: clamp(1rem, 2vw, 1.8rem); }
 .nav-links { display: flex; align-items: center; gap: clamp(.5rem, 1vw, .9rem); list-style: none; margin: 0; padding: 0; flex-wrap: nowrap; }
