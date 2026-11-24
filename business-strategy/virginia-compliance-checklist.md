@@ -1,7 +1,7 @@
 # Virginia Compliance Checklist — Home Care Organization Launch
 
 **Prepared:** 23 November 2026
-**Business:** Heart & Harbor Homecare (concept)
+**Business:** Heart & Harbor Health & Medical Support (concept)
 **Jurisdiction:** Commonwealth of Virginia · Prince William County
 **Primary regulator:** Virginia Department of Health, Office of Licensure and Certification (VDH OLC)
 
@@ -31,7 +31,7 @@ Virginia licenses **home care organizations (HCOs)** that provide home health se
 | # | Task | Detail | Status |
 |---|---|---|---|
 | 1.1 | Choose entity form | LLC is the default for a small agency. An S-corp election may make sense later for payroll tax treatment; decide with a CPA. | ☐ |
-| 1.2 | Reserve the name | Virginia SCC name check; also search USPTO and common-law use. "Heart & Harbor Homecare" is a placeholder and must be cleared. | ☐ |
+| 1.2 | Reserve the name | Virginia SCC name check; also search USPTO and common-law use. "Heart & Harbor Health & Medical Support" is a placeholder and must be cleared. | ☐ |
 | 1.3 | File articles of organization | Virginia SCC (online filing available). | ☐ |
 | 1.4 | Obtain an EIN | IRS Form SS-4; needed for payroll, banking, and licensing. | ☐ |
 | 1.5 | Adopt an operating agreement | Ownership, capital, distributions, dissolution, and deadlock provisions. | ☐ |
@@ -180,7 +180,7 @@ The governing body must ensure the organization **and its contractors** have app
 
 | # | Task | Detail | Status |
 |---|---|---|---|
-| 6.1 | Determine HIPAA status with counsel | Whether the agency is a covered entity depends on operations, including covered electronic transactions. "Non-medical" does not automatically mean "outside HIPAA." | ☐ |
+| 6.1 | Determine HIPAA status with counsel | Whether the agency is a covered entity depends on operations, including covered electronic transactions. "Professional" does not automatically mean "outside HIPAA." | ☐ |
 | 6.2 | Adopt a Notice of Privacy Practices | If a covered entity; otherwise adopt a consumer privacy policy. | ☐ |
 | 6.3 | Business associate agreements | Required with any vendor handling PHI on the agency's behalf (billing, EHR, scheduling, answering service, IT). | ☐ |
 | 6.4 | Risk analysis and management plan | Required for covered entities; strongly recommended for all. | ☐ |

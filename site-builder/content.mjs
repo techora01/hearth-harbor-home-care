@@ -13,11 +13,11 @@ export const county = {
 };
 
 export const business = {
-  name: "Heart & Harbor Homecare",
-  shortName: "Heart & Harbor Homecare",
-  fullName: "Heart & Harbor Homecare of Prince William County",
+  name: "Heart & Harbor Health & Medical Support",
+  shortName: "Heart & Harbor Health & Medical Support",
+  fullName: "Heart & Harbor Health & Medical Support of Prince William County",
   countyLabel: "of Prince William County",
-  legalName: "Heart & Harbor Homecare LLC (placeholder entity)",
+  legalName: "Heart & Harbor Health & Medical Support LLC (placeholder entity)",
   tagline: "Care that keeps home within reach.",
   promise:
     "You will always know who is coming, what they will do, and how your family is doing.",
@@ -38,7 +38,7 @@ export const business = {
   minimum: "4-hour visit minimum · no weekly minimum · no long-term contract",
   response: "New inquiries answered within one business hour, 8 a.m.–6 p.m.",
   disclaimer:
-    "Demonstration website. Heart & Harbor Homecare of Prince William County is a concept business. The phone number, address, license number, any rate information, staff biographies, and outcomes shown are placeholders and must be replaced with verified information before launch. Nothing here is medical advice.",
+    "Demonstration website. Heart & Harbor Health & Medical Support of Prince William County is a concept business. The phone number, address, license number, any rate information, staff biographies, and outcomes shown are placeholders and must be replaced with verified information before launch. Nothing here is medical advice.",
   licenseNote:
     "Personal care services in Virginia require licensure by the Virginia Department of Health. This concept site does not claim an active license. Launch content must show the actual license number only after VDH issues it.",
 };
@@ -506,11 +506,11 @@ export const locations = [
 export const faqs = [
   {
     q: "Are you licensed?",
-    a: "This is a concept website. Heart & Harbor Homecare does not yet hold a Virginia home care organization license. Personal care services in Virginia require licensure by the Virginia Department of Health, and the launch site must display the actual license number once issued. Companion and homemaker services can be offered without an HCO license when provided alone, but this business intends to be licensed before delivering personal care.",
+    a: "This is a concept website. Heart & Harbor Health & Medical Support does not yet hold a Virginia home care organization license. Personal care services in Virginia require licensure by the Virginia Department of Health, and the launch site must display the actual license number once issued. Companion and homemaker services can be offered without an HCO license when provided alone, but this business intends to be licensed before delivering personal care.",
   },
   {
     q: "What is the difference between home care and home health?",
-    a: "Home care is non-medical help with daily living — companionship, meals, housekeeping, transportation, and personal care such as bathing and dressing. Home health is skilled clinical care ordered by a physician, such as nursing, physical therapy, or occupational therapy, and is delivered by a Medicare-certified home health agency. We provide home care and refer clinical needs to licensed providers.",
+    a: "Home care is professional help with daily living — companionship, meals, housekeeping, transportation, and personal care such as bathing and dressing. Home health is skilled clinical care ordered by a physician, such as nursing, physical therapy, or occupational therapy, and is delivered by a Medicare-certified home health agency. We provide home care and refer clinical needs to licensed providers.",
   },
   {
     q: "How much does care cost?",
@@ -518,7 +518,7 @@ export const faqs = [
   },
   {
     q: "Do you accept insurance, Medicare, or Medicaid?",
-    a: "No payment relationships are claimed on this concept site. Most non-medical home care in Virginia is paid privately, through long-term care insurance, or through veterans' benefits. Medicaid personal care is available through the CCC Plus waiver but requires DMAS enrollment and a provider agreement. Confirm coverage with the agency before making a decision.",
+    a: "No payment relationships are claimed on this concept site. Most professional home care in Virginia is paid privately, through long-term care insurance, or through veterans' benefits. Medicaid personal care is available through the CCC Plus waiver but requires DMAS enrollment and a provider agreement. Confirm coverage with the agency before making a decision.",
   },
   {
     q: "Can you give my mother her medication?",
@@ -596,7 +596,7 @@ export const articles = [
       {
         h: "The local range",
         p: [
-          "National survey data put the median non-medical caregiver rate at about $35 per hour in 2025. In Northern Virginia, published local rates commonly land between $35 and $42 per hour depending on the agency, the level of care, and the hours purchased. Virginia's median is often cited at $35 per hour.",
+          "National survey data put the median professional caregiver rate at about $35 per hour in 2025. In Northern Virginia, published local rates commonly land between $35 and $42 per hour depending on the agency, the level of care, and the hours purchased. Virginia's median is often cited at $35 per hour.",
           "Treat any single number as a starting point. The real cost is the rate multiplied by the hours you actually need, plus premiums and fees.",
         ],
       },
@@ -610,8 +610,8 @@ export const articles = [
       {
         h: "Payment sources",
         p: [
-          "Most non-medical care is private pay. Long-term care insurance may reimburse covered services if the policy includes home care and the agency can provide the required documentation. Veterans may qualify for VA benefits, including aid and attendance for eligible wartime veterans and surviving spouses.",
-          "Medicaid's CCC Plus waiver covers agency-directed or consumer-directed personal care and respite for eligible adults, but the agency must be enrolled with DMAS. Medicare generally does not pay for non-medical custodial care; it covers short-term skilled home health ordered by a physician.",
+          "Most professional care is private pay. Long-term care insurance may reimburse covered services if the policy includes home care and the agency can provide the required documentation. Veterans may qualify for VA benefits, including aid and attendance for eligible wartime veterans and surviving spouses.",
+          "Medicaid's CCC Plus waiver covers agency-directed or consumer-directed personal care and respite for eligible adults, but the agency must be enrolled with DMAS. Medicare generally does not pay for professional custodial care; it covers short-term skilled home health ordered by a physician.",
         ],
       },
       {

@@ -54,7 +54,7 @@
 | ID | Source | URL | What it supports | Status |
 |---|---|---|---|---|
 | **S13** | Genworth — Cost of Care Survey 2024 | https://www.genworth.com/aging-and-you/finances/cost-of-care.html | National median annual home health aide $77,792; homemaker $75,504 (2024) | Reviewed (secondary reporting) |
-| **S14** | CareScout — Cost of Care Survey 2025 | https://www.carescout.com/cost-of-care | National median non-medical caregiver rate ~$35/hour (2025) | Reviewed (secondary reporting) |
+| **S14** | CareScout — Cost of Care Survey 2025 | https://www.carescout.com/cost-of-care | National median professional caregiver rate ~$35/hour (2025) | Reviewed (secondary reporting) |
 | **S15** | A Place for Mom — Virginia home care costs | https://www.aplaceformom.com/care-costs/virginia | Virginia median home care ~$35/hour | Identified |
 | **S16** | Visiting Angels Manassas — home care rates | https://www.visitingangels.com/manassas | Published local range $35–$42/hour | Identified |
 | **S17** | Local home care directories (Caring.com, A Place for Mom, agency sites) | Various | Competitor presence and service menus | Identified |
@@ -90,13 +90,13 @@
 
 | Competitor | URL | What was observed |
 |---|---|---|
-| Visiting Angels Manassas | https://www.visitingangels.com/manassas | Non-medical private duty; published $35–$42/hr range |
+| Visiting Angels Manassas | https://www.visitingangels.com/manassas | Professional private duty; published $35–$42/hr range |
 | Homewatch CareGivers of Prince William | https://www.homewatchcaregivers.com/ | Personal and companion care, transportation, housekeeping, medication reminders |
 | FirstLight Home Care | https://www.firstlighthomecare.com/ | Companion and personal care |
 | Home Helpers | https://www.homehelpershomecare.com/ | Personal and companion care |
 | Care Perfections Health Services | Local directory listing | Nurse-owned; personal, companion, some medical services |
-| Caring Hearts Homecare | Local directory listing | Personal care, therapy, medical social work |
-| Trusthaven Homecare | Local directory listing | Personal and companion care |
+| Caring Hearts Health & Medical Support | Local directory listing | Personal care, therapy, medical social work |
+| Trusthaven Health & Medical Support | Local directory listing | Personal and companion care |
 | Prince William Area Agency on Aging Care Registry | https://www.pwcva.gov/department/area-agency-aging | Registry of independent companions; no certification, training, or supervision by the county |
 
 **Competitor caveat:** service menus and rates are self-reported and change. No quality judgment is made here. Names are used for identification only; no affiliation or endorsement is implied.

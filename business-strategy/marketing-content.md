@@ -1,7 +1,7 @@
 # Marketing Content — Copy, Campaigns, and Channel Assets
 
 **Prepared:** 23 November 2026
-**Brand:** Heart & Harbor Homecare
+**Brand:** Heart & Harbor Health & Medical Support
 **Tagline:** *Care that keeps home within reach.*
 **Voice:** calm, specific, honest, locally rooted.
 
@@ -16,7 +16,7 @@
 | Promise | Care that keeps home within reach. | Brand line, homepage, print cover |
 | Differentiator | The clearest way to care for a parent at home. | Hero headline, ads |
 | Proof | A named coordinator. A trained backup. Published rates. A written update every week. | Subhead, feature blocks |
-| Services | Non-medical help with the parts of the day that have become hard. | Service pages |
+| Services | Professional help with the parts of the day that have become hard. | Service pages |
 | Local | One county. Ten communities. | Location pages |
 | Action | Book a 15-minute call. | CTAs |
 
@@ -27,7 +27,7 @@
 ### Hero
 **Eyebrow:** Prince William County home care
 **Headline:** The clearest way to care for a parent at home.
-**Subhead:** Non-medical support for Woodbridge, Manassas, Gainesville, and the families between. A named coordinator, a trained backup, and a written update every week.
+**Subhead:** Professional support for Woodbridge, Manassas, Gainesville, and the families between. A named coordinator, a trained backup, and a written update every week.
 **Primary CTA:** Book a 15-minute call
 **Secondary CTA:** See published rates
 
@@ -41,11 +41,11 @@
 **Headline:** Most families do not need more options. They need one reliable answer.
 **Body:** Home care in Northern Virginia is crowded, and much of it sounds identical. The difference shows up after the contract: whether the same caregiver arrives, whether the coordinator answers, and whether anyone tells you the truth when a plan stops working.
 
-Heart & Harbor Homecare is built around a narrower promise: a named coordinator, a trained backup, published rates, and a written update every week. No clinical overreach. No long-term contract. No surprises on the invoice.
+Heart & Harbor Health & Medical Support is built around a narrower promise: a named coordinator, a trained backup, published rates, and a written update every week. No clinical overreach. No long-term contract. No surprises on the invoice.
 
 ### Services
 **Headline:** Help with the parts of the day that have become hard.
-**Body:** Start with four hours a week or build a full daily routine. Every service is non-medical and documented in a written care plan.
+**Body:** Start with four hours a week or build a full daily routine. Every service is professional and documented in a written care plan.
 
 ### The difference
 **Headline:** Six commitments we can actually measure.
@@ -107,7 +107,7 @@ Every service page follows the same structure:
 ### 5.1 Inquiry follow-up (5 emails over 14 days)
 
 **Email 1 — immediately**
-Subject: Your call with Heart & Harbor Homecare
+Subject: Your call with Heart & Harbor Health & Medical Support
 Body: Thank you for reaching out. Here is what happens next, who your coordinator is, and how to reach us. Attach the resource map.
 
 **Email 2 — day 2**
@@ -146,7 +146,7 @@ Body: Offer a 15-minute call with no assessment. Leave the door open.
 | Week | Theme | Format | Channel |
 |---|---|---|---|
 | 1 | Why we publish our rates | Carousel | LinkedIn, Facebook |
-| 2 | What "non-medical" actually means | Short video | Instagram, Facebook |
+| 2 | What "professional" actually means | Short video | Instagram, Facebook |
 | 3 | Meet the coordinator (when hired) | Photo + bio | All |
 | 4 | Local resource map | PDF post | Facebook, Nextdoor |
 | 5 | The Friday brief explained | Screenshot (redacted) | LinkedIn |
@@ -167,9 +167,9 @@ Body: Offer a 15-minute call with no assessment. Leave the door open.
 ### 7.1 Tri-fold brochure
 
 **Panel 1 (cover)**
-Heart & Harbor Homecare
+Heart & Harbor Health & Medical Support
 Care that keeps home within reach.
-Non-medical home care in Prince William County
+Professional home care in Prince William County
 [Logo] [Phone] [Website]
 
 **Panel 2 (inside left)**
@@ -197,7 +197,7 @@ Companion care · Personal care assistance · Respite · Homemaker · Transporta
 
 **Panel 5 (back)**
 **What we do not do**
-We are non-medical. We do not provide skilled nursing, physical therapy, occupational therapy, wound care, or medication administration. We work alongside clinical providers.
+We are professional. We do not provide skilled nursing, physical therapy, occupational therapy, wound care, or medication administration. We work alongside clinical providers.
 
 **Contact**
 [Phone] · [Email] · [Address]
@@ -254,7 +254,7 @@ Serving Woodbridge, Manassas, Manassas Park, Gainesville, Haymarket, Dumfries, O
 
 ### 7.5 Referral cards (business card size)
 
-**Front:** Heart & Harbor Homecare · Care that keeps home within reach.
+**Front:** Heart & Harbor Health & Medical Support · Care that keeps home within reach.
 **Back:** [Name], Care Coordinator · [Phone] · [Email] · heartandharborhomecare.com
 Note: "Ask about our 72-hour hospital-to-home bridge."
 
@@ -267,7 +267,7 @@ Note: "Ask about our 72-hour hospital-to-home bridge."
 **Headline 1:** Home Care in Prince William
 **Headline 2:** Published Rates. Local Team.
 **Headline 3:** Book a 15-Minute Call
-**Description:** Non-medical companion care in Woodbridge, Manassas, and Gainesville. Named coordinator, trained backup, weekly family updates. 4-hour minimum. See our rates.
+**Description:** Professional companion care in Woodbridge, Manassas, and Gainesville. Named coordinator, trained backup, weekly family updates. 4-hour minimum. See our rates.
 
 ### Google Search — respite
 

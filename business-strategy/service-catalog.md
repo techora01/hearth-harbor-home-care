@@ -1,8 +1,8 @@
-# Service Catalog — Heart & Harbor Homecare
+# Service Catalog — Heart & Harbor Health & Medical Support
 
 **Prepared:** 23 November 2026
 **Status:** Launch catalog + phased roadmap. All prices illustrative until a bottom-up cost model is complete.
-**Scope rule:** Every service below is **non-medical**. No skilled nursing, physical therapy, occupational therapy, speech therapy, wound care, or medication administration is offered or implied.
+**Scope rule:** Every service below is **professional**. No skilled nursing, physical therapy, occupational therapy, speech therapy, wound care, or medication administration is offered or implied.
 
 ---
 

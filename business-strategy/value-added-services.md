@@ -1,7 +1,7 @@
 # Value-Added Services — What Actually Creates Loyalty
 
 **Prepared:** 23 November 2026
-**Purpose:** Define the non-hourly services that differentiate Heart & Harbor Homecare, with realistic cost, risk, and launch gating.
+**Purpose:** Define the non-hourly services that differentiate Heart & Harbor Health & Medical Support, with realistic cost, risk, and launch gating.
 
 ---
 

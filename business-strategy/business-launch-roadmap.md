@@ -1,7 +1,7 @@
 # Business Launch Roadmap — 18 Months
 
 **Prepared:** 23 November 2026
-**Business:** Heart & Harbor Homecare (concept)
+**Business:** Heart & Harbor Health & Medical Support (concept)
 **Target market:** Prince William County, Virginia
 **Model:** Licensed home care organization (personal care) with companion, homemaker, and respite core services
 

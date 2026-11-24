@@ -1,7 +1,7 @@
 # SEO & Keyword Strategy — Prince William County Home Care
 
 **Prepared:** 23 November 2026
-**Scope:** Organic search, local pack, and AI-answer visibility for a new non-medical home care agency.
+**Scope:** Organic search, local pack, and AI-answer visibility for a new professional home care agency.
 **Domain assumption:** `heartandharborhomecare.com` (placeholder — verify availability).
 
 > **Data honesty.** No paid keyword tool was used for this concept. Search volumes below are **planning estimates** based on the structure of local service search, not measured data. Replace them with Ahrefs, Semrush, or Google Keyword Planner data before committing budget.
@@ -44,12 +44,12 @@ These are the pages that must rank. Each gets a dedicated URL.
 
 | Keyword | Intent | Target |
 |---|---|---|
-| non-medical home care | Informational/commercial | `/services.html` |
+| professional home care | Informational/commercial | `/services.html` |
 | companion care vs personal care | Informational | article or service page |
 | homemaker services | Commercial | `/services/homemaker-services.html` |
 | medication reminders for elderly | Informational | `/services/medication-reminders.html` |
 | overnight home care | Commercial | `/services/overnight-care.html` |
-| dementia home care (non-medical) | Commercial | `/services/dementia-support.html` |
+| dementia home care (professional) | Commercial | `/services/dementia-support.html` |
 | post hospital home care | Commercial/urgent | `/services/hospital-to-home.html` |
 | home safety assessment for elderly | Commercial | `/services/home-safety-assessment.html` |
 
@@ -84,7 +84,7 @@ These are the pages that must rank. Each gets a dedicated URL.
 
 | URL | Primary keyword | Secondary keywords | Title tag (≤60 chars) |
 |---|---|---|---|
-| `/` | home care Prince William County | non-medical home care, in-home care | Home Care in Prince William County \| Heart & Harbor Homecare |
+| `/` | home care Prince William County | professional home care, in-home care | Home Care in Prince William County \| Heart & Harbor Health & Medical Support |
 | `/services.html` | home care services Prince William | companion, personal care, respite | Home Care Services in Prince William County |
 | `/services/companion-care.html` | companion care Prince William County | companionship, senior companion | Companion Care in Prince William County, VA |
 | `/services/personal-care.html` | personal care assistance | bathing, dressing, ADLs | Personal Care Assistance \| Prince William County |
@@ -93,7 +93,7 @@ These are the pages that must rank. Each gets a dedicated URL.
 | `/services/transportation-errands.html` | senior transportation Prince William | medical rides, errands | Senior Transportation & Errands \| PWC |
 | `/services/medication-reminders.html` | medication reminders | medication management (avoid) | Medication Reminders for Seniors \| PWC |
 | `/services/wellness-check-ins.html` | wellness checks for elderly | senior check-in visits | Wellness Check-Ins for Older Adults |
-| `/services/dementia-support.html` | dementia home care | memory loss support, non-medical | Dementia-Friendly Home Support \| PWC |
+| `/services/dementia-support.html` | dementia home care | memory loss support, professional | Dementia-Friendly Home Support \| PWC |
 | `/services/hospital-to-home.html` | post hospital home care | discharge support, transition care | Hospital-to-Home Support \| Prince William |
 | `/services/family-caregiver-coaching.html` | caregiver coaching | family care planning | Family Caregiver Coaching \| PWC |
 | `/services/home-safety-assessment.html` | home safety assessment elderly | fall prevention, aging in place | Home Safety Assessment \| Prince William |
@@ -109,9 +109,9 @@ These are the pages that must rank. Each gets a dedicated URL.
 | `/locations/dale-city.html` | home care Dale City VA | elderly care Dale City | Home Care in Dale City, VA |
 | `/locations/bristow.html` | home care Bristow VA | senior care Bristow | Home Care in Bristow, VA |
 | `/pricing.html` | home care cost Prince William County | hourly rate, payment options | Home Care Pricing in Prince William County |
-| `/about.html` | home care agency Prince William | local home care | Why Heart & Harbor Homecare \| Local Home Care |
+| `/about.html` | home care agency Prince William | local home care | Why Heart & Harbor Health & Medical Support \| Local Home Care |
 | `/resources.html` | caregiver resources Prince William | family guides | Family Care Resources \| Prince William |
-| `/contact.html` | home care consultation Prince William | book a call | Contact & Consultation \| Heart & Harbor Homecare |
+| `/contact.html` | home care consultation Prince William | book a call | Contact & Consultation \| Heart & Harbor Health & Medical Support |
 
 ---
 

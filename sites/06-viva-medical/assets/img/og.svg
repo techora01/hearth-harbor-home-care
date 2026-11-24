@@ -7,10 +7,10 @@
     <path d="M16 48V32c0-11 9-20 20-20s20 9 20 20v16" fill="none" stroke="#2A9D8F" stroke-width="4" stroke-linecap="round"/>
     <path d="M36 50c-7-4.4-11-8.6-11-13a6.5 6.5 0 0 1 11-4.2 6.5 6.5 0 0 1 11 4.2c0 4.4-4 8.6-11 13Z" fill="#2A9D8F"/>
   </g>
-  <text x="80" y="250" font-family="Georgia, serif" font-size="66" font-weight="700" fill="#264653">The clearest way to</text>
-  <text x="80" y="326" font-family="Georgia, serif" font-size="66" font-weight="700" fill="#264653">care for a parent at home.</text>
-  <text x="80" y="400" font-family="Arial, sans-serif" font-size="28" fill="#5E7C7A">Non-medical home care · Prince William County, Virginia</text>
+  <text x="80" y="250" font-family="Georgia, serif" font-size="66" font-weight="700" fill="#264653">Medical care.</text>
+  <text x="80" y="326" font-family="Georgia, serif" font-size="66" font-weight="700" fill="#264653">At home.</text>
+  <text x="80" y="400" font-family="Arial, sans-serif" font-size="28" fill="#5E7C7A">Professional home care · Prince William County, Virginia</text>
   <rect x="80" y="452" width="320" height="4" fill="#2A9D8F"/>
-  <text x="80" y="530" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#2A9D8F">Heart &amp; Harbor Homecare</text>
-  <text x="80" y="570" font-family="Arial, sans-serif" font-size="22" fill="#5E7C7A">HeartandHarborHomecare.com · (703) 555-0100 · concept site</text>
+  <text x="80" y="530" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#2A9D8F">Heart &amp; Harbor Health & Medical Support</text>
+  <text x="80" y="570" font-family="Arial, sans-serif" font-size="22" fill="#5E7C7A">HeartandHarborHealth & Medical Support.com · (703) 555-0100 · concept site</text>
 </svg>

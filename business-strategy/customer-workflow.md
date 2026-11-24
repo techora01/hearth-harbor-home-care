@@ -30,7 +30,7 @@ Seven stages, thirteen handoffs, one accountable coordinator.
 2. Capture minimal contact information — name, phone, best time, community.
 3. Do **not** collect detailed health information on an unsecured channel.
 4. Triage urgency: is anyone unsafe right now? If yes, direct to 911 or Adult Protective Services.
-5. Explain scope honestly: non-medical care; no nursing or therapy.
+5. Explain scope honestly: professional care; no nursing or therapy.
 6. Offer a free 30-minute consultation.
 7. Send a confirmation with the coordinator's name and time.
 

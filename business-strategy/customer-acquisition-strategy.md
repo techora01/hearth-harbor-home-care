@@ -45,7 +45,7 @@ That means:
 
 **Actions:**
 - Create and verify a Google Business Profile with the real (or placeholder, pre-launch) address, service area, hours, phone, and 8–10 photos.
-- Choose the primary category "Home Health Care Service" and secondary categories that accurately reflect non-medical scope.
+- Choose the primary category "Home Health Care Service" and secondary categories that accurately reflect professional scope.
 - Publish 24+ service and location pages (already built in the demo sites).
 - Collect reviews from real clients with written consent; respond to every review.
 - Post weekly updates: care tips, local events, staff training — not sales.
@@ -190,11 +190,11 @@ Awareness → Trust → Contact → Assessment → First visit → Retention →
 
 **Answer within three rings. Smile before speaking.**
 
-1. "Thank you for calling Heart & Harbor Homecare. This is [name]. How can I help?"
+1. "Thank you for calling Heart & Harbor Health & Medical Support. This is [name]. How can I help?"
 2. Listen without interrupting. Let them tell the story.
 3. "I'm sorry — that sounds like a lot. Can I ask a few questions so I can tell you honestly whether we can help?"
 4. Gather: who needs care, what is happening, where they live, what they need help with, timeline, who is deciding, budget awareness.
-5. "Here's what we can do, and here's what we don't do." Be specific about non-medical scope.
+5. "Here's what we can do, and here's what we don't do." Be specific about professional scope.
 6. "Our rates are published, and the first conversation is free. Would [time] work for a 30-minute visit?"
 7. Send a confirmation text/email with the coordinator's name and the time.
 8. Log the call and set a follow-up task.

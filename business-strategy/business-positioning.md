@@ -1,4 +1,4 @@
-# Business Positioning — Heart & Harbor Homecare
+# Business Positioning — Heart & Harbor Health & Medical Support
 
 **Prepared:** 23 November 2026
 **Status:** Recommended positioning for launch. All business identifiers remain placeholders until licensure and legal review.
@@ -7,7 +7,7 @@
 
 ## 1. The one-sentence position
 
-> **Heart & Harbor Homecare is the communication-first home care agency for Prince William County: a named coordinator, a trained backup, published rates, and a written family update every week.**
+> **Heart & Harbor Health & Medical Support is the communication-first home care agency for Prince William County: a named coordinator, a trained backup, published rates, and a written family update every week.**
 
 That sentence is the business. Everything else — services, website, brochures, scripts — exists to make it credible and repeatable.
 
@@ -31,17 +31,17 @@ A small agency cannot outspend a franchise. It can out-operate one on these thre
 
 | Element | Recommendation |
 |---|---|
-| **Name** | Heart & Harbor Homecare |
+| **Name** | Heart & Harbor Health & Medical Support |
 | **Why it works** | "Hearth" signals home, warmth, and the kitchen table. "Harbor" signals safety and the Potomac/Occoquan geography. It is warm without being clinical, and it does not sound like a hospital department. |
 | **Descriptor** | Home Care · Prince William |
 | **Tagline** | *Care that keeps home within reach.* |
 | **Operating promise** | *You will always know who is coming, what they will do, and how your family is doing.* |
-| **Category** | Non-medical home care (companion, homemaker, personal care, respite) |
-| **Legal name** | Heart & Harbor Homecare LLC (placeholder) |
+| **Category** | Professional home care (companion, homemaker, personal care, respite) |
+| **Legal name** | Heart & Harbor Health & Medical Support LLC (placeholder) |
 | **Domain** | heartandharborhomecare.com (placeholder — verify availability before purchase) |
 | **Service mark** | Conduct a USPTO and Virginia SCC search before adopting the name commercially |
 
-**Naming caution.** "Cardinal Care" was rejected because Virginia's Medicaid program is branded Cardinal Care. "Heart & Harbor Homecare" should still be cleared by counsel; common-law and registered marks may exist in other states.
+**Naming caution.** "Cardinal Care" was rejected because Virginia's Medicaid program is branded Cardinal Care. "Heart & Harbor Health & Medical Support" should still be cleared by counsel; common-law and registered marks may exist in other states.
 
 ---
 
@@ -100,7 +100,7 @@ A small agency cannot outspend a franchise. It can out-operate one on these thre
 - **Plain English.** Short sentences. Define terms like "activities of daily living" and "home health."
 - **Bilingual by design, not by machine.** Human translation for Spanish materials; no machine-translated care instructions.
 
-**Words to use:** reliable, named, written, local, trained, supervised, transparent, non-medical, coordinated.
+**Words to use:** reliable, named, written, local, trained, supervised, transparent, professional, coordinated.
 **Words to avoid:** compassionate (overused), affordable (unprovable), elite, concierge, medical, nursing, guaranteed, cure, best.
 
 ---
@@ -111,7 +111,7 @@ A small agency cannot outspend a franchise. It can out-operate one on these thre
 "We're a local home care agency in Prince William County. You get one named coordinator, a trained backup, and a written update every week. Rates are published, and there's no long-term contract."
 
 **30 seconds**
-"Most families call us after a fall or a hospital stay. We do a home visit, write a care plan, and match a caregiver to your parent's routine and language. You always know who's coming and what they did. We're non-medical — no nursing or therapy — so we work alongside the clinical team rather than replacing it."
+"Most families call us after a fall or a hospital stay. We do a home visit, write a care plan, and match a caregiver to your parent's routine and language. You always know who's coming and what they did. We're professional — no nursing or therapy — so we work alongside the clinical team rather than replacing it."
 
 **Referral-partner version**
 "We're the agency that sends the family a written update every Friday and publishes its rates. If you have a patient going home who needs non-clinical support in the first 72 hours, we can triage same-day and coordinate with the discharging team. We don't provide skilled care, so we won't compete with your clinical referrals."

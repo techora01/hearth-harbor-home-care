@@ -107,7 +107,7 @@ function start(port, baseDir, label) {
   return server;
 }
 
-console.log('\nHeart & Harbor Homecare — static preview servers\n');
+console.log('\nHeart & Harbor Health & Medical Support — static preview servers\n');
 start(8100, path.join(root, 'dashboard'), 'Dashboard');
 for (const s of sites) {
   start(s.port, path.join(root, 'sites', s.id), `${s.id}`);

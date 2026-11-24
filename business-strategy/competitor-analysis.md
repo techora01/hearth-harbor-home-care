@@ -25,13 +25,13 @@ The county's home care supply has four layers:
 | Agency | Location | Model | Publicly visible positioning | Published pricing | Notes |
 |---|---|---|---|---|---|
 | Homewatch CareGivers of Prince William | Manassas | National franchise | Personal and companion care, transportation, housekeeping, medication reminders | Not published on the listing reviewed | Broad service menu; franchise brand |
-| Visiting Angels (Manassas) | Manassas | National franchise | Non-medical private duty care, hourly to 24-hour | **$35–$42/hr** published on its site [S16] | Explicitly publishes a local rate range |
+| Visiting Angels (Manassas) | Manassas | National franchise | Professional private duty care, hourly to 24-hour | **$35–$42/hr** published on its site [S16] | Explicitly publishes a local rate range |
 | FirstLight Home Care | Manassas | National franchise | Companion and personal care | Not published on the listing reviewed | National training and caregiving model |
 | Home Helpers | Manassas | National franchise | Personal and companion care | Not published on the listing reviewed | National brand |
 | Care Perfections Health Services | Manassas | Independent, nurse-owned | Personal, companion, and some medical services | Not published | Nurse-owned positioning |
-| Caring Hearts Homecare | Manassas | Independent | Personal care, therapy, medical social work | Not published | Lists clinical services; verify licensure/certification |
-| Dependable Homecare / Apex Partners | Manassas | Independent | Compassionate personalized care | Not published | Small local operator |
-| Trusthaven Homecare | Manassas | Independent | Personal and companion care | Not published | Small local operator |
+| Caring Hearts Health & Medical Support | Manassas | Independent | Personal care, therapy, medical social work | Not published | Lists clinical services; verify licensure/certification |
+| Dependable Health & Medical Support / Apex Partners | Manassas | Independent | Compassionate personalized care | Not published | Small local operator |
+| Trusthaven Health & Medical Support | Manassas | Independent | Personal and companion care | Not published | Small local operator |
 | Harbor & Haven; Golden Care Agency; Passion Calling Healthcare | Prince William County | Independent | Local home care | Not published | Appear in local directory results [S17] |
 
 **Limitations.** Directory listings are incomplete and sometimes stale. Several agencies serve the county without a Manassas or Woodbridge office. The list above is illustrative, not exhaustive.
@@ -42,7 +42,7 @@ The county's home care supply has four layers:
 
 | Benchmark | Rate / cost | Source |
 |---|---|---|
-| National median non-medical caregiver rate, 2025 | ~$35/hr | CareScout/Genworth [S14] |
+| National median professional caregiver rate, 2025 | ~$35/hr | CareScout/Genworth [S14] |
 | Virginia median home care rate, 2026 guide | ~$35/hr | A Place for Mom [S15] |
 | Manassas franchise published range | $35–$42/hr | Visiting Angels [S16] |
 | Woodbridge home care average, monthly | ~$5,339/month | Caring.com [S18] |
@@ -90,7 +90,7 @@ These are **opportunity hypotheses** supported by the structure of the market, n
 
 Scored 1 (weak) to 5 (strong) for a new entrant's ability to differentiate. "Importance" is the estimated weight families place on the factor.
 
-| Factor | Typical franchise | Typical independent | Heart & Harbor Homecare target | Importance |
+| Factor | Typical franchise | Typical independent | Heart & Harbor Health & Medical Support target | Importance |
 |---|---|---|---|---|
 | Brand recognition | 5 | 2 | 2 (year 1) | 3 |
 | Price transparency | 2 | 2 | **5** | 5 |

@@ -1,7 +1,7 @@
 # Market Research — Home Care in Prince William County, Virginia
 
 **Prepared:** 23 November 2026
-**Prepared for:** Heart & Harbor Homecare (concept)
+**Prepared for:** Heart & Harbor Health & Medical Support (concept)
 **Geography:** Prince William County, Manassas, Manassas Park, Woodbridge, Gainesville, Haymarket, Dumfries, Occoquan, Lake Ridge, Dale City, Bristow
 **Status:** Secondary research synthesis. Figures are current as of the cited publication date; re-verify before fundraising or launch.
 
@@ -15,7 +15,7 @@ Prince William County is the second-most populous county in Virginia, with rough
 
 **Verified.** The county is exceptionally diverse: 26.8% of residents identify as Hispanic or Latino and 20.1% as Black or African American, compared with 20.0% and 12.6% nationally [S2]. Language access and culturally congruent caregiving are therefore mainstream requirements in this market, not niche add-ons.
 
-**Verified.** Virginia families provide about $27 billion of unpaid care each year [S12]. Nationally, the median non-medical caregiver rate reached about $35 per hour in 2025, and the annual median cost of home health aide care was $77,792 in 2024 [S13][S14]. Local published rates around Manassas run $35–$42 per hour [S16].
+**Verified.** Virginia families provide about $27 billion of unpaid care each year [S12]. Nationally, the median professional caregiver rate reached about $35 per hour in 2025, and the annual median cost of home health aide care was $77,792 in 2024 [S13][S14]. Local published rates around Manassas run $35–$42 per hour [S16].
 
 **Recommendation.** The opportunity is not "more home care." It is **reliable, communicative, transparently priced home care** for adult children who live nearby but work full time, and for the county's large multilingual population. The market is crowded with franchises and small owner-operated agencies; the gap is operational trust, not service breadth.
 
@@ -89,7 +89,7 @@ There is no public, county-level spend figure for private-pay home care. The fol
 | Post-hospital transition | Hospital discharge volume | First 72 hours, errands, safety | Discharge planner/family | High urgency |
 | Multilingual families | 26.8% Hispanic [S2] | Spanish-speaking coordinator/caregiver | Adult child | Medium–high |
 | Long-term care insurance policyholders | Not measured locally | Documentation, covered hours | Policyholder/family | High |
-| Veterans and surviving spouses | Not measured locally | Non-medical support, benefits navigation | Veteran/family | Medium |
+| Veterans and surviving spouses | Not measured locally | Professional support, benefits navigation | Veteran/family | Medium |
 
 **Recommendation.** Prioritize adult children, post-discharge families, and Spanish-speaking families for the first year. Respite is the best low-commitment entry offer. Veterans' benefits are a later-stage opportunity requiring VA paperwork competence.
 
@@ -114,13 +114,13 @@ There is no public, county-level spend figure for private-pay home care. The fol
 
 ---
 
-## 6. Demand for non-medical vs. skilled services
+## 6. Demand for professional vs. skilled services
 
 **Verified.** Virginia defines a home care organization (HCO) as an entity providing home health services, personal care services, or pharmaceutical services in a person's residence [S4]. Personal care includes assistance with activities of daily living [S4]. Skilled home health — nursing, physical therapy, occupational therapy, speech-language pathology — is a different, clinically licensed service line; Medicare requires a physician order and a Medicare-certified agency [S22].
 
-**Verified.** Medicare does **not** pay for 24-hour care, meal delivery, homemaker services unrelated to a care plan, or custodial/personal care when that is the only care needed [S22]. This is the single most important consumer-education point for a non-medical agency.
+**Verified.** Medicare does **not** pay for 24-hour care, meal delivery, homemaker services unrelated to a care plan, or custodial/personal care when that is the only care needed [S22]. This is the single most important consumer-education point for a professional agency.
 
-**Recommendation.** Position the business firmly in non-medical home care. Do not advertise skilled nursing, therapy, wound care, or medication administration. Build referral relationships with Medicare-certified home health agencies, then serve the custodial needs Medicare does not cover. This is complementary, not competitive.
+**Recommendation.** Position the business firmly in professional home care. Do not advertise skilled nursing, therapy, wound care, or medication administration. Build referral relationships with Medicare-certified home health agencies, then serve the custodial needs Medicare does not cover. This is complementary, not competitive.
 
 ---
 
@@ -165,7 +165,7 @@ These are difficult for a large franchise to change quickly and cheap for a smal
 | Risk | Evidence / reason | Mitigation |
 |---|---|---|
 | Caregiver labor shortage | National home care staffing pressure; local wages compete with retail and warehouse work | Above-market wages, consistent schedules, paid training, small caseloads |
-| Regulatory misclassification | Virginia licenses personal care; "non-medical" is not a blanket exemption [S5][S8] | Obtain HCO license before delivering personal care; counsel review |
+| Regulatory misclassification | Virginia licenses personal care; "professional" is not a blanket exemption [S5][S8] | Obtain HCO license before delivering personal care; counsel review |
 | Price sensitivity | $35–$42/hr is a real household expense | 4-hour minimum, respite packages, LTC insurance documentation |
 | Referral concentration | A few hospitals drive much of the urgent demand | Diversify across senior centers, attorneys, faith groups, digital |
 | Reputation risk | One bad hire can dominate local reviews | Background checks, supervised onboarding, fast complaint resolution |
