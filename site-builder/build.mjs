@@ -76,7 +76,7 @@ ${ld}
 
 function brand(t, depth = 0, opts = {}) {
   return `<a class="brand" href="${rel("index.html", depth)}" aria-label="${esc(B.fullName)} home">
-    ${logoSVG(t, { mark: t.logoMark, size: opts.size || 42 })}
+    ${logoSVG(t, { mark: t.logoMark, size: opts.size || 30 })}
     <span class="brand-text"><span class="brand-name">${esc(B.name)}</span><span class="brand-county">${esc(B.countyLabel)}</span></span>
   </a>`;
 }
@@ -105,7 +105,6 @@ function header(t, active = "", depth = 0) {
       <ul class="nav-links">${links}</ul>
       <div class="nav-cta">
         <a class="nav-phone" href="${tel}">${esc(B.phone)}</a>
-        <a class="btn small" href="${rel("contact.html", depth)}">Book a call ${icon("arrow", 16)}</a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">${icon("menu", 22)}</button>
       </div>
     </nav>

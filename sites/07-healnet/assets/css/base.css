@@ -116,7 +116,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
 .nav { flex: 1 1 auto; justify-content: center; }
 .brand { display: inline-flex; align-items: center; gap: .7rem; text-decoration: none; color: var(--ink); flex: 0 0 auto; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.05; }
-.brand-name { font-family: var(--font-display); font-weight: 700; font-size: 1.07rem; letter-spacing: -.01em; }
+.brand-name { font-family: var(--font-display); font-weight: 700; font-size: .92rem; letter-spacing: -.01em; }
 .brand-tag, .brand-county { font-size: .66rem; letter-spacing: .13em; text-transform: uppercase; color: var(--muted); margin-top: .25rem; }
 .brand-county { color: var(--accent, var(--primary)); font-weight: 700; letter-spacing: .16em; }
 .nav { display: flex; align-items: center; gap: clamp(1rem, 2vw, 1.8rem); }
