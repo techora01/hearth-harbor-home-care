@@ -1,0 +1,98 @@
+/* 08 — Hugo Serif lineage: magazine grid, oversized serif, pull quotes, photographic calm. */
+
+body { background: var(--bg); color: var(--ink); font-size: 1.06rem; }
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spacing: -.01em; line-height: 1.02; }
+h1 { font-size: clamp(3rem, 6.4vw, 5.6rem); letter-spacing: -.03em; }
+h2 { font-size: clamp(2rem, 4vw, 3.3rem); }
+h3 { font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; line-height: 1.15; }
+p { line-height: 1.7; }
+
+.site-header { background: rgba(252,251,247,.96); border-bottom: 1px solid var(--ink); }
+.header-inner { --header-h: 92px; }
+.brand-mark { color: var(--primary); }
+.brand-name { font-family: var(--font-display); font-weight: 600; font-size: 1.35rem; letter-spacing: -.02em; }
+.brand-tag { font-size: .58rem; letter-spacing: .22em; color: var(--accent); }
+.nav-links a { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; color: #3B443E; border-bottom: 1px solid transparent; }
+.nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--accent); border-color: var(--accent); }
+.btn { border-radius: 0; text-transform: uppercase; letter-spacing: .12em; font-size: .72rem; padding: 1rem 1.5rem; font-weight: 600; }
+.btn:hover { transform: none; }
+.btn.ghost { background: transparent; border-color: #BFC5BE; color: var(--ink); }
+.btn.secondary { background: transparent; border-color: var(--ink); color: var(--ink); }
+
+.hero { background: var(--bg); border-bottom: 1px solid var(--ink); }
+.hero-inner { grid-template-columns: 1.15fr .85fr; gap: clamp(2rem, 5vw, 4rem); padding-block: clamp(3.5rem, 7vw, 6rem); align-items: end; }
+.hero h1 { max-width: 13ch; }
+.hero h1::first-letter { color: var(--accent); }
+.hero .lede { font-family: var(--font-display); font-size: clamp(1.1rem, 1.7vw, 1.35rem); color: #525A54; max-width: 46ch; line-height: 1.5; }
+.hero .eyebrow { color: var(--accent); letter-spacing: .22em; }
+.hero .eyebrow::before { width: 50px; background: var(--accent); }
+.hero-art { align-self: stretch; }
+.hero-art .art { height: 100%; min-height: 420px; object-fit: cover; border-radius: 0; }
+.hero-art::after { content: "Prince William County · Est. 2026"; display:block; font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-top: .8rem; }
+.hero-badge { border-radius: 0; border: 0; border-left: 3px solid var(--accent); box-shadow: 0 14px 34px rgba(31,36,33,.14); }
+.hero-badge strong { font-family: var(--font-display); font-weight: 600; font-size: 1rem; }
+.hero-proof { border-top: 1px solid var(--ink); }
+.hero-proof div { text-transform: uppercase; letter-spacing: .1em; font-size: .68rem; }
+.hero-proof strong { font-family: var(--font-display); font-weight: 600; font-size: 1.6rem; color: var(--primary); }
+
+.trust-strip { background: #F1EEE5; border-color: #DDD8CB; }
+.trust-inner { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
+.stats { background: transparent; border: 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); gap: 0; border-radius: 0; }
+.stat { background: transparent; border-right: 1px solid #DDD8CB; }
+.stat:last-child { border-right: 0; }
+.stat strong { font-family: var(--font-display); font-weight: 600; color: var(--primary); }
+.stat span { font-size: .78rem; }
+
+.section.alt { background: #F1EEE5; }
+.eyebrow { color: var(--accent); letter-spacing: .2em; }
+.eyebrow::before { width: 44px; background: var(--accent); }
+.section-head { border-top: 1px solid var(--ink); padding-top: 1.4rem; max-width: 780px; }
+.section-head p { font-family: var(--font-display); font-size: 1.15rem; color: #525A54; }
+
+.card { background: transparent; border: 0; border-top: 1px solid #CFC9BC; border-radius: 0; padding: 1.3rem 0 0; }
+.card:hover { transform: none; box-shadow: none; border-top-color: var(--accent); }
+.card-icon { background: transparent; width: auto; height: auto; color: var(--accent); margin-bottom: .7rem; }
+.card h3 { font-size: 1.3rem; }
+.card h3 a { color: var(--ink); }
+.card h3 a:hover { color: var(--accent); }
+.card p { color: #525A54; font-size: .95rem; }
+.card-link { font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+.diff-proof { font-size: .74rem; color: #7A817B; border-top: 1px solid #E2DDD2; padding-top: .7rem; }
+
+.steps { gap: 0; border-top: 1px solid var(--ink); }
+.step { border-top: 0; border-right: 1px solid #DDD8CB; padding: 1.5rem 1.6rem 0 0; }
+.step:last-child { border-right: 0; }
+.step-num { font-family: var(--font-display); font-size: 2.2rem; color: var(--accent); line-height: 1; }
+.step h3 { font-size: 1.2rem; }
+.process-row { border-bottom: 1px solid #DDD8CB; padding-bottom: 1.2rem; align-items: start; }
+
+.pullquote { border-left: 0; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 2.2rem 0 2rem; font-family: var(--font-display); font-style: italic; font-size: clamp(1.6rem,3.2vw,2.4rem); line-height: 1.25; color: var(--primary); }
+.price-card { background: #fff; border: 1px solid #CFC9BC; border-radius: 0; padding: 1.6rem; }
+.price-table th { font-family: var(--font-display); text-transform: none; letter-spacing: 0; font-size: .8rem; color: var(--accent); border-bottom: 1px solid var(--ink); }
+.price-table td { border-color: #E2DDD2; }
+.price-table td.rate { font-family: var(--font-display); color: var(--primary); }
+.price-table tr:hover td { background: #FAF8F2; }
+
+.callout { background: #F6F3EB; border: 0; border-left: 3px solid var(--accent); border-radius: 0; }
+.callout h3 { font-family: var(--font-body); font-size: .85rem; text-transform: uppercase; letter-spacing: .1em; }
+.callout.warn { background: #FBF0E9; border-left-color: var(--accent); }
+.faq-item summary { font-family: var(--font-display); font-weight: 600; font-size: 1.08rem; }
+.article-card .pill { background: transparent; color: var(--accent); padding-left: 0; letter-spacing: .12em; }
+.toc { background: #F6F3EB; border-radius: 0; border-top: 2px solid var(--ink); }
+.toc h4 { color: var(--accent); }
+.contact-panel { background: #F6F3EB; border: 0; border-top: 3px solid var(--ink); border-radius: 0; padding: 1.8rem; }
+.field input, .field textarea, .field select { border-radius: 0; background: #fff; }
+
+.cta-band { background: var(--primary); }
+.cta-band h2 { color: #fff; font-style: italic; }
+.cta-band p { color: rgba(255,255,255,.78); }
+.page-hero { background: #F1EEE5; border-bottom: 1px solid var(--ink); }
+.page-hero h1 { max-width: 18ch; }
+.breadcrumbs { letter-spacing: .08em; text-transform: uppercase; font-size: .68rem; }
+
+.site-footer { background: #1F2421; }
+.site-footer h4 { color: #CFC9BC; }
+.footer-disclosure { color: #A6ADA7; }
+.mini-link { display:block; padding:.6rem 0; border-bottom:1px solid #DDD8CB; color: var(--primary); text-decoration:none; font-family: var(--font-display); }
+.sitemap-list { columns: 2; list-style: none; padding: 0; }
+@media (max-width: 620px) { .sitemap-list { columns: 1; } }

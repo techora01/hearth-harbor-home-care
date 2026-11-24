@@ -1,0 +1,318 @@
+/* ==========================================================================
+   Hearth & Harbor — Print Kit
+   Letter (8.5 × 11 in) and tri-fold (11 × 8.5 in) layouts.
+   Designed to print from a browser: File → Print → Save as PDF.
+   ========================================================================== */
+
+@page {
+  size: letter;
+  margin: 0.45in;
+}
+
+@page landscape {
+  size: letter landscape;
+  margin: 0;
+}
+
+:root {
+  --ink: #10202a;
+  --ink-2: #35454f;
+  --muted: #64757f;
+  --teal: #0f766e;
+  --teal-dark: #0b4f4a;
+  --teal-light: #e6f2f0;
+  --sand: #e9d8bd;
+  --sand-light: #f7efe2;
+  --sage: #8fae9e;
+  --terra: #c97b5e;
+  --gold: #c9a227;
+  --line: #d8e0e4;
+  --paper: #ffffff;
+  --font-display: "Georgia", "Times New Roman", serif;
+  --font-body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #eef1f3;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 10.5pt;
+  line-height: 1.45;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.sheet {
+  width: 8.5in;
+  min-height: 11in;
+  margin: 18px auto;
+  padding: 0.55in 0.6in;
+  background: var(--paper);
+  box-shadow: 0 10px 40px rgba(16, 32, 42, 0.14);
+  position: relative;
+  overflow: hidden;
+}
+
+.sheet.landscape {
+  width: 11in;
+  height: 8.5in;
+  min-height: 0;
+  padding: 0;
+  page: landscape;
+}
+
+/* ------------------------------- type ---------------------------------- */
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.08;
+  margin: 0 0 0.35em;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: 30pt; }
+h2 { font-size: 18pt; }
+h3 { font-size: 12.5pt; font-family: var(--font-body); font-weight: 700; letter-spacing: 0; }
+h4 { font-size: 9pt; font-family: var(--font-body); text-transform: uppercase; letter-spacing: 0.14em; color: var(--teal); }
+
+p { margin: 0 0 0.7em; }
+ul, ol { margin: 0 0 0.8em; padding-left: 1.1em; }
+li { margin-bottom: 0.28em; }
+strong { color: var(--ink); }
+small { font-size: 8pt; }
+
+.eyebrow {
+  font-size: 7.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  color: var(--teal);
+  margin-bottom: 0.5em;
+}
+
+.lede { font-size: 12pt; color: var(--ink-2); line-height: 1.5; }
+.muted { color: var(--muted); }
+.center { text-align: center; }
+.rule { height: 3px; background: var(--teal); width: 42px; margin: 0.8em 0; }
+.rule.gold { background: var(--gold); }
+
+/* ------------------------------- brand --------------------------------- */
+
+.brand { display: flex; align-items: center; gap: 9px; }
+.brand svg { flex: none; }
+.brand-name {
+  font-family: var(--font-display);
+  font-size: 14pt;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+}
+.brand-sub {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 6.5pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-top: 2px;
+}
+
+/* ------------------------------- blocks -------------------------------- */
+
+.callout {
+  background: var(--teal-light);
+  border-left: 4px solid var(--teal);
+  padding: 10px 13px;
+  margin: 0.9em 0;
+  font-size: 9.5pt;
+}
+.callout.warn { background: #fdf3ec; border-left-color: var(--terra); }
+.callout h3 { margin-bottom: 0.25em; }
+.callout p:last-child { margin-bottom: 0; }
+
+.checklist { list-style: none; padding-left: 0; }
+.checklist li { position: relative; padding-left: 18px; }
+.checklist li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.cols-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.cols-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+
+.card {
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--teal);
+  padding: 11px 12px;
+  background: #fff;
+}
+.card h3 { margin-bottom: 0.25em; font-size: 10pt; }
+.card p { font-size: 8.8pt; margin-bottom: 0; color: var(--ink-2); }
+
+.stat { border-top: 2px solid var(--teal); padding-top: 7px; }
+.stat strong { display: block; font-family: var(--font-display); font-size: 17pt; color: var(--teal); line-height: 1; }
+.stat span { display: block; font-size: 8pt; color: var(--muted); margin-top: 3px; }
+
+.pill {
+  display: inline-block;
+  font-size: 7pt;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--teal-light);
+  color: var(--teal-dark);
+  padding: 2px 7px;
+  border-radius: 999px;
+}
+
+.contact-block { font-size: 9.5pt; line-height: 1.6; }
+.contact-block a { color: var(--teal); text-decoration: none; }
+
+.fine { font-size: 7.2pt; color: var(--muted); line-height: 1.4; }
+
+/* ------------------------------ tri-fold -------------------------------- */
+
+.trifold {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 8.5in;
+}
+.panel {
+  padding: 0.45in 0.36in;
+  position: relative;
+  overflow: hidden;
+  border-right: 1px dashed #d9dee1;
+}
+.panel:last-child { border-right: 0; }
+.panel.bleed { background: var(--teal-dark); color: #fff; }
+.panel.bleed h1, .panel.bleed h2, .panel.bleed h3, .panel.bleed h4 { color: #fff; }
+.panel.bleed p, .panel.bleed li { color: rgba(255,255,255,0.82); }
+.panel.bleed .brand-name { color: #fff; }
+.panel.bleed .brand-sub { color: var(--sand); }
+.panel.cream { background: var(--sand-light); }
+.panel .fold-note {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 6pt;
+  color: #a9b3b8;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.panel h2 { font-size: 16pt; margin-bottom: 0.35em; }
+.panel p { font-size: 9pt; }
+.panel li { font-size: 9pt; }
+
+.cover-mark { margin-bottom: 0.5in; }
+.cover-title { font-size: 27pt; line-height: 1.04; margin-bottom: 0.3em; }
+.cover-tag { font-family: var(--font-display); font-style: italic; font-size: 12pt; color: var(--sand); margin-bottom: 0.6em; }
+.cover-foot { position: absolute; bottom: 0.45in; left: 0.36in; right: 0.36in; }
+
+/* ------------------------------ flyer ---------------------------------- */
+
+.flyer-hero {
+  background: var(--teal-dark);
+  color: #fff;
+  margin: -0.55in -0.6in 0.35in;
+  padding: 0.55in 0.6in 0.42in;
+}
+.flyer-hero h1 { color: #fff; font-size: 32pt; }
+.flyer-hero p { color: rgba(255,255,255,0.82); font-size: 11pt; margin-bottom: 0; }
+
+/* ------------------------------ cards ---------------------------------- */
+
+.card-sheet {
+  display: grid;
+  grid-template-columns: repeat(2, 3.5in);
+  gap: 0.16in;
+  justify-content: center;
+  padding-top: 0.1in;
+}
+.biz-card {
+  width: 3.5in;
+  height: 2in;
+  border: 1px solid var(--line);
+  padding: 0.2in 0.22in;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.biz-card .back { position: absolute; inset: 0; background: var(--teal-dark); color: #fff; padding: 0.2in 0.22in; }
+.biz-card h3 { font-family: var(--font-display); font-size: 12pt; margin: 0; }
+.biz-card .role { font-size: 7pt; text-transform: uppercase; letter-spacing: 0.12em; color: var(--teal); margin-top: 2px; }
+.biz-card .line { font-size: 7.5pt; color: var(--ink-2); line-height: 1.5; }
+.cut-note { text-align: center; font-size: 7pt; color: var(--muted); margin-top: 10px; }
+
+/* ------------------------------ screen UI ------------------------------- */
+
+.screen-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: #10202a;
+  color: #fff;
+  padding: 9px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+.screen-bar a { color: #8fe3d8; text-decoration: none; margin-left: 14px; }
+.screen-bar button {
+  background: #0f766e;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+body.has-bar { padding-top: 44px; }
+
+/* ------------------------------ print ---------------------------------- */
+
+@media print {
+  html, body { background: #fff; }
+  .sheet {
+    margin: 0;
+    box-shadow: none;
+    break-after: page;
+    page-break-after: always;
+  }
+  .sheet:last-of-type { break-after: auto; page-break-after: auto; }
+  .sheet.landscape { page: landscape; }
+  .screen-bar, .no-print { display: none !important; }
+  body.has-bar { padding-top: 0; }
+  a { color: inherit; text-decoration: none; }
+  .panel { border-right: 0; }
+}
+
+@media screen and (max-width: 900px) {
+  .sheet { width: 100%; min-height: 0; padding: 24px; }
+  .sheet.landscape { width: 100%; height: auto; }
+  .trifold { grid-template-columns: 1fr; height: auto; }
+  .panel { border-right: 0; border-bottom: 1px dashed #d9dee1; }
+  .card-sheet { grid-template-columns: 1fr; }
+  .biz-card { width: 100%; }
+  .cols-2, .cols-3, .cols-4 { grid-template-columns: 1fr; }
+}

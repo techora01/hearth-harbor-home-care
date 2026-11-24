@@ -1,0 +1,120 @@
+/* 05 — Agency Jekyll lineage: bold statement, dark ground, gold rules, numbered process. */
+
+body { background: var(--cream); color: var(--ink); }
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; letter-spacing: -.015em; line-height: .98; text-transform: uppercase; }
+h1 { font-size: clamp(2.9rem, 6.4vw, 5.4rem); }
+h2 { font-size: clamp(2rem, 3.8vw, 3.2rem); }
+h3 { font-family: var(--font-body); font-weight: 700; text-transform: none; font-size: 1.08rem; line-height: 1.3; letter-spacing: 0; }
+p { font-size: 1.02rem; }
+
+.site-header { background: #0C141B; border-bottom: 1px solid rgba(255,255,255,.1); }
+.header-inner { --header-h: 88px; }
+.brand-mark { color: var(--primary); }
+.brand-name { color: #fff; font-family: var(--font-display); font-weight: 400; text-transform: uppercase; letter-spacing: .02em; font-size: 1.05rem; }
+.brand-tag { color: rgba(255,255,255,.45); }
+.nav-links a { color: rgba(255,255,255,.72); font-size: .74rem; text-transform: uppercase; letter-spacing: .12em; font-weight: 600; border-bottom: 1px solid transparent; }
+.nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--primary); border-color: var(--primary); }
+.nav-phone { color: #fff; }
+.btn { border-radius: 0; background: var(--primary); color: #101820; text-transform: uppercase; letter-spacing: .12em; font-size: .74rem; padding: 1.05rem 1.6rem; font-weight: 700; }
+.btn:hover { background: #E0B93A; color: #101820; transform: none; }
+.btn.ghost { background: transparent; border-color: rgba(255,255,255,.35); color: #fff; }
+.btn.ghost:hover { background: rgba(255,255,255,.08); color: #fff; }
+.btn.secondary { background: transparent; border-color: #101820; color: #101820; }
+
+.hero { background: #0C141B; color: #fff; position: relative; overflow: hidden; }
+.hero::before { content: "HH"; position: absolute; right: -2vw; bottom: -14rem; font-family: var(--font-display); font-size: 34rem; line-height: 1; color: rgba(255,255,255,.025); letter-spacing: -.08em; pointer-events: none; }
+.hero-inner { grid-template-columns: 1.12fr .88fr; padding-block: clamp(4rem, 8vw, 7rem); position: relative; z-index: 2; }
+.hero h1 { color: #fff; letter-spacing: -.02em; }
+.hero h1 em { font-style: normal; color: var(--primary); }
+.hero .lede { color: rgba(255,255,255,.72); font-size: 1.1rem; max-width: 54ch; }
+.hero .eyebrow { color: var(--primary); letter-spacing: .2em; }
+.hero .eyebrow::before { background: var(--primary); width: 36px; height: 2px; }
+.hero-actions .btn:first-child { background: var(--primary); }
+.hero-actions .btn.ghost { border-color: rgba(255,255,255,.3); }
+.hero-proof { border-top: 1px solid rgba(255,255,255,.16); }
+.hero-proof div { color: rgba(255,255,255,.55); text-transform: uppercase; font-size: .68rem; letter-spacing: .1em; }
+.hero-proof strong { color: #fff; font-family: var(--font-display); font-weight: 400; font-size: 1.5rem; letter-spacing: 0; }
+.hero-art .art { border-radius: 0; border: 1px solid rgba(201,162,39,.55); box-shadow: 18px 18px 0 rgba(201,162,39,.14); }
+.hero-badge { border-radius: 0; background: #101820; border: 1px solid rgba(201,162,39,.5); }
+.hero-badge strong { color: #fff; text-transform: uppercase; font-size: .76rem; letter-spacing: .08em; }
+.hero-badge .icon { color: var(--primary); }
+
+.trust-strip { background: #101820; border-color: rgba(255,255,255,.1); }
+.trust-inner { color: rgba(255,255,255,.55); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; }
+.trust-inner .icon { color: var(--primary); }
+
+.stats { background: #101820; border: 0; border-radius: 0; gap: 0; }
+.stat { background: #101820; border-right: 1px solid rgba(255,255,255,.12); border-top: 2px solid var(--primary); }
+.stat:last-child { border-right: 0; }
+.stat strong { font-family: var(--font-display); font-weight: 400; color: var(--primary); font-size: clamp(2rem,3.4vw,3rem); }
+.stat span { color: rgba(255,255,255,.7); }
+.stat small { color: rgba(255,255,255,.35); }
+
+.section.alt { background: #101820; color: #fff; }
+.section.alt h2 { color: #fff; }
+.section.alt .lede, .section.alt .section-head p { color: rgba(255,255,255,.66); }
+.section.alt .card { background: #16222C; border-color: rgba(255,255,255,.1); }
+.section.alt .card h3, .section.alt .card h3 a { color: #fff; }
+.section.alt .card p { color: rgba(255,255,255,.65); }
+.section.alt .eyebrow { color: var(--primary); }
+.section.alt .price-table td, .section.alt .price-table th { border-color: rgba(255,255,255,.12); color: rgba(255,255,255,.8); }
+.section.alt .price-table th { color: rgba(255,255,255,.45); }
+
+.eyebrow { color: var(--accent); letter-spacing: .18em; font-size: .7rem; }
+.eyebrow::before { width: 28px; background: var(--accent); }
+.section-head p, .lede { color: #5C6468; }
+
+.card { background: #fff; border: 1px solid #D9D2C4; border-radius: 0; border-top: 3px solid #101820; padding: 1.6rem; }
+.card:hover { transform: none; border-top-color: var(--primary); box-shadow: 0 14px 34px rgba(16,24,32,.08); }
+.card-icon { border-radius: 0; background: #101820; color: var(--primary); width: 44px; height: 44px; }
+.card p { color: #4E565A; font-size: .96rem; }
+.card-link { text-transform: uppercase; font-size: .72rem; letter-spacing: .1em; color: #101820; }
+.diff-proof { font-size: .72rem; color: #7C7568; border-top: 1px solid #E4DCCE; padding-top: .8rem; }
+
+.steps { gap: 0; }
+.step { border-top: 1px solid #CFC7B8; padding: 1.5rem 1.6rem 0 0; }
+.step-num { font-family: var(--font-display); font-size: 2.6rem; color: var(--accent); line-height: .8; letter-spacing: -.04em; }
+.step h3 { text-transform: uppercase; font-family: var(--font-display); font-weight: 400; font-size: 1.05rem; letter-spacing: .03em; }
+.step p { color: #5C6468; font-size: .9rem; }
+.process-row { border-top: 1px solid #D9D2C4; padding-top: 1.2rem; }
+
+.pullquote { border-left: 4px solid var(--primary); font-family: var(--font-display); font-weight: 400; text-transform: uppercase; font-size: clamp(1.5rem,2.8vw,2.2rem); line-height: 1.15; color: #101820; }
+.price-card { background: #101820; color: #fff; border: 0; border-radius: 0; padding: clamp(1.2rem,2.4vw,2rem); }
+.price-table th { color: rgba(255,255,255,.45); }
+.price-table td { border-color: rgba(255,255,255,.12); color: rgba(255,255,255,.82); }
+.price-table td.rate { font-family: var(--font-display); font-weight: 400; color: var(--primary); }
+.price-table tr:hover td { background: rgba(255,255,255,.04); }
+.price-note { color: rgba(255,255,255,.45); }
+
+.callout { background: #fff; border: 1px solid #D9D2C4; border-left: 4px solid var(--accent); border-radius: 0; }
+.callout.warn { background: #FFF4ED; border-left-color: var(--accent); }
+.faq-item summary { font-family: var(--font-display); font-weight: 400; text-transform: uppercase; letter-spacing: .02em; font-size: .95rem; }
+.article-card .pill { background: #101820; color: var(--primary); border-radius: 0; }
+.toc { background: #fff; border: 1px solid #D9D2C4; border-radius: 0; }
+.toc h4 { color: #101820; }
+.contact-panel { background: #101820; color: #fff; border-radius: 0; padding: 2rem; }
+.contact-panel h2 { color: #fff; }
+.contact-panel a { color: var(--primary); }
+.contact-panel .muted { color: rgba(255,255,255,.55); }
+.contact-panel .callout { background: #16222C; border-color: rgba(255,255,255,.12); }
+.contact-panel .callout p { color: rgba(255,255,255,.66); }
+.field input, .field textarea, .field select { border-radius: 0; }
+
+.cta-band { background: var(--primary); color: #101820; }
+.cta-band h2 { color: #101820; }
+.cta-band p { color: rgba(16,24,32,.75); }
+.cta-band .btn { background: #101820; color: #fff; }
+.cta-band .btn:hover { background: #1E2B36; }
+.cta-band .btn.ghost { background: transparent; color: #101820; border-color: rgba(16,24,32,.4); }
+.cta-band .eyebrow { color: rgba(16,24,32,.6) !important; }
+.page-hero { background: #101820; color: #fff; border-bottom: 3px solid var(--primary); }
+.page-hero h1 { color: #fff; }
+.page-hero .lede { color: rgba(255,255,255,.66); }
+.breadcrumbs, .breadcrumbs a { color: rgba(255,255,255,.5); }
+
+.site-footer { background: #0C141B; }
+.site-footer h4 { color: rgba(255,255,255,.45); }
+.footer-disclosure { color: rgba(255,255,255,.4); }
+.mini-link { display:block; padding:.6rem 0; border-bottom:1px solid #D9D2C4; color: #101820; text-decoration:none; font-size:.86rem; text-transform:uppercase; letter-spacing:.04em; }
+.sitemap-list { columns: 2; list-style: none; padding: 0; }
+@media (max-width: 620px) { .sitemap-list { columns: 1; } }

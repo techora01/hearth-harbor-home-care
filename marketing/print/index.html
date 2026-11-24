@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Print Kit — Hearth &amp; Harbor Home Care</title>
+<style>
+  :root{
+    --ink:#10202a; --muted:#5e6d80; --line:#dde5ee; --bg:#f6f8fb;
+    --teal:#0f766e; --teal-dark:#0b4f4a; --sand:#e9d8bd; --gold:#c9a227;
+    --font:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--font);background:var(--bg);color:var(--ink);line-height:1.6}
+  .wrap{width:min(1080px,92vw);margin:0 auto}
+  header{background:linear-gradient(135deg,#0b1220,#0b4f4a 60%,#0f766e);color:#fff;padding:46px 0 38px}
+  h1{font-family:Georgia,serif;font-size:clamp(1.9rem,4vw,2.8rem);letter-spacing:-.03em;margin:0 0 10px;line-height:1.08}
+  header p{color:rgba(255,255,255,.76);max-width:64ch;margin:0 0 18px}
+  .pill{display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);color:#dff7f2;border-radius:999px;padding:.3rem .7rem;font-size:.72rem;font-weight:700;letter-spacing:.06em}
+  main{padding:36px 0 60px}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 24px;display:flex;flex-direction:column;gap:8px}
+  .item h2{margin:0;font-size:1.12rem;letter-spacing:-.015em}
+  .item p{margin:0;color:var(--muted);font-size:.9rem}
+  .spec{font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);font-weight:700}
+  .actions{margin-top:auto;padding-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:.4rem;padding:.55rem .9rem;border-radius:7px;font-size:.82rem;font-weight:700;text-decoration:none;background:var(--teal);color:#fff;border:1px solid transparent}
+  .btn:hover{background:var(--teal-dark)}
+  .btn.ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+  .btn.ghost:hover{background:#f3f6f9}
+  .note{margin-top:28px;border-left:4px solid var(--gold);background:#fffdf4;padding:16px 18px;border-radius:0 10px 10px 0;font-size:.88rem;color:#5c5030}
+  .note strong{display:block;margin-bottom:4px}
+  footer{padding:24px 0 44px;color:var(--muted);font-size:.78rem;border-top:1px solid var(--line)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <span class="pill">Print kit · November 2026</span>
+  <h1>Marketing materials, ready to print.</h1>
+  <p>Five print-ready pieces built on the same researched positioning as the websites. Open a file, review the placeholders, and print or save as PDF from your browser.</p>
+  <p style="font-size:.82rem;color:rgba(255,255,255,.55);margin:0">All business identifiers are placeholders. Replace phone, address, email, license, and pricing before distribution.</p>
+</div></header>
+
+<main class="wrap">
+  <div class="grid">
+
+    <article class="item">
+      <span class="spec">Letter landscape · 2 pages · tri-fold</span>
+      <h2>Tri-fold brochure</h2>
+      <p>The primary leave-behind. Front cover, scope statement, six differentiators, five-step process, pricing, and contact page.</p>
+      <div class="actions">
+        <a class="btn" href="tri-fold-brochure.html">Open</a>
+        <a class="btn ghost" href="tri-fold-brochure.html" onclick="setTimeout(()=>window.print(),400)">Print</a>
+      </div>
+    </article>
+
+    <article class="item">
+      <span class="spec">Letter portrait · 1 page</span>
+      <h2>Referral sheet</h2>
+      <p>For discharge planners, case managers, and elder law attorneys. Scope, bridge package, response standard, and what you need from a referral.</p>
+      <div class="actions">
+        <a class="btn" href="referral-sheet.html">Open</a>
+        <a class="btn ghost" href="referral-sheet.html" onclick="setTimeout(()=>window.print(),400)">Print</a>
+      </div>
+    </article>
+
+    <article class="item">
+      <span class="spec">Letter portrait · 1 page</span>
+      <h2>Caregiver recruitment sheet</h2>
+      <p>Honest recruiting copy: what the job is, what it is not, what we offer, and a realistic day. For colleges, churches, and workforce centers.</p>
+      <div class="actions">
+        <a class="btn" href="caregiver-recruitment.html">Open</a>
+        <a class="btn ghost" href="caregiver-recruitment.html" onclick="setTimeout(()=>window.print(),400)">Print</a>
+      </div>
+    </article>
+
+    <article class="item">
+      <span class="spec">Letter portrait · 1 page</span>
+      <h2>Community flyer</h2>
+      <p>Five signs it may be time for help, a plain-language services summary, and an invitation to a free 30-minute talk.</p>
+      <div class="actions">
+        <a class="btn" href="flyer.html">Open</a>
+        <a class="btn ghost" href="flyer.html" onclick="setTimeout(()=>window.print(),400)">Print</a>
+      </div>
+    </article>
+
+    <article class="item">
+      <span class="spec">Letter portrait · 2 pages · 10 cards</span>
+      <h2>Referral cards</h2>
+      <p>3.5 × 2 inch business cards. Front: brand, tagline, phone. Back: the 72-hour hospital-to-home bridge offer.</p>
+      <div class="actions">
+        <a class="btn" href="referral-cards.html">Open</a>
+        <a class="btn ghost" href="referral-cards.html" onclick="setTimeout(()=>window.print(),400)">Print</a>
+      </div>
+    </article>
+
+    <article class="item" style="background:#0b4f4a;color:#fff;border-color:#0b4f4a">
+      <span class="spec" style="color:#e9d8bd">Strategy library</span>
+      <h2 style="color:#fff">The research behind the print</h2>
+      <p style="color:rgba(255,255,255,.72)">Market research, competitor analysis, positioning, compliance checklist, and the full launch roadmap.</p>
+      <div class="actions">
+        <a class="btn" style="background:#e9d8bd;color:#0b4f4a" href="../business-strategy/business-launch-roadmap.md">Launch roadmap</a>
+        <a class="btn ghost" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.3)" href="../business-strategy/virginia-compliance-checklist.md">Compliance</a>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="note">
+    <strong>Printing notes</strong>
+    Print at 100% scale (do not "fit to page") for accurate card and tri-fold dimensions. Enable background graphics. For the tri-fold: print double-sided, flip on the short edge, then fold in thirds with the front cover panel on the outside. For the cards: print page 1, then page 2 on the reverse, and trim on the light borders. Colors are RGB; a professional printer may ask for CMYK conversion.
+  </div>
+</main>
+
+<footer><div class="wrap">Hearth &amp; Harbor Home Care — concept marketing kit · Static HTML/CSS · No third-party assets · Placeholders must be replaced before distribution.</div></footer>
+</body>
+</html>

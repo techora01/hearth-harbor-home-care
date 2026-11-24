@@ -1,0 +1,92 @@
+/* 06 — Viva Medical lineage: airy pastels, soft blobs, rounded cards, calm teal. */
+
+body { background: var(--bg); color: var(--ink); }
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; letter-spacing: -.01em; line-height: 1.06; }
+h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+h2 { font-size: clamp(1.9rem, 3.3vw, 2.8rem); }
+.lede { color: #4F6F6C; font-size: 1.12rem; }
+
+.site-header { background: rgba(247,251,250,.92); border-bottom: 1px solid rgba(42,157,143,.12); }
+.header-inner { --header-h: 84px; }
+.brand-mark { color: var(--primary); }
+.brand-name { font-family: var(--font-display); font-weight: 400; font-size: 1.2rem; }
+.brand-tag { color: var(--primary); }
+.nav-links a { border-radius: 999px; padding: .45rem .8rem; border: none; font-size: .88rem; color: #3C5C58; }
+.nav-links a:hover, .nav-links a[aria-current="page"] { background: #E4F1ED; color: var(--primary-dark); border: none; }
+.btn { border-radius: 999px; padding: .95rem 1.7rem; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(42,157,143,.22); }
+.btn.ghost { background: #fff; border-color: #D5E7E2; color: var(--primary-dark); }
+.btn.small { padding: .62rem 1.15rem; }
+
+.hero { background: linear-gradient(180deg, #F7FBFA 0%, #EAF6F3 100%); }
+.hero-inner { padding-block: clamp(3.4rem, 6.5vw, 5.8rem); }
+.hero h1 { color: #1F4D49; }
+.hero .eyebrow { background: #fff; color: var(--primary-dark); border-radius: 999px; padding: .45rem .9rem; letter-spacing: .1em; font-size: .68rem; box-shadow: 0 6px 18px rgba(42,157,143,.1); }
+.hero .eyebrow::before { display: none; }
+.hero-art { position: relative; }
+.hero-art::before { content:""; position:absolute; inset: -8% -6% -8% 6%; background: radial-gradient(closest-side, rgba(233,196,106,.30), transparent 72%); border-radius: 48% 52% 42% 58% / 55% 46% 54% 45%; z-index: 0; }
+.hero-art .art { position: relative; z-index: 1; border-radius: 32px; box-shadow: 0 30px 70px rgba(31,77,73,.16); }
+.hero-badge { border-radius: 18px; border: 0; box-shadow: 0 20px 44px rgba(31,77,73,.16); }
+.hero-badge strong { font-family: var(--font-display); font-weight: 400; font-size: 1rem; }
+.hero-proof { border-top-color: #CFE4DE; }
+.hero-proof strong { font-family: var(--font-display); font-weight: 400; color: var(--primary-dark); }
+
+.trust-strip { background: #fff; border-color: #E1EFEB; }
+.trust-inner { color: #4F6F6C; }
+.trust-inner .icon { color: var(--primary); }
+.stats { border: 0; background: transparent; gap: 1rem; grid-template-columns: repeat(4,1fr); }
+.stat { background: #fff; border-radius: 22px; border: 1px solid #E1EFEB; box-shadow: 0 10px 30px rgba(31,77,73,.05); }
+.stat strong { font-family: var(--font-display); font-weight: 400; color: var(--primary-dark); }
+.stat small { color: #7C9692; }
+
+.section.alt { background: #EAF6F3; }
+.eyebrow { color: var(--primary); background: #E4F1ED; padding: .35rem .8rem; border-radius: 999px; font-size: .68rem; letter-spacing: .1em; }
+.eyebrow::before { display: none; }
+.section-head p { color: #4F6F6C; }
+
+.card { border: 0; border-radius: 24px; box-shadow: 0 12px 34px rgba(31,77,73,.07); padding: 1.7rem; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 24px 50px rgba(31,77,73,.13); }
+.card-icon { border-radius: 16px; background: #E4F1ED; color: var(--primary-dark); width: 52px; height: 52px; }
+.card h3 { font-size: 1.4rem; }
+.card p { color: #52706D; font-size: .95rem; }
+.diff-proof { font-size: .74rem; color: #7C9692; background: #F7FBFA; border-radius: 10px; padding: .7rem .8rem; margin-top: .9rem; }
+.card-link { color: var(--primary-dark); }
+
+.steps { gap: 1.4rem; }
+.step { border-top: 0; background: #fff; border-radius: 22px; padding: 1.5rem; box-shadow: 0 10px 28px rgba(31,77,73,.06); }
+.step-num { display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: #E9C46A; color: #5C4712; font-family: var(--font-body); font-weight: 700; font-size: .8rem; }
+.step h3 { font-size: 1.2rem; }
+.process-row { background: #fff; border-radius: 18px; padding: 1.2rem 1.3rem; box-shadow: 0 8px 22px rgba(31,77,73,.05); }
+
+.pullquote { border-left: 0; border-top: 1px solid #CFE4DE; border-bottom: 1px solid #CFE4DE; padding: 2rem 0; text-align: center; color: #1F4D49; font-size: clamp(1.5rem,2.6vw,2.1rem); }
+.price-card { background: #fff; border: 1px solid #E1EFEB; border-radius: 26px; padding: clamp(1.2rem,2.4vw,2rem); box-shadow: 0 16px 40px rgba(31,77,73,.07); }
+.price-table th { color: #7C9692; border-color: #E1EFEB; }
+.price-table td { border-color: #EDF6F3; color: #35534F; }
+.price-table td.rate { font-family: var(--font-display); color: var(--primary-dark); }
+.price-table tr:hover td { background: #F7FBFA; }
+
+.callout { background: #FFFDF7; border: 1px solid #F0E4C2; border-left: 4px solid var(--accent); border-radius: 18px; }
+.callout.warn { background: #FFF6EE; border-color: #F6DDC7; border-left-color: var(--accent2); }
+.faq-item summary { font-family: var(--font-display); font-weight: 400; font-size: 1.08rem; }
+.article-card .pill { background: #EAF6F3; color: var(--primary-dark); }
+.toc { background: #fff; border: 0; border-radius: 22px; box-shadow: 0 12px 34px rgba(31,77,73,.07); }
+.toc h4 { color: var(--primary); }
+.contact-panel { background: #fff; border: 0; border-radius: 26px; padding: 2rem; box-shadow: 0 16px 40px rgba(31,77,73,.08); }
+.field input, .field textarea, .field select { border-radius: 12px; border-color: #D8EAE5; background: #FBFDFC; }
+
+.cta-band { background: transparent; padding-block: 0 clamp(3rem,5vw,4.5rem); }
+.cta-band .container.cta-inner { background: #1F4D49; border-radius: 30px; padding: clamp(2rem,4vw,3.4rem); }
+.cta-band h2 { color: #fff; }
+.cta-band p { color: rgba(255,255,255,.78); }
+.cta-band .btn { background: var(--accent); color: #4A3708; }
+.cta-band .btn:hover { background: #F0D07C; }
+.page-hero { background: #EAF6F3; border-bottom: 0; }
+.page-hero h1 { color: #1F4D49; }
+.breadcrumbs a { color: #5E7C7A; }
+
+.site-footer { background: #1F4D49; }
+.site-footer h4 { color: #A9CFC8; }
+.footer-bottom { border-color: rgba(255,255,255,.14); }
+.mini-link { display:flex; gap:.55rem; align-items:center; background:#fff; border-radius: 14px; padding:.8rem 1rem; box-shadow: 0 6px 18px rgba(31,77,73,.06); color: #1F4D49; text-decoration:none; font-size:.88rem; }
+.sitemap-list { columns: 2; }
+@media (max-width: 620px) { .sitemap-list { columns: 1; } }

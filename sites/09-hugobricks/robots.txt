@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://techora01.github.io/hearth-harbor-home-care/sites/09-hugobricks/sitemap.xml

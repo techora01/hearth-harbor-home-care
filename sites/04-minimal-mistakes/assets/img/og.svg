@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <circle cx="1030" cy="110" r="260" fill="#2F6F8F" opacity=".16"/>
+  <circle cx="1110" cy="520" r="190" fill="#7A9E7E" opacity=".14"/>
+  <g transform="translate(80 90)">
+    <rect width="72" height="72" rx="18" fill="#1E4E66"/>
+    <path d="M16 48V32c0-11 9-20 20-20s20 9 20 20v16" fill="none" stroke="#2F6F8F" stroke-width="4" stroke-linecap="round"/>
+    <path d="M36 50c-7-4.4-11-8.6-11-13a6.5 6.5 0 0 1 11-4.2 6.5 6.5 0 0 1 11 4.2c0 4.4-4 8.6-11 13Z" fill="#2F6F8F"/>
+  </g>
+  <text x="80" y="250" font-family="Georgia, serif" font-size="66" font-weight="700" fill="#20272B">The clearest way to</text>
+  <text x="80" y="326" font-family="Georgia, serif" font-size="66" font-weight="700" fill="#20272B">care for a parent at home.</text>
+  <text x="80" y="400" font-family="Arial, sans-serif" font-size="28" fill="#5F6C73">Non-medical home care Â· Prince William County, Virginia</text>
+  <rect x="80" y="452" width="320" height="4" fill="#2F6F8F"/>
+  <text x="80" y="530" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#2F6F8F">Hearth &amp; Harbor Home Care</text>
+  <text x="80" y="570" font-family="Arial, sans-serif" font-size="22" fill="#5F6C73">HearthandHarborCare.com Â· (703) 555-0100 Â· concept site</text>
+</svg>

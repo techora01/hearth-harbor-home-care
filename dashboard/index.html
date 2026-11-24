@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hearth &amp; Harbor — Nine-Site Demo Dashboard</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+  :root{
+    --ink:#101b2b; --muted:#5e6d80; --line:#dde5ee; --bg:#f6f8fb; --card:#fff;
+    --teal:#0f766e; --teal2:#134e4a; --gold:#c9a227; --radius:16px;
+    --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.55}
+  a{color:var(--teal);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{width:min(1240px,94vw);margin:0 auto}
+  header.top{background:linear-gradient(135deg,#0b1220,#123b3a 60%,#0f766e);color:#fff;padding:52px 0 44px}
+  .kicker{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#7fe3d4;font-weight:700;margin-bottom:14px}
+  .kicker::before{content:"";width:26px;height:1px;background:currentColor}
+  h1{font-size:clamp(2rem,4vw,3.1rem);line-height:1.06;letter-spacing:-.035em;margin:0 0 14px;font-weight:700}
+  .lede{max-width:72ch;color:rgba(255,255,255,.76);font-size:1.05rem;margin:0 0 26px}
+  .meta{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:.82rem;color:rgba(255,255,255,.62)}
+  .meta strong{color:#fff}
+  .pill{display:inline-flex;align-items:center;gap:.4rem;padding:.3rem .65rem;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);font-size:.72rem;font-weight:600;color:#dff7f2}
+  main{padding:38px 0 70px}
+  .toolbar{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;margin-bottom:22px}
+  .toolbar h2{margin:0;font-size:1.15rem;letter-spacing:-.02em}
+  .toolbar .hint{font-size:.82rem;color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+  .site{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease}
+  .site:hover{transform:translateY(-3px);box-shadow:0 20px 48px rgba(16,27,43,.12)}
+  .preview{position:relative;height:210px;overflow:hidden;background:#e9eff5;border-bottom:1px solid var(--line)}
+  .preview iframe{position:absolute;top:0;left:0;width:1440px;height:1050px;transform:scale(.36);transform-origin:top left;border:0;pointer-events:none;background:#fff}
+  .preview .overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(16,27,43,.08));pointer-events:none}
+  .site-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .site-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+  .num{font-size:.7rem;font-weight:700;letter-spacing:.12em;color:var(--muted)}
+  .site h3{margin:0;font-size:1.02rem;letter-spacing:-.015em}
+  .site p{margin:0;font-size:.84rem;color:var(--muted)}
+  .swatches{display:flex;gap:5px;flex-shrink:0}
+  .sw{width:18px;height:18px;border-radius:5px;border:1px solid rgba(0,0,0,.08)}
+  .tech{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);background:#eaf6f3;padding:.22rem .5rem;border-radius:4px;align-self:flex-start}
+  .site-foot{display:flex;gap:8px;margin-top:auto;padding-top:6px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;padding:.6rem .9rem;border-radius:8px;font-size:.8rem;font-weight:700;background:var(--teal);color:#fff;border:1px solid transparent}
+  .btn:hover{background:var(--teal2);text-decoration:none;color:#fff}
+  .btn.ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+  .btn.ghost:hover{background:#f3f6f9;color:var(--ink)}
+  .panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;margin-top:34px}
+  .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .cols h4{margin:0 0 8px;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+  .cols ul{margin:0;padding:0;list-style:none;font-size:.87rem}
+  .cols li{margin-bottom:6px}
+  .note{border-left:3px solid var(--gold);background:#fffdf4;padding:14px 16px;border-radius:0 8px 8px 0;font-size:.86rem;color:#5c5030}
+  footer{padding:26px 0 40px;color:var(--muted);font-size:.78rem;border-top:1px solid var(--line);margin-top:40px}
+  @media (max-width:1020px){.grid{grid-template-columns:repeat(2,1fr)}.cols{grid-template-columns:1fr 1fr}}
+  @media (max-width:680px){.grid,.cols{grid-template-columns:1fr}.preview{height:190px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="kicker">Prince William County · Home care concept</div>
+  <h1>Nine directions.<br>One researched business.</h1>
+  <p class="lede">A complete launch package for <strong>Hearth &amp; Harbor Home Care</strong>: local market research, a differentiated service model, Virginia compliance planning, print marketing, and nine independently designed static sites — all built from the same factual foundation.</p>
+  <div class="meta">
+    <span class="pill">9 live demos · ports 8101–8109</span>
+    <span class="pill">333 static pages</span>
+    <span class="pill">No build step required</span>
+    <span><strong>Production recommendation:</strong> 02 / Medic lineage</span>
+  </div>
+</div></header>
+
+<main class="wrap">
+  <div class="toolbar">
+    <h2>Live site demonstrations</h2>
+    <span class="hint" id="modeHint">Each preview is the real site, scaled. Open in a new tab for the full experience.</span>
+  </div>
+
+  <div class="grid" id="sites"></div>
+
+  <div class="panel">
+    <h2>Strategy &amp; research library</h2>
+    <p>Fourteen documents, a source register, and print-ready marketing. Open the Markdown files directly, or start with the launch roadmap.</p>
+    <div class="cols">
+      <div>
+        <h4>Market &amp; strategy</h4>
+        <ul>
+          <li><a href="../business-strategy/market-research.md">Market research</a></li>
+          <li><a href="../business-strategy/competitor-analysis.md">Competitor analysis</a></li>
+          <li><a href="../business-strategy/business-positioning.md">Business positioning</a></li>
+          <li><a href="../business-strategy/competitive-differentiators.md">Competitive differentiators</a></li>
+          <li><a href="../business-strategy/value-added-services.md">Value-added services</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Operations &amp; compliance</h4>
+        <ul>
+          <li><a href="../business-strategy/service-catalog.md">Service catalog</a></li>
+          <li><a href="../business-strategy/virginia-compliance-checklist.md">Virginia compliance checklist</a></li>
+          <li><a href="../business-strategy/customer-workflow.md">Customer workflow</a></li>
+          <li><a href="../business-strategy/customer-acquisition-strategy.md">Acquisition strategy</a></li>
+          <li><a href="../business-strategy/business-launch-roadmap.md">Launch roadmap</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Content &amp; marketing</h4>
+        <ul>
+          <li><a href="../business-strategy/marketing-content.md">Marketing content</a></li>
+          <li><a href="../business-strategy/seo-keyword-strategy.md">SEO keyword strategy</a></li>
+          <li><a href="../business-strategy/website-content-master.md">Website content master</a></li>
+          <li><a href="../business-strategy/source-register.md">Source register</a></li>
+          <li><a href="../marketing/print/">Printable marketing materials →</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note" style="margin-top:20px">All business identifiers — phone, address, license number, prices, staff — are clearly marked placeholders. Nothing on these sites should be published as an operating agency until Virginia licensure, insurance, staffing, and legal review are complete.</p>
+  </div>
+
+  <div class="panel">
+    <h2>How the nine builds differ</h2>
+    <p>Same business, nine visual and structural interpretations. Each is a self-contained static site with its own palette, typography, navigation, homepage composition, conversion path, and local landing pages.</p>
+    <div class="cols">
+      <div><h4>What is shared</h4><ul><li>Researched positioning and service scope</li><li>Compliance-safe language and disclaimers</li><li>Local SEO structure and schema</li><li>Ten community landing pages</li><li>Four long-form family guides</li></ul></div>
+      <div><h4>What changes</h4><ul><li>Visual identity and logo treatment</li><li>Typography and color system</li><li>Homepage section order and hero style</li><li>Card, pricing, and CTA treatment</li><li>Navigation pattern and mobile behavior</li></ul></div>
+      <div><h4>Production candidate</h4><ul><li><strong>02 — Medic lineage</strong> wins on healthcare trust, clarity, and conversion.</li><li>01 is the strongest brand statement but too dark for older adults.</li><li>03 and 08 are excellent for content marketing.</li><li>04 is the best resource hub.</li></ul></div>
+    </div>
+  </div>
+</main>
+
+<footer><div class="wrap">Hearth &amp; Harbor Home Care — concept package · Built November 2026 · Static HTML/CSS/JS · Deployable to GitHub Pages as-is.</div></footer>
+
+<script>
+const sites = [
+  {n:"01", id:"01-screwfast", name:"ScrewFast lineage", port:8101, tech:"Astro + Tailwind", desc:"Dark aurora glass, product-led polish, oversized type. The most modern brand statement.", colors:["#0A1020","#5EEAD4","#A78BFA"]},
+  {n:"02", id:"02-medic", name:"Medic lineage", port:8102, tech:"Bootstrap 4", desc:"Classic healthcare trust: contact bar, blue navigation, icon service grid, appointment panel.", colors:["#1B6CA8","#38A3A5","#F1F7FB"], best:true},
+  {n:"03", id:"03-jekyll-serif", name:"Jekyll Serif lineage", port:8103, tech:"Jekyll", desc:"Warm cream paper, editorial serif, hairline rules. Calm and human.", colors:["#FBF7F0","#4F6F52","#B08968"]},
+  {n:"04", id:"04-minimal-mistakes", name:"Minimal Mistakes lineage", port:8104, tech:"Jekyll", desc:"Documentation clarity with sidebar logic. The best family resource hub.", colors:["#FFFFFF","#2F6F8F","#7A9E7E"]},
+  {n:"05", id:"05-agency", name:"Agency lineage", port:8105, tech:"Jekyll", desc:"Dark statement hero, gold rules, numbered process. High-contrast conversion.", colors:["#101820","#C9A227","#F7F3EA"]},
+  {n:"06", id:"06-viva-medical", name:"Viva Medical lineage", port:8106, tech:"Astro + Tailwind", desc:"Airy pastels, soft blobs, rounded cards. Approachable and optimistic.", colors:["#2A9D8F","#E9C46A","#F7FBFA"]},
+  {n:"07", id:"07-healnet", name:"HealNet lineage", port:8107, tech:"Astro + DaisyUI", desc:"Friendly chunky components, badge pills, playful shadows. Clear for first-time buyers.", colors:["#6D5BD0","#2DD4BF","#F6F4FF"]},
+  {n:"08", id:"08-hugo-serif", name:"Hugo Serif lineage", port:8108, tech:"Hugo", desc:"Magazine grid, oversized Playfair headlines, pull quotes. Editorial authority.", colors:["#FCFBF7","#315C4C","#C97B5E"]},
+  {n:"09", id:"09-hugobricks", name:"HugoBricks lineage", port:8109, tech:"Hugo", desc:"Bento blocks, thick borders, offset shadows. Modular and energetic.", colors:["#1F6FEB","#FF6B4A","#FFC94A"]},
+];
+
+// On localhost use the per-port demo servers; on GitHub Pages use relative paths.
+const isLocal = location.hostname === "localhost" || location.hostname === "127.0.0.1";
+const baseFor = (s) => isLocal ? `http://localhost:${s.port}/` : `../sites/${s.id}/`;
+
+document.getElementById("sites").innerHTML = sites.map(s => {
+  const base = baseFor(s);
+  return `
+  <article class="site">
+    <div class="preview">
+      <iframe src="${base}" title="${s.name} live preview" loading="lazy" tabindex="-1"></iframe>
+      <div class="overlay"></div>
+    </div>
+    <div class="site-body">
+      <div class="site-head">
+        <div><div class="num">${s.n}${s.best ? " · RECOMMENDED" : ""}</div><h3>${s.name}</h3></div>
+        <div class="swatches">${s.colors.map(c => `<span class="sw" style="background:${c}"></span>`).join("")}</div>
+      </div>
+      <span class="tech">${s.tech}</span>
+      <p>${s.desc}</p>
+      <div class="site-foot">
+        <a class="btn" href="${base}" target="_blank" rel="noopener">Open site</a>
+        <a class="btn ghost" href="${base}contact.html" target="_blank" rel="noopener">Contact page</a>
+      </div>
+    </div>
+  </article>`;
+}).join("");
+
+if (isLocal) {
+  document.getElementById("modeHint").textContent =
+    "Local mode: previews load from ports 8101–8109. Run `node serve.mjs` first.";
+} else {
+  document.getElementById("modeHint").textContent =
+    "Static mode: previews load from relative /sites/ paths.";
+}
+</script>
+</body>
+</html>

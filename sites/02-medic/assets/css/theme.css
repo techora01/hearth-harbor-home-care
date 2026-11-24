@@ -1,0 +1,92 @@
+/* 02 — Medic lineage: clinical trust, blue navigation, appointment panel. */
+
+body { background: var(--bg); }
+h1, h2, h3, h4 { font-weight: 600; letter-spacing: -.02em; }
+h1 { font-size: clamp(2.35rem, 4.6vw, 3.6rem); }
+
+.topbar { background: var(--primary-dark); }
+.topbar .icon { opacity: .8; }
+.site-header { background: #fff; box-shadow: 0 6px 24px rgba(15,76,117,.06); border-bottom: 3px solid var(--primary); }
+.header-inner { --header-h: 84px; }
+.brand-mark { color: var(--primary); }
+.brand-name { color: var(--primary-dark); font-weight: 700; }
+.brand-tag { color: var(--muted); }
+.nav-links { gap: .4rem; }
+.nav-links a { font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; padding: .55rem .7rem; border-bottom: none; border-radius: 3px; color: #31485A; }
+.nav-links a:hover, .nav-links a[aria-current="page"] { background: var(--bg2); color: var(--primary); border: none; }
+.nav-phone { color: var(--primary-dark); }
+.btn { border-radius: 4px; text-transform: uppercase; letter-spacing: .045em; font-size: .82rem; padding: 1rem 1.6rem; }
+.btn:hover { transform: none; }
+.btn.ghost { background: var(--bg2); border-color: var(--line); color: var(--primary-dark); }
+.btn.small { text-transform: none; letter-spacing: 0; }
+
+.hero { background: linear-gradient(180deg, #EAF4FA 0%, #F7FBFD 100%); border-bottom: 1px solid var(--line); position: relative; }
+.hero::after { content:""; position:absolute; left:0; right:0; bottom:-1px; height:70px; background:#fff; clip-path: polygon(0 100%, 100% 0, 100% 100%); opacity:.55; }
+.hero-inner { padding-block: clamp(3.4rem, 6vw, 5.6rem); position: relative; z-index: 2; }
+.hero h1 { color: var(--primary-dark); }
+.hero .lede { color: #486172; }
+.hero .eyebrow { color: var(--primary); }
+.hero-actions .btn:first-child { background: var(--primary); }
+.hero-art .art { border-radius: 8px; box-shadow: 0 24px 60px rgba(15,76,117,.18); border: 8px solid #fff; }
+.hero-badge { background: #fff; border-radius: 4px; border-left: 4px solid var(--primary); box-shadow: 0 18px 40px rgba(15,76,117,.16); }
+.hero-badge strong { color: var(--primary-dark); }
+.hero-badge .icon { color: var(--primary); }
+.hero-proof { border-top-color: #CFE0EB; }
+.hero-proof strong { color: var(--primary-dark); }
+
+.trust-strip { background: #fff; border-bottom: 1px solid var(--line); }
+.trust-inner { color: #486172; }
+.trust-inner .icon { color: var(--primary); }
+
+.stats { border-radius: 4px; border-color: var(--line); background: var(--line); }
+.stat { background: #fff; border-top: 3px solid var(--primary); }
+.stat strong { color: var(--primary-dark); }
+.stat span { color: #486172; }
+
+.section.alt { background: #F4F9FC; }
+.section-head p, .lede { color: #5D7180; }
+.eyebrow { color: var(--primary); }
+.eyebrow::before { background: var(--accent); height: 3px; width: 22px; }
+
+.card { border-radius: 4px; border-color: #E1EAF0; box-shadow: 0 6px 20px rgba(15,76,117,.045); }
+.card:hover { border-color: #C6DAE6; box-shadow: 0 18px 40px rgba(15,76,117,.1); }
+.card-icon { border-radius: 4px; background: var(--bg2); color: var(--primary); border: 1px solid #D6E7F1; }
+.service-card { border-top: 3px solid var(--primary); }
+.service-card h3 a { color: var(--primary-dark); text-decoration: none; }
+.service-card h3 a:hover { color: var(--primary); }
+.card-link { color: var(--primary); font-size: .82rem; text-transform: uppercase; letter-spacing: .05em; }
+.diff-card { background: #fff; }
+.diff-proof { font-size: .78rem; color: var(--muted); border-top: 1px dashed var(--line); padding-top: .8rem; margin-top: .9rem; }
+
+.step { border-top: 3px solid var(--primary); }
+.step-num { display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--bg2); color: var(--primary-dark); font-size: .95rem; margin-bottom: .9rem; }
+.process-row { border-top: 1px solid var(--line); padding-top: 1.2rem; }
+.process-row .step-num { margin-bottom: .4rem; }
+
+.price-card { background: #fff; border: 1px solid var(--line); border-radius: 4px; padding: clamp(1rem,2.4vw,1.8rem); box-shadow: 0 12px 34px rgba(15,76,117,.07); }
+.price-table th { background: #F4F9FC; color: var(--primary-dark); border-bottom: 2px solid #D6E7F1; }
+.price-table td { border-color: #E7EFF4; }
+.price-table td.rate { color: var(--primary-dark); }
+
+.pullquote { border-left-color: var(--accent); color: var(--primary-dark); }
+.callout { background: #F4F9FC; border-left-color: var(--primary); border-radius: 4px; }
+.callout.warn { background: #FFF9EF; border-left-color: var(--accent2); }
+.faq-item summary { font-family: var(--font-body); font-weight: 600; color: var(--primary-dark); }
+.article-card .pill { background: #EAF4FA; color: var(--primary-dark); }
+.toc { border-radius: 4px; border-top: 3px solid var(--primary); }
+.toc h4 { color: var(--primary-dark); }
+.contact-panel { background: #F4F9FC; border: 1px solid var(--line); border-radius: 4px; padding: 2rem; border-top: 4px solid var(--primary); }
+
+.cta-band { background: var(--primary-dark); }
+.cta-band .btn { text-transform: uppercase; }
+.page-hero { background: #EAF4FA; border-bottom: 3px solid var(--primary); }
+.page-hero h1 { color: var(--primary-dark); }
+
+.site-footer { background: #0F2D40; }
+.site-footer h4 { color: #BFD6E4; }
+.footer-bottom { border-color: rgba(255,255,255,.12); }
+.mini-link { display:flex; gap:.5rem; align-items:center; padding:.7rem .8rem; border:1px solid var(--line); border-radius:4px; background:#fff; color: var(--primary-dark); text-decoration:none; font-size:.88rem; }
+.mini-link:hover { background: var(--bg2); }
+.sitemap-list { columns: 2; }
+.sitemap-list li { margin-bottom: .5rem; }
+@media (max-width: 620px) { .sitemap-list { columns: 1; } }

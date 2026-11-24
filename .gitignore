@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# Local tooling config — may contain credentials/tokens. Never commit.
+opencode.json
+opencode.jsonc
+.env
+.env.*
+
+# Third-party theme clones — kept locally for design reference only.
+# They are not part of the deployed site and must not be redistributed
+# without verifying each repository's license.
+reference-themes/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local logs and scratch
+*.log
+tmp/
