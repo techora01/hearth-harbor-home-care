@@ -221,7 +221,7 @@ function hero(t) {
   const variant = t.hero;
   const copy = `
     <div class="hero-copy reveal">
-      <p class="eyebrow">Prince William County home care</p>
+      <p class="eyebrow">Prince William County Health Aid</p>
       <h1>${variant === "statement" ? "Care that<br><em>moves with you.</em>" : "Care that moves<br><em>with you.</em>"}</h1>
       <p class="lede">${esc(B.promise)} One coordinator. One caregiver team. Prince William County and beyond.</p>
       <div class="btn-row hero-actions">
@@ -229,7 +229,7 @@ function hero(t) {
         <a class="btn ghost" href="cost.html">How we quote care</a>
       </div>
       <div class="hero-proof">
-        <div><strong>4-hour</strong>minimum visit</div>
+        <div><strong>No</strong>minimum visit</div>
         <div><strong>1 hour</strong>inquiry response target</div>
         <div><strong>Weekly</strong>written family brief</div>
       </div>
