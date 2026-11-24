@@ -61,11 +61,11 @@ export const differentiators = [
   },
   {
     icon: "message",
-    title: "The Friday Family Brief",
-    short: "A ten-minute weekly update you can actually read.",
+    title: "Real-time family visibility",
+    short: "See what happened, when it happened, and who was there.",
     body:
-      "Each Friday, families receive a short written summary: what changed, what was eaten, how sleep and mood were, which supplies are low, and what needs a decision. Delivered by email, text link, or printed copy.",
-    proof: "A short written record you can share with family and keep with your own notes.",
+      "Every visit is documented in a shared care log: arrival and departure (electronic visit verification), tasks completed, meals and fluids, mood and sleep notes, and any change in condition. Families access it through a secure portal or receive a weekly summary by email or print.",
+    proof: "You are never left guessing. Visibility is built into the workflow, not added as an afterthought.",
   },
   {
     icon: "match",
@@ -405,6 +405,9 @@ export const commitments = [
   { title: "No long-term contract", body: "Seven days' written notice to pause or end service. No cancellation penalty for illness or hospitalization." },
   { title: "A written quote", body: "The rate in your signed care agreement is the rate we bill. Weekend, overnight, and mileage terms are disclosed in writing before the first visit." },
   { title: "A named backup", body: "Every client has a trained backup caregiver who has been introduced before an emergency." },
+  { title: "Electronic visit verification", body: "Every visit is clocked in and out with task documentation, creating an auditable record for families, payers, and regulators." },
+  { title: "Family portal access", body: "Authorized family members can view care notes, schedules, and invoices through a secure portal, or receive printed copies." },
+  { title: "Caregiver retention focus", body: "We invest in training, scheduling stability, and fair compensation to keep the same caregivers with the same clients." },
   { title: "Background checks before contact", body: "Virginia State Police criminal record check and sworn disclosure before any direct client contact, consistent with 12VAC5-381-110." },
   { title: "No clinical overreach", body: "We do not provide skilled nursing, physical therapy, wound care, or medication administration. We refer to licensed providers." },
   { title: "Privacy by design", body: "Care notes are shared only with people the client authorizes. Photos require written consent." },
