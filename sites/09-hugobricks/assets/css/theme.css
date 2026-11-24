@@ -22,12 +22,12 @@ h2 { font-size: clamp(1.9rem, 3.4vw, 2.8rem); }
 
 .hero { background: var(--bg2); border-bottom: 2px solid #16233A; }
 .hero-inner { position: relative; display: block; padding-block: clamp(3rem, 6vw, 5.4rem); }
-.hero-copy { width: 100%; box-sizing: border-box; padding: clamp(1.6rem,3.4vw,2.8rem); padding-right: clamp(14rem, 26vw, 22rem); background: #fff; border: 2px solid #16233A; border-radius: 18px; box-shadow: 10px 10px 0 #16233A; position: relative; z-index: 2; }
+.hero-copy { position: absolute; top: 5.5rem; right: clamp(1rem, 3vw, 2.5rem); width: clamp(16rem, 34vw, 26rem); box-sizing: border-box; padding: clamp(1.6rem,3.4vw,2.8rem); background: #fff; border: 2px solid #16233A; border-radius: 18px; box-shadow: 10px 10px 0 #16233A; z-index: 2; }
 .hero h1 { color: #16233A; }
 .hero .eyebrow { background: var(--accent2); color: #16233A; border: 2px solid #16233A; border-radius: 6px; padding: .3rem .6rem; letter-spacing: .08em; font-size: .66rem; }
 .hero .eyebrow::before { display: none; }
-.hero-art { position: absolute; right: clamp(1rem, 3vw, 2.5rem); top: 50%; transform: translateY(-50%); width: clamp(12rem, 22vw, 20rem); z-index: 0; opacity: .85; }
-.hero-badge { border-radius: 12px; border: 2px solid #16233A; box-shadow: 5px 5px 0 rgba(22,35,58,.18); }
+.hero-art { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; opacity: .55; }
+.hero-badge { position: absolute; top: 1rem; right: clamp(1rem, 3vw, 2.5rem); z-index: 3; border-radius: 12px; border: 2px solid #16233A; box-shadow: 5px 5px 0 rgba(22,35,58,.18); }
 .hero-badge strong { font-weight: 800; }
 .hero-proof { border-top: 2px dashed #C9D5E6; }
 .hero-proof strong { font-weight: 800; color: var(--primary); }
@@ -100,6 +100,7 @@ h2 { font-size: clamp(1.9rem, 3.4vw, 2.8rem); }
 .mini-link { display:flex; gap:.5rem; align-items:center; background:#fff; border:2px solid #16233A; border-radius:8px; padding:.65rem .8rem; color:#16233A; text-decoration:none; font-weight:600; font-size:.86rem; box-shadow: 3px 3px 0 #D9E1EC; }
 .sitemap-list { columns: 2; }
 @media (max-width: 900px) {
-  .hero-copy { padding-right: clamp(1.6rem,3.4vw,2.8rem); }
-  .hero-art { position: static; transform: none; width: 100%; max-width: 480px; margin-top: 1.4rem; }
+  .hero-copy { position: static; width: 100%; margin-top: 4rem; }
+  .hero-badge { position: static; margin-bottom: 1rem; display: inline-flex; }
+  .hero-art { position: absolute; inset: 0; opacity: .35; }
 }

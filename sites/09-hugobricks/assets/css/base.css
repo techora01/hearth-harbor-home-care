@@ -111,7 +111,9 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
   position: sticky; top: 0; z-index: 60; background: var(--header-bg, var(--bg));
   border-bottom: 1px solid var(--line); backdrop-filter: blur(14px);
 }
-.header-inner { display: flex; align-items: center; justify-content: center; gap: 1.5rem; min-height: var(--header-h, 78px); flex-wrap: wrap; }
+.header-inner { display: flex; align-items: center; gap: 1.5rem; min-height: var(--header-h, 78px); flex-wrap: wrap; }
+.brand { flex: 0 0 auto; }
+.nav { flex: 1 1 auto; justify-content: center; }
 .brand { display: inline-flex; align-items: center; gap: .7rem; text-decoration: none; color: var(--ink); flex: 0 0 auto; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.05; }
 .brand-name { font-family: var(--font-display); font-weight: 700; font-size: 1.07rem; letter-spacing: -.01em; }
