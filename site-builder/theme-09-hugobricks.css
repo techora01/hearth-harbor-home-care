@@ -22,11 +22,11 @@ h2 { font-size: clamp(1.9rem, 3.4vw, 2.8rem); }
 
 .hero { background: var(--bg2); border-bottom: 2px solid #16233A; }
 .hero-inner { position: relative; display: block; padding-block: clamp(3rem, 6vw, 5.4rem); }
-.hero-copy { width: 100%; box-sizing: border-box; padding: clamp(1.6rem,3.4vw,2.8rem); padding-right: clamp(14rem, 26vw, 22rem); background: #fff; border: 2px solid #16233A; border-radius: 18px; box-shadow: 10px 10px 0 #16233A; position: relative; z-index: 1; }
+.hero-copy { width: 100%; box-sizing: border-box; padding: clamp(1.6rem,3.4vw,2.8rem); padding-right: clamp(14rem, 26vw, 22rem); background: #fff; border: 2px solid #16233A; border-radius: 18px; box-shadow: 10px 10px 0 #16233A; position: relative; z-index: 2; }
 .hero h1 { color: #16233A; }
 .hero .eyebrow { background: var(--accent2); color: #16233A; border: 2px solid #16233A; border-radius: 6px; padding: .3rem .6rem; letter-spacing: .08em; font-size: .66rem; }
 .hero .eyebrow::before { display: none; }
-.hero-art { position: absolute; right: clamp(1rem, 3vw, 2.5rem); top: 50%; transform: translateY(-50%); width: clamp(12rem, 22vw, 20rem); z-index: 2; }
+.hero-art { position: absolute; right: clamp(1rem, 3vw, 2.5rem); top: 50%; transform: translateY(-50%); width: clamp(12rem, 22vw, 20rem); z-index: 0; opacity: .85; }
 .hero-badge { border-radius: 12px; border: 2px solid #16233A; box-shadow: 5px 5px 0 rgba(22,35,58,.18); }
 .hero-badge strong { font-weight: 800; }
 .hero-proof { border-top: 2px dashed #C9D5E6; }
