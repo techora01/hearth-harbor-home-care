@@ -4,6 +4,8 @@ A complete, research-backed launch package for a fictional-but-realistic non-med
 
 > **This is a concept package, not an operating business.** Phone, address, email, license number, insurance status, staff, and pricing are clearly marked placeholders. Nothing here should be published as a real agency until licensure, insurance, staffing, and legal review are complete. See the disclaimer at the bottom.
 
+**Live demos (GitHub Pages):** <https://techora01.github.io/hearth-harbor-home-care/>
+
 ---
 
 ## Quick start
@@ -156,13 +158,29 @@ Print at 100% scale with background graphics enabled. Colors are RGB; a professi
 
 ## Deployment (GitHub Pages)
 
-The repository is designed to deploy as a static site with no build step.
+**Live now:** <https://techora01.github.io/hearth-harbor-home-care/> → redirects to the demo dashboard.
 
-1. Push to GitHub.
-2. Settings → Pages → Source: **Deploy from a branch** → `main` / `/ (root)`.
-3. The root `index.html` redirects to `dashboard/`.
-4. `.nojekyll` ensures all files are served as-is.
-5. The dashboard detects `localhost` and switches between local ports and relative `/sites/...` paths automatically.
+- Repository: `techora01/hearth-harbor-home-care`
+- Pages source: branch `main`, path `/ (root)`
+- Built and published on 2026-11-24; all nine demos verified live (HTTP 200).
+
+The repository deploys as a static site with no build step.
+
+1. The root `index.html` redirects to `dashboard/`.
+2. `.nojekyll` ensures all files are served as-is.
+3. The dashboard detects `localhost` and switches between local ports and relative `/sites/...` paths automatically.
+4. Canonical URLs, sitemaps, and robots files are built for the Pages origin.
+
+### Redeploying
+
+```bash
+# Build with the GitHub Pages canonical origin, then push.
+SITE_ORIGIN=https://techora01.github.io PAGES_BASE=/hearth-harbor-home-care node site-builder/build.mjs
+node site-builder/check-links.mjs
+git add -A && git commit -m "Rebuild sites" && git push
+```
+
+`SITE_ORIGIN` and `PAGES_BASE` are optional environment variables; without them the build uses the production domain `https://hearthandharborcare.com`.
 
 `reference-themes/` is gitignored and never deployed. It exists only as local design reference; each upstream repository has its own license and must be reviewed before any code reuse.
 
