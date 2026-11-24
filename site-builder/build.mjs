@@ -219,7 +219,6 @@ function breadcrumbSchema(t, page, items) {
 
 function hero(t) {
   const variant = t.hero;
-  const badge = `<div class="hero-badge">${icon("shield", 22)}<div><strong>Professional medical care support</strong><span>Prince William County</span></div></div>`;
   const copy = `
     <div class="hero-copy reveal">
       <p class="eyebrow">Prince William County home care</p>
@@ -238,7 +237,7 @@ function hero(t) {
   const art = `<div class="hero-art reveal">${scene(t.scene)}</div>`;
   return `<section class="hero hero-${variant}">
     <div class="hero-glow" aria-hidden="true"></div>
-    <div class="container hero-inner">${badge}${copy}${art}</div>
+    <div class="container hero-inner">${copy}${art}</div>
   </section>`;
 }
 
