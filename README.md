@@ -14,8 +14,9 @@ A complete, research-backed launch package for a fictional-but-realistic non-med
 # 1. Rebuild all nine static sites
 node site-builder/build.mjs
 
-# 2. Verify every internal link
+# 2. Verify every internal link and run the structural audit
 node site-builder/check-links.mjs
+node site-builder/audit.mjs
 
 # 3. Run the demo servers (dashboard on 8100, sites on 8101–8109)
 node serve.mjs
@@ -69,7 +70,8 @@ All nine are hand-built static HTML/CSS/JS. The original themes could not be bui
 │   ├── base.css                  Shared structure, responsive rules, print, a11y
 │   ├── theme-*.css               Nine theme stylesheets
 │   ├── build.mjs                 Static site generator
-│   └── check-links.mjs           Internal link validator
+│   ├── check-links.mjs           Internal link validator
+│   └── audit.mjs                 Structural SEO / accessibility audit
 ├── business-strategy/            14 research and planning documents
 ├── marketing/print/              Print-ready brochure, referral sheet, recruitment sheet, flyer, cards
 ├── serve.mjs                     Zero-dependency demo servers
@@ -151,6 +153,8 @@ Print at 100% scale with background graphics enabled. Colors are RGB; a professi
 - JSON-LD: `HomeHealthCareService`, `BreadcrumbList`, `FAQPage`, `Service`, `Article`.
 - `sitemap.xml` and `robots.txt` per site.
 - Relative internal links (works from any subpath).
+
+**Automated check:** `site-builder/audit.mjs` passes on all 333 pages — one `<h1>` per page, unique title per site, meta description, canonical, skip link, and footer disclosure on every page.
 
 **Known limitation:** the builds have not had an independent accessibility audit. Several decorative SVGs are complex and marked `aria-hidden`; meaning is carried in adjacent text.
 
