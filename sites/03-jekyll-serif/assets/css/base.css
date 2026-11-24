@@ -107,11 +107,8 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
 .pill.neutral { background: var(--bg2); color: var(--muted); }
 
 /* Header */
-.site-header {
-  position: sticky; top: 0; z-index: 60; background: var(--header-bg, var(--bg));
-  border-bottom: 1px solid var(--line); backdrop-filter: blur(14px);
-}
-.header-inner { display: flex; align-items: center; gap: .8rem; min-height: var(--header-h, 78px); flex-wrap: nowrap; }
+.site-header .container { width: 100%; max-width: none; padding-inline: .25rem; margin-inline: 0; }
+.header-inner { display: flex; align-items: center; gap: .8rem; min-height: var(--header-h, 78px); flex-wrap: nowrap; padding-left: 0; }
 .brand { flex: 0 0 auto; }
 .nav { flex: 1 1 auto; justify-content: center; }
 .brand { display: inline-flex; align-items: center; gap: .4rem; text-decoration: none; color: var(--ink); flex: 0 0 auto; }
