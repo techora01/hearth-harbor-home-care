@@ -27,7 +27,7 @@
       }
       if (status) {
         status.className = 'form-status show';
-        status.innerHTML = '<strong>Demo form â€” nothing was sent.</strong><br>This concept site has no backend. Before launch, connect the form to a HIPAA-aware intake service or CRM, then test delivery and consent language.';
+        status.innerHTML = '<strong>Demo form — nothing was sent.</strong><br>This concept site has no backend. Before launch, connect the form to a HIPAA-aware intake service or CRM, then test delivery and consent language.';
       }
       form.reset();
     });

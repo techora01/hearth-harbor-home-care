@@ -76,7 +76,7 @@ ${ld}
 function brand(t, depth = 0, opts = {}) {
   return `<a class="brand" href="${rel("index.html", depth)}" aria-label="${esc(B.name)} home">
     ${logoSVG(t, { mark: t.logoMark, size: opts.size || 42 })}
-    <span class="brand-text"><span class="brand-name">${esc(B.shortName)}</span><span class="brand-tag">Home Care Â· Prince William</span></span>
+    <span class="brand-text"><span class="brand-name">${esc(B.shortName)}</span><span class="brand-tag">Home Care · Prince William</span></span>
   </a>`;
 }
 
@@ -93,7 +93,7 @@ function header(t, active = "", depth = 0) {
           <div class="topbar-list">
             <span>${icon("phone", 14)} <a href="${tel}">${esc(B.phone)}</a></span>
             <span>${icon("mail", 14)} <a href="${B.emailHref}">${esc(B.email)}</a></span>
-            <span>${icon("clock", 14)} Monâ€“Fri, 8 a.m.â€“6 p.m.</span>
+            <span>${icon("clock", 14)} Mon–Fri, 8 a.m.–6 p.m.</span>
           </div>
           <div class="topbar-list"><span>${icon("pin", 14)} Serving Prince William County</span></div>
         </div></div>`
@@ -142,8 +142,8 @@ function footer(t, depth = 0) {
   </div>
   <p class="footer-disclosure">${esc(B.disclaimer)} ${esc(B.licenseNote)}</p>
   <div class="footer-bottom">
-    <span>Â© ${new Date().getFullYear()} ${esc(B.legalName)}. All rights reserved.</span>
-    <span>${esc(B.addressLine)} Â· ${esc(B.city)}, ${B.state} ${B.zip}</span>
+    <span>© ${new Date().getFullYear()} ${esc(B.legalName)}. All rights reserved.</span>
+    <span>${esc(B.addressLine)} · ${esc(B.city)}, ${B.state} ${B.zip}</span>
   </div>
 </div></footer>
 <script src="${rel("assets/js/site.js", depth)}" defer></script>
@@ -292,7 +292,7 @@ function servicesSection(t) {
 
 function diffSection(t) {
   return `<section class="section"><div class="container">
-    <div class="section-head reveal"><p class="eyebrow">The difference</p><h2>Six commitments we can actually measure.</h2><p>Positioning is easy. These are the operating choices behind it â€” each one has a cost, an owner, and a way to audit it.</p></div>
+    <div class="section-head reveal"><p class="eyebrow">The difference</p><h2>Six commitments we can actually measure.</h2><p>Positioning is easy. These are the operating choices behind it — each one has a cost, an owner, and a way to audit it.</p></div>
     <div class="grid cols-3">
       ${differentiators
         .slice(0, 6)
@@ -319,8 +319,8 @@ function processSection(t) {
 
 function quoteSection(t) {
   return `<section class="section tight"><div class="container narrow center">
-    <p class="pullquote">â€œYou will always know who is coming, what they will do, and how your family is doing.â€</p>
-    <p class="muted">Our operating promise â€” not a testimonial. This concept site does not publish invented client reviews.</p>
+    <p class="pullquote">“You will always know who is coming, what they will do, and how your family is doing.”</p>
+    <p class="muted">Our operating promise — not a testimonial. This concept site does not publish invented client reviews.</p>
   </div></section>`;
 }
 
@@ -396,7 +396,7 @@ function faqSection(t) {
 
 function ctaSection(t, depth = 0) {
   return `<section class="cta-band"><div class="container cta-inner">
-    <div><p class="eyebrow" style="color:rgba(255,255,255,.7)">Start here</p><h2>Tell us what is happening. We will tell you what we can â€” and cannot â€” do.</h2><p>A 15-minute call, no assessment fee, no obligation. If home care is not the right answer yet, we will say so and point you toward the right local resource.</p></div>
+    <div><p class="eyebrow" style="color:rgba(255,255,255,.7)">Start here</p><h2>Tell us what is happening. We will tell you what we can — and cannot — do.</h2><p>A 15-minute call, no assessment fee, no obligation. If home care is not the right answer yet, we will say so and point you toward the right local resource.</p></div>
     <div class="btn-row"><a class="btn" href="${rel("contact.html", depth)}">Book a call ${icon("arrow", 18)}</a><a class="btn ghost" href="${tel}">${esc(B.phone)}</a></div>
   </div></section>`;
 }
@@ -489,7 +489,7 @@ function servicesPage(t) {
           )
           .join("")}
       </div>
-      <div class="callout mt-3"><h3>Not sure what you need?</h3><p>Start with a 15-minute call. We will tell you whether companion care, personal care, or a clinical referral is the right next step â€” even if that means we are not the answer.</p><a class="btn mt-2" href="contact.html">Book a call ${icon("arrow", 16)}</a></div>
+      <div class="callout mt-3"><h3>Not sure what you need?</h3><p>Start with a 15-minute call. We will tell you whether companion care, personal care, or a clinical referral is the right next step — even if that means we are not the answer.</p><a class="btn mt-2" href="contact.html">Book a call ${icon("arrow", 16)}</a></div>
     </div></section>
     ${ctaSection(t)}
   `;
@@ -607,7 +607,7 @@ function locationPage(t, l) {
         </div>
         <h2>How coverage works</h2>
         <p>We schedule within the community and neighboring ZIP codes to reduce windshield time. Visits start at four hours. If a home is outside our practical radius, we will say so on the first call rather than promise coverage we cannot staff.</p>
-        <div class="callout"><h3>${icon("pin", 16)} ZIP codes served</h3><p>${esc(l.zips)} Â· Prince William County, Virginia</p></div>
+        <div class="callout"><h3>${icon("pin", 16)} ZIP codes served</h3><p>${esc(l.zips)} · Prince William County, Virginia</p></div>
         <div class="btn-row mt-3"><a class="btn" href="../contact.html">Check availability in ${esc(l.name)} ${icon("arrow", 16)}</a><a class="btn ghost" href="../pricing.html">See rates</a></div>
       </div>
       <aside class="toc">
@@ -640,7 +640,7 @@ function aboutPage(t) {
     })}
     <section class="section"><div class="container split">
       <div class="article-body">
-        <h2>The problem with â€œcareâ€ as a category</h2>
+        <h2>The problem with “care” as a category</h2>
         <p>Home care is sold with the same vocabulary everywhere: compassionate, trusted, family-first. Those words are not wrong. They are just not operational. A family cannot tell from a brochure whether the caregiver will arrive at 8:05 or 8:40, whether the coordinator knows the medication list, or whether anyone will call when something changes.</p>
         <p>We are designing around the operational questions instead.</p>
         <h2 id="process">The six-step process</h2>
@@ -651,7 +651,7 @@ function aboutPage(t) {
         <ul class="dotlist">
           <li>We will not provide skilled nursing, physical therapy, occupational therapy, wound care, or medication administration.</li>
           <li>We will not advertise a license, insurance panel, or credential we do not hold.</li>
-          <li>We will not use invented testimonials or stock â€œcaregiver of the monthâ€ stories.</li>
+          <li>We will not use invented testimonials or stock “caregiver of the month” stories.</li>
           <li>We will not require a long-term contract to start care.</li>
           <li>We will not promise 24-hour coverage before the staffing model can support it.</li>
         </ul>
@@ -681,7 +681,7 @@ function pricingPage(t) {
       kicker: "Pricing & payment",
     })}
     <section class="section"><div class="container">
-      <div class="callout warn"><h3>${icon("alert", 16)} Demo pricing notice</h3><p>These figures are placeholders for design and business planning. They are not an offer, a quote, or a guarantee of availability. Virginia market data suggests roughly $35â€“$42 per hour for non-medical care in 2025â€“2026.</p></div>
+      <div class="callout warn"><h3>${icon("alert", 16)} Demo pricing notice</h3><p>These figures are placeholders for design and business planning. They are not an offer, a quote, or a guarantee of availability. Virginia market data suggests roughly $35–$42 per hour for non-medical care in 2025–2026.</p></div>
       <div class="price-card mt-2">
         <table class="price-table">
           <caption class="visually-hidden">Illustrative home care rates</caption>
@@ -698,7 +698,7 @@ function pricingPage(t) {
       <div class="split mt-2">
         <div>
           <h3>Private pay and long-term care insurance</h3>
-          <p>Most non-medical care is paid privately. If a long-term care policy covers home care, we can provide the documentation the insurer requires â€” care notes, invoices, and a plan of care â€” but reimbursement is never guaranteed.</p>
+          <p>Most non-medical care is paid privately. If a long-term care policy covers home care, we can provide the documentation the insurer requires — care notes, invoices, and a plan of care — but reimbursement is never guaranteed.</p>
           <h3>Veterans' benefits</h3>
           <p>Some wartime veterans and surviving spouses qualify for VA aid and attendance or housebound benefits. Eligibility is determined by the VA, not by us. We can help assemble the service documentation.</p>
           <h3>Medicaid and Medicare</h3>
@@ -706,9 +706,9 @@ function pricingPage(t) {
         </div>
         <div class="card">
           <h3>${icon("receipt", 18)} Sample weekly budget</h3>
-          <p class="muted">Illustrative only â€” 12 hours of companion care per week at $32/hour.</p>
+          <p class="muted">Illustrative only — 12 hours of companion care per week at $32/hour.</p>
           <table class="price-table"><tbody>
-            <tr><td>12 hours Ã— $32</td><td class="rate">$384</td></tr>
+            <tr><td>12 hours × $32</td><td class="rate">$384</td></tr>
             <tr><td>Four weeks</td><td class="rate">$1,536</td></tr>
             <tr><td>Assessment fee</td><td class="rate">$0</td></tr>
             <tr><td>Long-term contract</td><td class="rate">None</td></tr>
@@ -736,7 +736,7 @@ function contactPage(t) {
     <section class="section"><div class="container split">
       <div>
         <h2>Request a call back</h2>
-        <p class="muted">This demo form validates in the browser and does not send data. Before launch, connect it to a HIPAA-aware form service or your CRM â€” not a plain email inbox.</p>
+        <p class="muted">This demo form validates in the browser and does not send data. Before launch, connect it to a HIPAA-aware form service or your CRM — not a plain email inbox.</p>
         <form class="form" data-demo-form novalidate>
           <div class="form-row">
             <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
@@ -757,7 +757,7 @@ function contactPage(t) {
         <h2>Reach us directly</h2>
         <p><strong>Phone</strong><br><a href="${tel}">${esc(B.phone)}</a> <span class="muted">(placeholder)</span></p>
         <p><strong>Email</strong><br><a href="${B.emailHref}">${esc(B.email)}</a></p>
-        <p><strong>Office</strong><br>${esc(B.addressLine)}<br>${esc(B.city)}, ${B.state} ${B.zip}<br><span class="muted">By appointment only â€” placeholder address</span></p>
+        <p><strong>Office</strong><br>${esc(B.addressLine)}<br>${esc(B.city)}, ${B.state} ${B.zip}<br><span class="muted">By appointment only — placeholder address</span></p>
         <p><strong>Hours</strong><br>${esc(B.hours)}</p>
         <div class="callout warn"><h3>${icon("alert", 16)} If this is an emergency</h3><p>Call 911. For suspected elder abuse or neglect in Virginia, contact Adult Protective Services through the local department of social services. This website is not monitored for emergencies.</p></div>
         <hr>
@@ -785,7 +785,7 @@ function resourcesPage(t) {
       <div class="grid cols-2">
         ${articles
           .map(
-            (a) => `<article class="card article-card reveal"><span class="pill neutral">${esc(a.category)}</span><h3><a href="resources/${a.slug}.html">${esc(a.title)}</a></h3><p>${esc(a.description)}</p><span class="muted small">${esc(a.read)} Â· Updated ${esc(a.date)}</span></article>`
+            (a) => `<article class="card article-card reveal"><span class="pill neutral">${esc(a.category)}</span><h3><a href="resources/${a.slug}.html">${esc(a.title)}</a></h3><p>${esc(a.description)}</p><span class="muted small">${esc(a.read)} · Updated ${esc(a.date)}</span></article>`
           )
           .join("")}
       </div>
@@ -876,11 +876,11 @@ function privacyPage(t) {
       <h2>How information would be protected</h2>
       <p>Access limited to staff with a need to know; encrypted storage and transmission; unique user accounts; audit logging; written confidentiality policies; background-checked staff; and a documented breach response process. Protected health information would not be sent through ordinary text message or unencrypted email without authorization.</p>
       <h2>HIPAA status</h2>
-      <p>Whether a home care agency is a HIPAA covered entity depends on its operations, including whether it conducts covered electronic transactions. Many private-pay companion agencies are not covered entities, but they may still be business associates of covered entities or subject to state privacy and consumer-protection law. This determination must be made with counsel â€” do not assume that â€œnon-medicalâ€ means â€œoutside HIPAA.â€</p>
+      <p>Whether a home care agency is a HIPAA covered entity depends on its operations, including whether it conducts covered electronic transactions. Many private-pay companion agencies are not covered entities, but they may still be business associates of covered entities or subject to state privacy and consumer-protection law. This determination must be made with counsel — do not assume that “non-medical” means “outside HIPAA.”</p>
       <h2>Your choices</h2>
       <p>You can ask what information is held about you, request a correction, withdraw consent for non-essential communication, or ask for a copy of the agency's notice of privacy practices. Use the contact page to make a request.</p>
       <h2>Contact</h2>
-      <p>${esc(B.name)} Â· ${esc(B.email)} Â· ${esc(B.phone)} (placeholders)</p>
+      <p>${esc(B.name)} · ${esc(B.email)} · ${esc(B.phone)} (placeholders)</p>
       <p class="small muted">Last updated: November 2026.</p>
     </div></section>
   `;
@@ -962,10 +962,10 @@ function ogImage(t) {
   </g>
   <text x="80" y="250" font-family="Georgia, serif" font-size="66" font-weight="700" fill="${p.ink}">The clearest way to</text>
   <text x="80" y="326" font-family="Georgia, serif" font-size="66" font-weight="700" fill="${p.ink}">care for a parent at home.</text>
-  <text x="80" y="400" font-family="Arial, sans-serif" font-size="28" fill="${p.muted}">Non-medical home care Â· Prince William County, Virginia</text>
+  <text x="80" y="400" font-family="Arial, sans-serif" font-size="28" fill="${p.muted}">Non-medical home care · Prince William County, Virginia</text>
   <rect x="80" y="452" width="320" height="4" fill="${p.primary}"/>
   <text x="80" y="530" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="${p.primary}">Hearth &amp; Harbor Home Care</text>
-  <text x="80" y="570" font-family="Arial, sans-serif" font-size="22" fill="${p.muted}">HearthandHarborCare.com Â· (703) 555-0100 Â· concept site</text>
+  <text x="80" y="570" font-family="Arial, sans-serif" font-size="22" fill="${p.muted}">HearthandHarborCare.com · (703) 555-0100 · concept site</text>
 </svg>`;
 }
 
@@ -999,7 +999,7 @@ function siteJS() {
       }
       if (status) {
         status.className = 'form-status show';
-        status.innerHTML = '<strong>Demo form â€” nothing was sent.</strong><br>This concept site has no backend. Before launch, connect the form to a HIPAA-aware intake service or CRM, then test delivery and consent language.';
+        status.innerHTML = '<strong>Demo form — nothing was sent.</strong><br>This concept site has no backend. Before launch, connect the form to a HIPAA-aware intake service or CRM, then test delivery and consent language.';
       }
       form.reset();
     });
