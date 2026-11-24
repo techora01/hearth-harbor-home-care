@@ -132,7 +132,7 @@ function footer(t, depth = 0) {
     <div><h4>Services</h4><ul>${sLinks}<li><a href="${rel("services.html", depth)}">All services</a></li></ul></div>
     <div><h4>Service area</h4><ul>${lLinks}<li><a href="${rel("locations.html", depth)}">All communities</a></li></ul></div>
     <div><h4>Company</h4><ul>
-      <li><a href="${rel("about.html", depth)}">Why Heart &amp; Harbor Health & Medical Support</a></li>
+      <li><a href="${rel("about.html", depth)}">Why Heart &amp; Harbor Medical Support</a></li>
       <li><a href="${rel("cost.html", depth)}">Cost &amp; payment</a></li>
       <li><a href="${rel("resources.html", depth)}">Family resources</a></li>
       <li><a href="${rel("contact.html", depth)}">Contact &amp; consultation</a></li>
@@ -220,12 +220,12 @@ function breadcrumbSchema(t, page, items) {
 
 function hero(t) {
   const variant = t.hero;
-  const badge = `<div class="hero-badge">${icon("shield", 22)}<div><strong>Professional home care</strong><span>Prince William County, Virginia</span></div></div>`;
+  const badge = `<div class="hero-badge">${icon("shield", 22)}<div><strong>Professional care support</strong><span>Prince William County, Virginia</span></div></div>`;
   const copy = `
     <div class="hero-copy reveal">
       <p class="eyebrow">Prince William County home care</p>
-      <h1>${variant === "statement" ? "Medical care,<br><em>at home.</em>" : "Medical care.<br><em>At home.</em>"}</h1>
-      <p class="lede">${esc(B.promise)} One coordinator. One caregiver team. Prince William County.</p>
+      <h1>${variant === "statement" ? "Care that<br><em>moves with you.</em>" : "Care that moves<br><em>with you.</em>"}</h1>
+      <p class="lede">${esc(B.promise)} One coordinator. One caregiver team. Prince William County and beyond.</p>
       <div class="btn-row hero-actions">
         <a class="btn" href="contact.html">Book a 15-minute call ${icon("arrow", 18)}</a>
         <a class="btn ghost" href="cost.html">How we quote care</a>
@@ -260,7 +260,7 @@ function introSection(t) {
       <p class="eyebrow">Why we exist</p>
       <h2>Most families do not need more options. They need one reliable answer.</h2>
       <p>Home care in Northern Virginia is crowded, and much of it sounds identical. The difference shows up after the contract: whether the same caregiver arrives, whether the coordinator answers, and whether anyone tells you the truth when a plan stops working.</p>
-      <p>Heart &amp; Harbor Health & Medical Support is built around a narrower promise: a named coordinator, a trained backup, a written quote before care begins, and a written update every week. No clinical overreach. No long-term contract. No surprises on the invoice.</p>
+      <p>Heart &amp; Harbor Medical Support is built around a narrower promise: a named coordinator, a trained backup, a written quote before care begins, and a written update every week. No clinical overreach. No long-term contract. No surprises on the invoice.</p>
       <div class="btn-row mt-2"><a class="btn secondary" href="about.html">How we operate ${icon("arrow", 16)}</a><a class="text-link" href="resources.html">Read the family guides</a></div>
     </div>
     <div class="reveal">${scene(t.sceneAlt, "art art-panel")}</div>
@@ -473,7 +473,7 @@ function servicesPage(t) {
       kicker: "Service catalog",
     })}
     <section class="section"><div class="container">
-      <div class="callout warn"><h3>${icon("alert", 16)} Scope matters</h3><p>Heart &amp; Harbor Health & Medical Support provides professional home care. We do not provide skilled nursing, physical therapy, occupational therapy, wound care, or medication administration. Personal care requires a Virginia home care organization license; this concept site does not claim an active license.</p></div>
+      <div class="callout warn"><h3>${icon("alert", 16)} Scope matters</h3><p>Heart &amp; Harbor Medical Support provides professional home care. We do not provide skilled nursing, physical therapy, occupational therapy, wound care, or medication administration. Personal care requires a Virginia home care organization license; this concept site does not claim an active license.</p></div>
       <h2 class="mt-3">Core services</h2>
       <div class="grid cols-3 mt-2">
         ${coreServices
@@ -520,7 +520,7 @@ function servicePage(t, s) {
         <ul class="checklist">${s.bullets.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>
         <h2>How we quote this service</h2><p>Every service is quoted in writing after a no-cost conversation. The quote itemizes hours, any weekend, overnight, or holiday premium, and travel, and it does not change without your written agreement. There is no assessment fee and no long-term contract.</p>
         <h2>Scope and supervision</h2>
-        <div class="callout warn"><h3>${icon("shield", 16)} Professional care only</h3><p>Heart &amp; Harbor Health & Medical Support provides professional home care. We do not provide skilled nursing, physical therapy, occupational therapy, wound care, or medication administration. Personal care requires a Virginia home care organization license; this concept site does not claim an active license.</p></div>
+        <div class="callout warn"><h3>${icon("shield", 16)} Professional care only</h3><p>Heart &amp; Harbor Medical Support provides professional home care. We do not provide skilled nursing, physical therapy, occupational therapy, wound care, or medication administration. Personal care requires a Virginia home care organization license; this concept site does not claim an active license.</p></div>
         <div class="btn-row mt-3"><a class="btn" href="../contact.html">Ask about ${esc(s.name.toLowerCase())} ${icon("arrow", 16)}</a><a class="btn ghost" href="../services.html">All services</a></div>
       </div>
       <aside class="toc">
@@ -636,7 +636,7 @@ function aboutPage(t) {
   <main id="main">
     ${pageHero(t, {
       title: "A smaller agency, built for the parts of care that get skipped.",
-      lede: "Heart & Harbor Health & Medical Support is a concept for a licensed, locally owned home care organization in Prince William County. The operating model is deliberately narrow: fewer clients, named coordinators, and written communication.",
+      lede: "Heart & Harbor Medical Support is a concept for a licensed, locally owned home care organization in Prince William County. The operating model is deliberately narrow: fewer clients, named coordinators, and written communication.",
       crumbs: [{ label: "Home", href: "index.html" }, { label: "Why us" }],
       kicker: "Our approach",
     })}
@@ -802,7 +802,7 @@ function articlePage(t, a) {
         <span class="pill neutral">${esc(a.category)}</span>
         <h1 class="mt-1">${esc(a.title)}</h1>
         <p class="lede">${esc(a.description)}</p>
-        <div class="article-meta"><span>${icon("calendar", 14)} ${esc(a.date)}</span><span>${icon("clock", 14)} ${esc(a.read)}</span><span>By the Heart &amp; Harbor Health & Medical Support editorial team</span></div>
+        <div class="article-meta"><span>${icon("calendar", 14)} ${esc(a.date)}</span><span>${icon("clock", 14)} ${esc(a.read)}</span><span>By the Heart &amp; Harbor Medical Support editorial team</span></div>
       </div></header>
       <div class="container article-layout section tight">
         <div class="article-body">
@@ -895,7 +895,7 @@ function accessibilityPage(t) {
       <p>If something is hard to use, call ${esc(B.phone)} or email ${esc(B.email)} (placeholders). A live agency should commit to a response time and a remediation process.</p>
     </div></section>
   `;
-  return head(t, { title: `Accessibility | ${B.shortName}`, description: "Accessibility commitments and known limitations for the Heart & Harbor Health & Medical Support home care website.", page: "accessibility.html" }) + body + footer(t, 0);
+  return head(t, { title: `Accessibility | ${B.shortName}`, description: "Accessibility commitments and known limitations for the Heart & Harbor Medical Support home care website.", page: "accessibility.html" }) + body + footer(t, 0);
 }
 
 function notFoundPage(t) {
@@ -927,7 +927,7 @@ function sitemapPage(t) {
   <main id="main">
     ${pageHero(t, { title: "Sitemap", lede: "Every page in this site.", crumbs: [{ label: "Home", href: "index.html" }, { label: "Sitemap" }] })}
     <section class="section"><div class="container"><ul class="sitemap-list">${pages.map((p) => `<li><a href="${p.href}">${esc(p.label)}</a></li>`).join("")}</ul></div></section>`;
-  return head(t, { title: `Sitemap | ${B.shortName}`, description: "Sitemap for the Heart & Harbor Health & Medical Support home care website.", page: "sitemap.html" }) + body + footer(t, 0);
+  return head(t, { title: `Sitemap | ${B.shortName}`, description: "Sitemap for the Heart & Harbor Medical Support home care website.", page: "sitemap.html" }) + body + footer(t, 0);
 }
 
 /* ------------------------------ assets ---------------------------------- */
@@ -948,12 +948,12 @@ function ogImage(t) {
     <path d="M16 48V32c0-11 9-20 20-20s20 9 20 20v16" fill="none" stroke="${p.primary}" stroke-width="4" stroke-linecap="round"/>
     <path d="M36 50c-7-4.4-11-8.6-11-13a6.5 6.5 0 0 1 11-4.2 6.5 6.5 0 0 1 11 4.2c0 4.4-4 8.6-11 13Z" fill="${p.primary}"/>
   </g>
-  <text x="80" y="250" font-family="Georgia, serif" font-size="66" font-weight="700" fill="${p.ink}">Medical care.</text>
-  <text x="80" y="326" font-family="Georgia, serif" font-size="66" font-weight="700" fill="${p.ink}">At home.</text>
+  <text x="80" y="250" font-family="Georgia, serif" font-size="66" font-weight="700" fill="${p.ink}">Care that moves</text>
+  <text x="80" y="326" font-family="Georgia, serif" font-size="66" font-weight="700" fill="${p.ink}">with you.</text>
   <text x="80" y="400" font-family="Arial, sans-serif" font-size="28" fill="${p.muted}">Professional home care · Prince William County, Virginia</text>
   <rect x="80" y="452" width="320" height="4" fill="${p.primary}"/>
-  <text x="80" y="530" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="${p.primary}">Heart &amp; Harbor Health & Medical Support</text>
-  <text x="80" y="570" font-family="Arial, sans-serif" font-size="22" fill="${p.muted}">HeartandHarborHealth & Medical Support.com · (703) 555-0100 · concept site</text>
+  <text x="80" y="530" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="${p.primary}">Heart &amp; Harbor Medical Support</text>
+  <text x="80" y="570" font-family="Arial, sans-serif" font-size="22" fill="${p.muted}">HeartandHarborMedical Support.com · (703) 555-0100 · concept site</text>
 </svg>`;
 }
 

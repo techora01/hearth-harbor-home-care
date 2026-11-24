@@ -1,4 +1,4 @@
-# Service Catalog — Heart & Harbor Health & Medical Support
+# Service Catalog — Heart & Harbor Medical Support
 
 **Prepared:** 23 November 2026
 **Status:** Launch catalog + phased roadmap. All prices illustrative until a bottom-up cost model is complete.

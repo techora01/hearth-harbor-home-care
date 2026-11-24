@@ -13,11 +13,11 @@ export const county = {
 };
 
 export const business = {
-  name: "Heart & Harbor Health & Medical Support",
-  shortName: "Heart & Harbor Health & Medical Support",
-  fullName: "Heart & Harbor Health & Medical Support of Prince William County",
+  name: "Heart & Harbor Medical Support",
+  shortName: "Heart & Harbor Medical Support",
+  fullName: "Heart & Harbor Medical Support of Prince William County",
   countyLabel: "of Prince William County",
-  legalName: "Heart & Harbor Health & Medical Support LLC (placeholder entity)",
+  legalName: "Heart & Harbor Medical Support LLC (placeholder entity)",
   tagline: "Care that keeps home within reach.",
   promise:
     "You will always know who is coming, what they will do, and how your family is doing.",
@@ -38,7 +38,7 @@ export const business = {
   minimum: "4-hour visit minimum · no weekly minimum · no long-term contract",
   response: "New inquiries answered within one business hour, 8 a.m.–6 p.m.",
   disclaimer:
-    "Demonstration website. Heart & Harbor Health & Medical Support of Prince William County is a concept business. The phone number, address, license number, any rate information, staff biographies, and outcomes shown are placeholders and must be replaced with verified information before launch. Nothing here is medical advice.",
+    "Demonstration website. Heart & Harbor Medical Support of Prince William County is a concept business. The phone number, address, license number, any rate information, staff biographies, and outcomes shown are placeholders and must be replaced with verified information before launch. Nothing here is medical advice.",
   licenseNote:
     "Personal care services in Virginia require licensure by the Virginia Department of Health. This concept site does not claim an active license. Launch content must show the actual license number only after VDH issues it.",
 };
@@ -506,7 +506,7 @@ export const locations = [
 export const faqs = [
   {
     q: "Are you licensed?",
-    a: "This is a concept website. Heart & Harbor Health & Medical Support does not yet hold a Virginia home care organization license. Personal care services in Virginia require licensure by the Virginia Department of Health, and the launch site must display the actual license number once issued. Companion and homemaker services can be offered without an HCO license when provided alone, but this business intends to be licensed before delivering personal care.",
+    a: "This is a concept website. Heart & Harbor Medical Support does not yet hold a Virginia home care organization license. Personal care services in Virginia require licensure by the Virginia Department of Health, and the launch site must display the actual license number once issued. Companion and homemaker services can be offered without an HCO license when provided alone, but this business intends to be licensed before delivering personal care.",
   },
   {
     q: "What is the difference between home care and home health?",

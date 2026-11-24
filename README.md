@@ -1,4 +1,4 @@
-# Heart & Harbor Health & Medical Support — Launch Package
+# Heart & Harbor Medical Support — Launch Package
 
 A complete, research-backed launch package for a fictional-but-realistic professional home care agency in **Prince William County, Virginia**: market research, positioning, a Virginia compliance plan, print marketing, and **nine independently designed static websites** built from one shared factual foundation.
 
@@ -230,7 +230,7 @@ The footer disclosure must remain on every page until all placeholders are repla
 
 ## Disclaimer
 
-Heart & Harbor Health & Medical Support is a **concept** created for research, design, and business-planning purposes. It is not an operating agency. It holds no Virginia home care organization license, no insurance, and no clinical credentials. It does not provide skilled nursing, physical therapy, occupational therapy, wound care, medication administration, or any other clinical service.
+Heart & Harbor Medical Support is a **concept** created for research, design, and business-planning purposes. It is not an operating agency. It holds no Virginia home care organization license, no insurance, and no clinical credentials. It does not provide skilled nursing, physical therapy, occupational therapy, wound care, medication administration, or any other clinical service.
 
 All names, contact details, addresses, license numbers, prices, staff biographies, and testimonials are placeholders or omitted. Nothing on these sites is medical, legal, financial, or tax advice. Regulations and program rules change; verify with the Virginia Department of Health, DMAS, and qualified counsel.
 

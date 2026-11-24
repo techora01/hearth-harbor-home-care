@@ -1,7 +1,7 @@
 # Virginia Compliance Checklist — Home Care Organization Launch
 
 **Prepared:** 23 November 2026
-**Business:** Heart & Harbor Health & Medical Support (concept)
+**Business:** Heart & Harbor Medical Support (concept)
 **Jurisdiction:** Commonwealth of Virginia · Prince William County
 **Primary regulator:** Virginia Department of Health, Office of Licensure and Certification (VDH OLC)
 
@@ -31,7 +31,7 @@ Virginia licenses **home care organizations (HCOs)** that provide home health se
 | # | Task | Detail | Status |
 |---|---|---|---|
 | 1.1 | Choose entity form | LLC is the default for a small agency. An S-corp election may make sense later for payroll tax treatment; decide with a CPA. | ☐ |
-| 1.2 | Reserve the name | Virginia SCC name check; also search USPTO and common-law use. "Heart & Harbor Health & Medical Support" is a placeholder and must be cleared. | ☐ |
+| 1.2 | Reserve the name | Virginia SCC name check; also search USPTO and common-law use. "Heart & Harbor Medical Support" is a placeholder and must be cleared. | ☐ |
 | 1.3 | File articles of organization | Virginia SCC (online filing available). | ☐ |
 | 1.4 | Obtain an EIN | IRS Form SS-4; needed for payroll, banking, and licensing. | ☐ |
 | 1.5 | Adopt an operating agreement | Ownership, capital, distributions, dissolution, and deadlock provisions. | ☐ |

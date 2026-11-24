@@ -190,7 +190,7 @@ Awareness → Trust → Contact → Assessment → First visit → Retention →
 
 **Answer within three rings. Smile before speaking.**
 
-1. "Thank you for calling Heart & Harbor Health & Medical Support. This is [name]. How can I help?"
+1. "Thank you for calling Heart & Harbor Medical Support. This is [name]. How can I help?"
 2. Listen without interrupting. Let them tell the story.
 3. "I'm sorry — that sounds like a lot. Can I ask a few questions so I can tell you honestly whether we can help?"
 4. Gather: who needs care, what is happening, where they live, what they need help with, timeline, who is deciding, budget awareness.

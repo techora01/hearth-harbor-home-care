@@ -95,8 +95,8 @@
 | FirstLight Home Care | https://www.firstlighthomecare.com/ | Companion and personal care |
 | Home Helpers | https://www.homehelpershomecare.com/ | Personal and companion care |
 | Care Perfections Health Services | Local directory listing | Nurse-owned; personal, companion, some medical services |
-| Caring Hearts Health & Medical Support | Local directory listing | Personal care, therapy, medical social work |
-| Trusthaven Health & Medical Support | Local directory listing | Personal and companion care |
+| Caring Hearts Medical Support | Local directory listing | Personal care, therapy, medical social work |
+| Trusthaven Medical Support | Local directory listing | Personal and companion care |
 | Prince William Area Agency on Aging Care Registry | https://www.pwcva.gov/department/area-agency-aging | Registry of independent companions; no certification, training, or supervision by the county |
 
 **Competitor caveat:** service menus and rates are self-reported and change. No quality judgment is made here. Names are used for identification only; no affiliation or endorsement is implied.

@@ -84,7 +84,7 @@ These are the pages that must rank. Each gets a dedicated URL.
 
 | URL | Primary keyword | Secondary keywords | Title tag (≤60 chars) |
 |---|---|---|---|
-| `/` | home care Prince William County | professional home care, in-home care | Home Care in Prince William County \| Heart & Harbor Health & Medical Support |
+| `/` | home care Prince William County | professional home care, in-home care | Home Care in Prince William County \| Heart & Harbor Medical Support |
 | `/services.html` | home care services Prince William | companion, personal care, respite | Home Care Services in Prince William County |
 | `/services/companion-care.html` | companion care Prince William County | companionship, senior companion | Companion Care in Prince William County, VA |
 | `/services/personal-care.html` | personal care assistance | bathing, dressing, ADLs | Personal Care Assistance \| Prince William County |
@@ -109,9 +109,9 @@ These are the pages that must rank. Each gets a dedicated URL.
 | `/locations/dale-city.html` | home care Dale City VA | elderly care Dale City | Home Care in Dale City, VA |
 | `/locations/bristow.html` | home care Bristow VA | senior care Bristow | Home Care in Bristow, VA |
 | `/pricing.html` | home care cost Prince William County | hourly rate, payment options | Home Care Pricing in Prince William County |
-| `/about.html` | home care agency Prince William | local home care | Why Heart & Harbor Health & Medical Support \| Local Home Care |
+| `/about.html` | home care agency Prince William | local home care | Why Heart & Harbor Medical Support \| Local Home Care |
 | `/resources.html` | caregiver resources Prince William | family guides | Family Care Resources \| Prince William |
-| `/contact.html` | home care consultation Prince William | book a call | Contact & Consultation \| Heart & Harbor Health & Medical Support |
+| `/contact.html` | home care consultation Prince William | book a call | Contact & Consultation \| Heart & Harbor Medical Support |
 
 ---
 

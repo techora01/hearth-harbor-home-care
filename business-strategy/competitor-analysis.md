@@ -29,9 +29,9 @@ The county's home care supply has four layers:
 | FirstLight Home Care | Manassas | National franchise | Companion and personal care | Not published on the listing reviewed | National training and caregiving model |
 | Home Helpers | Manassas | National franchise | Personal and companion care | Not published on the listing reviewed | National brand |
 | Care Perfections Health Services | Manassas | Independent, nurse-owned | Personal, companion, and some medical services | Not published | Nurse-owned positioning |
-| Caring Hearts Health & Medical Support | Manassas | Independent | Personal care, therapy, medical social work | Not published | Lists clinical services; verify licensure/certification |
-| Dependable Health & Medical Support / Apex Partners | Manassas | Independent | Compassionate personalized care | Not published | Small local operator |
-| Trusthaven Health & Medical Support | Manassas | Independent | Personal and companion care | Not published | Small local operator |
+| Caring Hearts Medical Support | Manassas | Independent | Personal care, therapy, medical social work | Not published | Lists clinical services; verify licensure/certification |
+| Dependable Medical Support / Apex Partners | Manassas | Independent | Compassionate personalized care | Not published | Small local operator |
+| Trusthaven Medical Support | Manassas | Independent | Personal and companion care | Not published | Small local operator |
 | Harbor & Haven; Golden Care Agency; Passion Calling Healthcare | Prince William County | Independent | Local home care | Not published | Appear in local directory results [S17] |
 
 **Limitations.** Directory listings are incomplete and sometimes stale. Several agencies serve the county without a Manassas or Woodbridge office. The list above is illustrative, not exhaustive.
@@ -90,7 +90,7 @@ These are **opportunity hypotheses** supported by the structure of the market, n
 
 Scored 1 (weak) to 5 (strong) for a new entrant's ability to differentiate. "Importance" is the estimated weight families place on the factor.
 
-| Factor | Typical franchise | Typical independent | Heart & Harbor Health & Medical Support target | Importance |
+| Factor | Typical franchise | Typical independent | Heart & Harbor Medical Support target | Importance |
 |---|---|---|---|---|
 | Brand recognition | 5 | 2 | 2 (year 1) | 3 |
 | Price transparency | 2 | 2 | **5** | 5 |
