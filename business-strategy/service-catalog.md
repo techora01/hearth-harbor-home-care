@@ -1,4 +1,4 @@
-# Service Catalog — Hearth & Harbor Home Care
+# Service Catalog — Heart & Harbor Homecare
 
 **Prepared:** 23 November 2026
 **Status:** Launch catalog + phased roadmap. All prices illustrative until a bottom-up cost model is complete.

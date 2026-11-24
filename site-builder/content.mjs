@@ -1,17 +1,30 @@
 // Shared, research-driven content for all nine demo sites.
 // Every business identifier below is a clearly-marked placeholder, not a claim.
 
+// The county is a first-class value so additional counties can be added later
+// without rewriting the wordmark or the page copy.
+export const county = {
+  name: "Prince William County",
+  shortName: "Prince William",
+  state: "VA",
+  label: "of Prince William County",
+  slug: "prince-william-county",
+  pageTitle: "Home care for Prince William County families",
+};
+
 export const business = {
-  name: "Hearth & Harbor Home Care",
-  shortName: "Hearth & Harbor",
-  legalName: "Hearth & Harbor Home Care LLC (placeholder entity)",
+  name: "Heart & Harbor Homecare",
+  shortName: "Heart & Harbor Homecare",
+  fullName: "Heart & Harbor Homecare of Prince William County",
+  countyLabel: "of Prince William County",
+  legalName: "Heart & Harbor Homecare LLC (placeholder entity)",
   tagline: "Care that keeps home within reach.",
   promise:
     "You will always know who is coming, what they will do, and how your family is doing.",
   phone: "(703) 555-0100",
   phoneHref: "tel:+17035550100",
-  email: "hello@hearthandharborcare.com",
-  emailHref: "mailto:hello@hearthandharborcare.com",
+  email: "hello@heartandharborhomecare.com",
+  emailHref: "mailto:hello@heartandharborhomecare.com",
   addressLine: "By appointment only · 12345 Placeholder Plaza, Suite 200",
   city: "Woodbridge",
   state: "VA",
@@ -25,7 +38,7 @@ export const business = {
   minimum: "4-hour visit minimum · no weekly minimum · no long-term contract",
   response: "New inquiries answered within one business hour, 8 a.m.–6 p.m.",
   disclaimer:
-    "Demonstration website. Hearth & Harbor Home Care is a concept business. The phone number, address, license number, pricing, staff biographies, and outcomes shown are placeholders and must be replaced with verified information before launch. Nothing here is medical advice.",
+    "Demonstration website. Heart & Harbor Homecare of Prince William County is a concept business. The phone number, address, license number, any rate information, staff biographies, and outcomes shown are placeholders and must be replaced with verified information before launch. Nothing here is medical advice.",
   licenseNote:
     "Personal care services in Virginia require licensure by the Virginia Department of Health. This concept site does not claim an active license. Launch content must show the actual license number only after VDH issues it.",
 };
@@ -44,7 +57,7 @@ export const differentiators = [
     short: "A real person who knows the case — not a call center queue.",
     body:
       "Every family is assigned a named coordinator who owns the care plan, the schedule, and the questions. The coordinator answers during office hours and hands off to a documented on-call line after hours.",
-    proof: "Operational commitment. Staffing model must be funded before launch.",
+    proof: "You get a direct name, a direct number, and a documented after-hours backup.",
   },
   {
     icon: "message",
@@ -52,7 +65,7 @@ export const differentiators = [
     short: "A ten-minute weekly update you can actually read.",
     body:
       "Each Friday, families receive a short written summary: what changed, what was eaten, how sleep and mood were, which supplies are low, and what needs a decision. Delivered by email, text link, or printed copy.",
-    proof: "Differentiator built on a simple checklist and a shared inbox — low technical risk.",
+    proof: "A short written record you can share with family and keep with your own notes.",
   },
   {
     icon: "match",
@@ -60,7 +73,7 @@ export const differentiators = [
     short: "Language, temperament, routine, and interests are matched on purpose.",
     body:
       "The intake captures the client's routines, pet preferences, language, and conversation style. The coordinator assigns a primary caregiver and a trained backup, then checks fit at 72 hours and 14 days.",
-    proof: "Reduces early cancellations, the most expensive failure point in home care.",
+    proof: "Fit is checked at 72 hours and 14 days — and changed if it is not working.",
   },
   {
     icon: "clock",
@@ -68,15 +81,15 @@ export const differentiators = [
     short: "The first three days home are the riskiest. We plan for them.",
     body:
       "Non-clinical support after discharge: transportation home, groceries and prescriptions picked up, medication reminders set up, fall hazards cleared, and a follow-up call to the family. We coordinate with — never replace — the discharging clinical team.",
-    proof: "Non-clinical only. Skilled nursing, therapy, and wound care require separate licensure.",
+    proof: "Non-clinical support that works alongside the discharging care team.",
   },
   {
     icon: "receipt",
-    title: "Published pricing and a 4-hour minimum",
-    short: "No assessment fee, no long-term contract, no surprise line items.",
+    title: "A written quote, not a rate card",
+    short: "Clear pricing in writing — before the first visit, not after.",
     body:
-      "Hourly rates are published on the website. Visits start at four hours. Families can pause or end service with seven days' notice. Respite and overnight care are quoted the same way.",
-    proof: "Transparency is a positioning choice; rates below are illustrative and need a margin review.",
+      "We do not publish a single hourly figure, because the honest number depends on the schedule, the level of support, and travel. After a no-cost conversation we send an itemized written quote: hours, any weekend or overnight premium, and mileage. The rate you sign is the rate we bill.",
+    proof: "No assessment fee. No long-term contract. Seven days' written notice to pause or end care.",
   },
   {
     icon: "language",
@@ -84,7 +97,7 @@ export const differentiators = [
     short: "English and Spanish coordination for a county that is 26.8% Hispanic.",
     body:
       "Intake, care-plan reviews, and family updates are available in English and Spanish when a qualified coordinator is on staff. We do not machine-translate care instructions or use unqualified interpreters for clinical conversations.",
-    proof: "Hiring-dependent. Do not advertise languages until staff are verified.",
+    proof: "Language support is offered only when a qualified coordinator is on staff.",
   },
 ];
 
@@ -355,17 +368,6 @@ export const services = [
   },
 ];
 
-export const pricing = [
-  { service: "Companion & homemaker care", rate: "$32", unit: "per hour", notes: "4-hour minimum; weekday daytime" },
-  { service: "Personal care assistance", rate: "$36", unit: "per hour", notes: "Licensed scope; caregiver training included" },
-  { service: "Respite care", rate: "$34", unit: "per hour", notes: "20-hour bundle available" },
-  { service: "Overnight care (awake)", rate: "$42", unit: "per hour", notes: "8–10 hour shifts" },
-  { service: "Dementia-friendly support", rate: "$39", unit: "per hour", notes: "Specialized training; 6-hour minimum" },
-  { service: "Home safety assessment", rate: "$149", unit: "flat", notes: "Credited toward first month of care" },
-  { service: "Family care planning session", rate: "$225", unit: "flat", notes: "90 minutes; written action plan" },
-  { service: "Hospital-to-home bridge", rate: "$395", unit: "3 days", notes: "Non-clinical; supplies extra" },
-];
-
 export const processSteps = [
   {
     n: "01",
@@ -380,7 +382,7 @@ export const processSteps = [
   {
     n: "03",
     title: "A written care plan",
-    body: "You receive the schedule, the named caregiver, the tasks, the rate, and the escalation contacts in writing before care begins.",
+    body: "You receive the schedule, the named caregiver, the tasks, the written quote, and the escalation contacts before care begins.",
   },
   {
     n: "04",
@@ -401,7 +403,7 @@ export const processSteps = [
 
 export const commitments = [
   { title: "No long-term contract", body: "Seven days' written notice to pause or end service. No cancellation penalty for illness or hospitalization." },
-  { title: "Published rates", body: "The hourly rate quoted is the rate billed. Mileage and holiday premiums are disclosed before the first visit." },
+  { title: "A written quote", body: "The rate in your signed care agreement is the rate we bill. Weekend, overnight, and mileage terms are disclosed in writing before the first visit." },
   { title: "A named backup", body: "Every client has a trained backup caregiver who has been introduced before an emergency." },
   { title: "Background checks before contact", body: "Virginia State Police criminal record check and sworn disclosure before any direct client contact, consistent with 12VAC5-381-110." },
   { title: "No clinical overreach", body: "We do not provide skilled nursing, physical therapy, wound care, or medication administration. We refer to licensed providers." },
@@ -504,7 +506,7 @@ export const locations = [
 export const faqs = [
   {
     q: "Are you licensed?",
-    a: "This is a concept website. Hearth & Harbor Home Care does not yet hold a Virginia home care organization license. Personal care services in Virginia require licensure by the Virginia Department of Health, and the launch site must display the actual license number once issued. Companion and homemaker services can be offered without an HCO license when provided alone, but this business intends to be licensed before delivering personal care.",
+    a: "This is a concept website. Heart & Harbor Homecare does not yet hold a Virginia home care organization license. Personal care services in Virginia require licensure by the Virginia Department of Health, and the launch site must display the actual license number once issued. Companion and homemaker services can be offered without an HCO license when provided alone, but this business intends to be licensed before delivering personal care.",
   },
   {
     q: "What is the difference between home care and home health?",
@@ -512,7 +514,7 @@ export const faqs = [
   },
   {
     q: "How much does care cost?",
-    a: "Rates on this site are illustrative placeholders for a Prince William County launch. Local market data suggests roughly $35–$42 per hour for non-medical care. We publish a flat hourly rate, disclose holiday and overnight premiums, require a four-hour minimum visit, and do not require a long-term contract.",
+    a: "We do not publish a single hourly rate because it would change with hours, schedule, and level of support. After a no-cost consultation we send an itemized written quote covering the hourly rate, any weekend or overnight premium, mileage, and the four-hour minimum. There is no assessment fee and no long-term contract.",
   },
   {
     q: "Do you accept insurance, Medicare, or Medicaid?",
@@ -706,9 +708,8 @@ export const resourceLinks = [
 
 export const navLinks = [
   { href: "services.html", label: "Services" },
-  { href: "locations.html", label: "Service area" },
-  { href: "pricing.html", label: "Pricing" },
-  { href: "about.html", label: "Why us" },
+  { href: "locations.html", label: "Service Area" },
+  { href: "about.html", label: "Our Approach" },
   { href: "resources.html", label: "Resources" },
   { href: "contact.html", label: "Contact" },
 ];

@@ -125,7 +125,7 @@ Every page includes:
 |---|---|
 | **Purpose** | Convert urgent local searchers; establish trust in 10 seconds |
 | **H1** | "The clearest way to care for a parent at home." (or theme variant) |
-| **Title** | Home Care in Prince William County \| Hearth & Harbor |
+| **Title** | Home Care in Prince William County \| Heart & Harbor Homecare |
 | **Schema** | `HomeHealthCareService`, `FAQPage` |
 | **Sections** | Hero → trust strip → stats → why we exist → services (6) → differentiators (6) → process (3) → pull quote → locations → pricing teaser → resources (4) → FAQ (6) → CTA |
 | **Primary CTA** | Book a 15-minute call |
@@ -159,7 +159,7 @@ Every page includes:
 |---|---|
 | **Purpose** | Rank for service intent; answer "what is included" and "what does it cost" |
 | **H1** | Service name |
-| **Title** | `{Service} in Prince William County, VA \| Hearth & Harbor` |
+| **Title** | `{Service} in Prince William County, VA \| Heart & Harbor Homecare` |
 | **Schema** | `HomeHealthCareService`, `BreadcrumbList`, `Service` |
 | **Sections** | Hero (kicker: launch or phase) → intro → who it is for → problem → what a visit includes (checklist) → cost → regulatory notes → business case → CTA → sidebar (on this page, related services, contact) |
 
@@ -189,7 +189,7 @@ Every page includes:
 |---|---|
 | **Purpose** | Rank for "[service] [city]"; provide real local context |
 | **H1** | "Home care in {Community}, Virginia" |
-| **Title** | `Home Care in {Community}, VA \| Hearth & Harbor` |
+| **Title** | `Home Care in {Community}, VA \| Heart & Harbor Homecare` |
 | **Schema** | `HomeHealthCareService`, `BreadcrumbList` |
 | **Sections** | Hero (ZIPs) → local intro → what families ask for → local context/landmarks → services (4) → coverage → ZIP callout → CTA → sidebar (nearby communities, local resources, contact) |
 
@@ -223,7 +223,7 @@ Every page includes:
 |---|---|
 | **Purpose** | Differentiate on operating model; state limits honestly |
 | **H1** | "A smaller agency, built for the parts of care that get skipped." |
-| **Title** | Why Hearth & Harbor \| Locally Focused Home Care |
+| **Title** | Why Heart & Harbor Homecare \| Locally Focused Home Care |
 | **Schema** | `HomeHealthCareService`, `BreadcrumbList` |
 | **Sections** | Hero → the problem with "care" as a category → six-step process → what we will not do → who is behind it → placeholder disclosure → commitments → CTA → sidebar (at a glance) |
 
@@ -237,7 +237,7 @@ Every page includes:
 |---|---|
 | **Purpose** | Capture inquiries; set expectations; protect privacy |
 | **H1** | "Tell us what is happening." |
-| **Title** | Contact & Consultation \| Hearth & Harbor |
+| **Title** | Contact & Consultation \| Heart & Harbor Homecare |
 | **Schema** | `HomeHealthCareService`, `BreadcrumbList` |
 | **Sections** | Hero → demo form → contact panel → emergency callout → what happens next (3 steps) |
 
@@ -266,7 +266,7 @@ Every page includes:
 |---|---|
 | **Purpose** | Rank for informational queries; build trust; feed AI answers |
 | **H1** | Article title |
-| **Title** | `{Title} \| Hearth & Harbor` |
+| **Title** | `{Title} \| Heart & Harbor Homecare` |
 | **Schema** | `HomeHealthCareService`, `BreadcrumbList`, `Article` |
 | **Sections** | Breadcrumbs → category pill → H1 → lede → meta (date, read time, author) → body with H2 sections → bottom-line takeaway → CTA → disclaimer → sidebar (TOC, more guides, ask) |
 
@@ -323,7 +323,7 @@ Friendly recovery with links to home, services, and contact.
 User-agent: *
 Allow: /
 
-Sitemap: https://hearthandharborcare.com/sitemap.xml
+Sitemap: https://heartandharborhomecare.com/sitemap.xml
 ```
 
 ### 4.16 `sitemap.xml`
@@ -375,9 +375,9 @@ Every one of these must be replaced before launch:
 | Placeholder | Current value | Owner |
 |---|---|---|
 | Phone | (703) 555-0100 | Administrator |
-| Email | hello@hearthandharborcare.com | Administrator |
+| Email | hello@heartandharborhomecare.com | Administrator |
 | Address | 12345 Placeholder Plaza, Suite 200, Woodbridge, VA 22192 | Administrator |
-| Domain | hearthandharborcare.com | Marketing |
+| Domain | heartandharborhomecare.com | Marketing |
 | License number | Pending — placeholder | Administrator |
 | Insurance | Not stated as active | Administrator |
 | Rates | Illustrative | Administrator / finance |

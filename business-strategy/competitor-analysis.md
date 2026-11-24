@@ -90,7 +90,7 @@ These are **opportunity hypotheses** supported by the structure of the market, n
 
 Scored 1 (weak) to 5 (strong) for a new entrant's ability to differentiate. "Importance" is the estimated weight families place on the factor.
 
-| Factor | Typical franchise | Typical independent | Hearth & Harbor target | Importance |
+| Factor | Typical franchise | Typical independent | Heart & Harbor Homecare target | Importance |
 |---|---|---|---|---|
 | Brand recognition | 5 | 2 | 2 (year 1) | 3 |
 | Price transparency | 2 | 2 | **5** | 5 |

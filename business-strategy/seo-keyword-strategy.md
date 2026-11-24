@@ -2,7 +2,7 @@
 
 **Prepared:** 23 November 2026
 **Scope:** Organic search, local pack, and AI-answer visibility for a new non-medical home care agency.
-**Domain assumption:** `hearthandharborcare.com` (placeholder — verify availability).
+**Domain assumption:** `heartandharborhomecare.com` (placeholder — verify availability).
 
 > **Data honesty.** No paid keyword tool was used for this concept. Search volumes below are **planning estimates** based on the structure of local service search, not measured data. Replace them with Ahrefs, Semrush, or Google Keyword Planner data before committing budget.
 
@@ -84,7 +84,7 @@ These are the pages that must rank. Each gets a dedicated URL.
 
 | URL | Primary keyword | Secondary keywords | Title tag (≤60 chars) |
 |---|---|---|---|
-| `/` | home care Prince William County | non-medical home care, in-home care | Home Care in Prince William County \| Hearth & Harbor |
+| `/` | home care Prince William County | non-medical home care, in-home care | Home Care in Prince William County \| Heart & Harbor Homecare |
 | `/services.html` | home care services Prince William | companion, personal care, respite | Home Care Services in Prince William County |
 | `/services/companion-care.html` | companion care Prince William County | companionship, senior companion | Companion Care in Prince William County, VA |
 | `/services/personal-care.html` | personal care assistance | bathing, dressing, ADLs | Personal Care Assistance \| Prince William County |
@@ -109,9 +109,9 @@ These are the pages that must rank. Each gets a dedicated URL.
 | `/locations/dale-city.html` | home care Dale City VA | elderly care Dale City | Home Care in Dale City, VA |
 | `/locations/bristow.html` | home care Bristow VA | senior care Bristow | Home Care in Bristow, VA |
 | `/pricing.html` | home care cost Prince William County | hourly rate, payment options | Home Care Pricing in Prince William County |
-| `/about.html` | home care agency Prince William | local home care | Why Hearth & Harbor \| Local Home Care |
+| `/about.html` | home care agency Prince William | local home care | Why Heart & Harbor Homecare \| Local Home Care |
 | `/resources.html` | caregiver resources Prince William | family guides | Family Care Resources \| Prince William |
-| `/contact.html` | home care consultation Prince William | book a call | Contact & Consultation \| Hearth & Harbor |
+| `/contact.html` | home care consultation Prince William | book a call | Contact & Consultation \| Heart & Harbor Homecare |
 
 ---
 

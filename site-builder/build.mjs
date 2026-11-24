@@ -3,10 +3,10 @@ import path from "node:path";
 import { themes } from "./themes.mjs";
 import {
   business as B,
+  county,
   stats,
   differentiators,
   services,
-  pricing,
   processSteps,
   commitments,
   locations,
@@ -20,7 +20,7 @@ import { logoSVG, icon, scene } from "./art.mjs";
 const ROOT = process.cwd();
 // Canonical origin for SEO tags. Override when deploying somewhere else, e.g.
 //   SITE_ORIGIN=https://user.github.io PAGES_BASE=/repo-name node site-builder/build.mjs
-const SITE_ORIGIN = process.env.SITE_ORIGIN || "https://hearthandharborcare.com";
+const SITE_ORIGIN = process.env.SITE_ORIGIN || "https://heartandharborhomecare.com";
 const PAGES_BASE = (process.env.PAGES_BASE || "").replace(/\/$/, "");
 const esc = (s) =>
   String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -75,9 +75,9 @@ ${ld}
 }
 
 function brand(t, depth = 0, opts = {}) {
-  return `<a class="brand" href="${rel("index.html", depth)}" aria-label="${esc(B.name)} home">
+  return `<a class="brand" href="${rel("index.html", depth)}" aria-label="${esc(B.fullName)} home">
     ${logoSVG(t, { mark: t.logoMark, size: opts.size || 42 })}
-    <span class="brand-text"><span class="brand-name">${esc(B.shortName)}</span><span class="brand-tag">Home Care · Prince William</span></span>
+    <span class="brand-text"><span class="brand-name">${esc(B.name)}</span><span class="brand-county">${esc(B.countyLabel)}</span></span>
   </a>`;
 }
 
@@ -132,8 +132,8 @@ function footer(t, depth = 0) {
     <div><h4>Services</h4><ul>${sLinks}<li><a href="${rel("services.html", depth)}">All services</a></li></ul></div>
     <div><h4>Service area</h4><ul>${lLinks}<li><a href="${rel("locations.html", depth)}">All communities</a></li></ul></div>
     <div><h4>Company</h4><ul>
-      <li><a href="${rel("about.html", depth)}">Why Hearth &amp; Harbor</a></li>
-      <li><a href="${rel("pricing.html", depth)}">Pricing &amp; payment</a></li>
+      <li><a href="${rel("about.html", depth)}">Why Heart &amp; Harbor Homecare</a></li>
+      <li><a href="${rel("cost.html", depth)}">Cost &amp; payment</a></li>
       <li><a href="${rel("resources.html", depth)}">Family resources</a></li>
       <li><a href="${rel("contact.html", depth)}">Contact &amp; consultation</a></li>
       <li><a href="${rel("privacy.html", depth)}">Privacy</a></li>
@@ -177,7 +177,7 @@ function baseSchema(t, page) {
     "@context": "https://schema.org",
     "@type": "HomeHealthCareService",
     "@id": `${siteUrl(t)}#organization`,
-    name: B.name,
+    name: B.fullName,
     url: urlFor(t, page),
     telephone: B.phone,
     email: B.email,
@@ -220,7 +220,7 @@ function breadcrumbSchema(t, page, items) {
 
 function hero(t) {
   const variant = t.hero;
-  const badge = `<div class="hero-badge">${icon("shield", 22)}<div><strong>Licensed-model design</strong><span>VDH HCO licensure planned before personal care</span></div></div>`;
+  const badge = `<div class="hero-badge">${icon("shield", 22)}<div><strong>Non-medical home care</strong><span>Prince William County, Virginia</span></div></div>`;
   const copy = `
     <div class="hero-copy reveal">
       <p class="eyebrow">Prince William County home care</p>
@@ -228,7 +228,7 @@ function hero(t) {
       <p class="lede">${esc(B.promise)} Locally focused, non-medical support for Woodbridge, Manassas, Gainesville, and the families between.</p>
       <div class="btn-row hero-actions">
         <a class="btn" href="contact.html">Book a 15-minute call ${icon("arrow", 18)}</a>
-        <a class="btn ghost" href="pricing.html">See published rates</a>
+        <a class="btn ghost" href="cost.html">How we quote care</a>
       </div>
       <div class="hero-proof">
         <div><strong>4-hour</strong>minimum visit</div>
@@ -260,7 +260,7 @@ function introSection(t) {
       <p class="eyebrow">Why we exist</p>
       <h2>Most families do not need more options. They need one reliable answer.</h2>
       <p>Home care in Northern Virginia is crowded, and much of it sounds identical. The difference shows up after the contract: whether the same caregiver arrives, whether the coordinator answers, and whether anyone tells you the truth when a plan stops working.</p>
-      <p>Hearth &amp; Harbor is built around a narrower promise: a named coordinator, a trained backup, published rates, and a written update every week. No clinical overreach. No long-term contract. No surprises on the invoice.</p>
+      <p>Heart &amp; Harbor Homecare is built around a narrower promise: a named coordinator, a trained backup, a written quote before care begins, and a written update every week. No clinical overreach. No long-term contract. No surprises on the invoice.</p>
       <div class="btn-row mt-2"><a class="btn secondary" href="about.html">How we operate ${icon("arrow", 16)}</a><a class="text-link" href="resources.html">Read the family guides</a></div>
     </div>
     <div class="reveal">${scene(t.sceneAlt, "art art-panel")}</div>
@@ -340,26 +340,28 @@ function locationsSection(t) {
   </div></section>`;
 }
 
-function pricingTeaser(t) {
+function costSection(t) {
   return `<section class="section alt"><div class="container">
     <div class="split">
       <div class="reveal">
-        <p class="eyebrow">Pricing</p>
-        <h2>Published rates, before you ever pick up the phone.</h2>
-        <p>Most agencies make you sit through an assessment to learn the hourly rate. We publish it. Rates below are illustrative launch pricing for a Prince William County agency and must be validated against your cost model before go-live.</p>
-        <div class="callout"><h3>${icon("receipt", 16)} The fine print, up front</h3><p>${esc(B.minimum)}. Holiday and overnight premiums are disclosed in writing. Mileage is separate and capped.</p></div>
-        <div class="btn-row mt-2"><a class="btn" href="pricing.html">Full pricing &amp; payment options</a></div>
+        <p class="eyebrow">Cost &amp; payment</p>
+        <h2>A clear, written quote — before the first visit.</h2>
+        <p>We do not publish a single hourly figure, because the honest number depends on the schedule, the level of support, and travel. After a no-cost conversation we send an itemized written quote. The rate you sign is the rate we bill.</p>
+        <div class="callout"><h3>${icon("receipt", 16)} What is always included</h3><p>${esc(B.minimum)}. Weekend, overnight, and mileage terms are disclosed in writing before the first visit. Seven days' written notice to pause or end care.</p></div>
+        <div class="btn-row mt-2"><a class="btn" href="cost.html">How we quote care ${icon("arrow", 16)}</a><a class="btn ghost" href="contact.html">Ask for a quote</a></div>
       </div>
-      <div class="reveal"><div class="price-card">
-        <table class="price-table"><caption class="visually-hidden">Illustrative hourly rates</caption>
-          <thead><tr><th scope="col">Service</th><th scope="col">Rate</th></tr></thead>
-          <tbody>${pricing
-            .slice(0, 5)
-            .map((p) => `<tr><td>${esc(p.service)}<br><small class="muted">${esc(p.notes)}</small></td><td class="rate">${p.rate}<br><small class="muted">${esc(p.unit)}</small></td></tr>`)
-            .join("")}</tbody>
-        </table>
-        <p class="price-note">Illustrative pricing. Not a quote or an offer of service.</p>
-      </div></div>
+      <div class="reveal">
+        <div class="card">
+          <h3>What shapes your quote</h3>
+          <ul class="dotlist">
+            <li>The number of hours and the weekly schedule</li>
+            <li>Companion versus hands-on personal care</li>
+            <li>Weekend, overnight, or holiday coverage</li>
+            <li>Travel time for transportation and errands</li>
+          </ul>
+          <p class="muted small mt-2">No assessment fee. No long-term contract. No surprise line items.</p>
+        </div>
+      </div>
     </div>
   </div></section>`;
 }
@@ -416,12 +418,12 @@ function commitmentsSection(t) {
 function homePage(t) {
   const title = t.title;
   const description =
-    "Non-medical home care in Prince William County, Virginia. Companion care, personal care assistance, respite, transportation, and weekly family updates. Published rates, 4-hour minimum, no long-term contract.";
+    "Non-medical home care in Prince William County, Virginia. Companion care, personal care assistance, respite, transportation, and weekly family updates. A written quote before care begins, 4-hour minimum, no long-term contract.";
   const body = `${header(t, "", 0)}
   <main id="main">
     ${hero(t)}
     <div class="trust-strip"><div class="container trust-inner">
-      <div>${icon("shield", 16)} VDH licensure planned before personal care</div>
+      <div>${icon("shield", 16)} Non-medical care only — scope we can stand behind</div>
       <div>${icon("clock", 16)} Inquiry response within 1 business hour</div>
       <div>${icon("users", 16)} Named coordinator + trained backup</div>
       <div>${icon("pin", 16)} Prince William County only</div>
@@ -433,7 +435,7 @@ function homePage(t) {
     ${processSection(t)}
     ${quoteSection(t)}
     ${locationsSection(t)}
-    ${pricingTeaser(t)}
+    ${costSection(t)}
     ${resourcesSection(t)}
     ${faqSection(t)}
     ${ctaSection(t)}
@@ -471,8 +473,8 @@ function servicesPage(t) {
       kicker: "Service catalog",
     })}
     <section class="section"><div class="container">
-      <div class="callout warn"><h3>${icon("alert", 16)} Scope matters</h3><p>Hearth &amp; Harbor provides non-medical home care. We do not provide skilled nursing, physical therapy, occupational therapy, wound care, or medication administration. Personal care requires a Virginia home care organization license; this concept site does not claim an active license.</p></div>
-      <h2 class="mt-3">Launch services</h2>
+      <div class="callout warn"><h3>${icon("alert", 16)} Scope matters</h3><p>Heart &amp; Harbor Homecare provides non-medical home care. We do not provide skilled nursing, physical therapy, occupational therapy, wound care, or medication administration. Personal care requires a Virginia home care organization license; this concept site does not claim an active license.</p></div>
+      <h2 class="mt-3">Core services</h2>
       <div class="grid cols-3 mt-2">
         ${coreServices
           .map(
@@ -480,13 +482,13 @@ function servicesPage(t) {
           )
           .join("")}
       </div>
-      <h2 class="mt-3">Phase 2 and 3 additions</h2>
+      <h2 class="mt-3">Specialized support</h2>
       <p class="lede">Introduced only after the core operation is stable, staffed, and insured.</p>
       <div class="grid cols-3 mt-2">
         ${services
           .filter((s) => s.category === "growth")
           .map(
-            (s) => `<article class="card service-card reveal"><div class="card-icon">${icon(s.icon, 24)}</div><h3><a href="services/${s.slug}.html">${esc(s.name)}</a></h3><p>${esc(s.short)}</p><span class="pill neutral">Phase ${s.phase}</span><a class="card-link" href="services/${s.slug}.html">Details ${icon("arrow", 14)}</a></article>`
+            (s) => `<article class="card service-card reveal"><div class="card-icon">${icon(s.icon, 24)}</div><h3><a href="services/${s.slug}.html">${esc(s.name)}</a></h3><p>${esc(s.short)}</p><a class="card-link" href="services/${s.slug}.html">Details ${icon("arrow", 14)}</a></article>`
           )
           .join("")}
       </div>
@@ -506,7 +508,7 @@ function servicePage(t, s) {
       title: s.name,
       lede: s.short,
       crumbs: [{ label: "Home", href: "index.html" }, { label: "Services", href: "services.html" }, { label: s.name }],
-      kicker: s.category === "core" ? "Launch service" : `Phase ${s.phase} service`,
+      kicker: s.category === "core" ? "Core service" : "Specialized support",
       depth: 1,
     })}
     <section class="section"><div class="container split">
@@ -516,15 +518,14 @@ function servicePage(t, s) {
         <h2>The problem it solves</h2><p>${esc(s.problem)}</p>
         <h2>What a visit includes</h2>
         <ul class="checklist">${s.bullets.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>
-        <h2>What it costs</h2><p>${esc(s.revenue)} See the <a href="../pricing.html">full pricing page</a> for illustrative rates and the minimum-visit policy.</p>
-        <h2>Regulatory notes</h2>
-        <div class="callout warn"><h3>${icon("shield", 16)} Virginia scope and supervision</h3><p>${esc(s.reg)}</p></div>
-        <h2>Business case</h2><p>${esc(s.value)}</p>
+        <h2>How we quote this service</h2><p>Every service is quoted in writing after a no-cost conversation. The quote itemizes hours, any weekend, overnight, or holiday premium, and travel, and it does not change without your written agreement. There is no assessment fee and no long-term contract.</p>
+        <h2>Scope and supervision</h2>
+        <div class="callout warn"><h3>${icon("shield", 16)} Non-medical care only</h3><p>Heart &amp; Harbor Homecare provides non-medical home care. We do not provide skilled nursing, physical therapy, occupational therapy, wound care, or medication administration. Personal care requires a Virginia home care organization license; this concept site does not claim an active license.</p></div>
         <div class="btn-row mt-3"><a class="btn" href="../contact.html">Ask about ${esc(s.name.toLowerCase())} ${icon("arrow", 16)}</a><a class="btn ghost" href="../services.html">All services</a></div>
       </div>
       <aside class="toc">
         <h4>On this page</h4>
-        <ul><li><a href="#top">Overview</a></li><li><a href="../pricing.html">Pricing</a></li><li><a href="../locations.html">Service area</a></li><li><a href="../resources.html">Family guides</a></li></ul>
+        <ul><li><a href="#top">Overview</a></li><li><a href="../cost.html">Cost &amp; payment</a></li><li><a href="../locations.html">Service area</a></li><li><a href="../resources.html">Family guides</a></li></ul>
         <hr>
         <h4>Related services</h4>
         <ul>${others.map((o) => `<li><a href="${o.slug}.html">${esc(o.name)}</a></li>`).join("")}</ul>
@@ -550,7 +551,7 @@ function servicePage(t, s) {
         description: s.short,
         provider: { "@type": "HomeHealthCareService", name: B.name },
         areaServed: { "@type": "AdministrativeArea", name: "Prince William County, Virginia" },
-        offers: { "@type": "Offer", priceCurrency: "USD", description: s.revenue },
+        offers: { "@type": "Offer", priceCurrency: "USD", description: "Quoted in writing after a no-cost consultation." },
       },
     ],
   }) + body + footer(t, 1);
@@ -609,7 +610,7 @@ function locationPage(t, l) {
         <h2>How coverage works</h2>
         <p>We schedule within the community and neighboring ZIP codes to reduce windshield time. Visits start at four hours. If a home is outside our practical radius, we will say so on the first call rather than promise coverage we cannot staff.</p>
         <div class="callout"><h3>${icon("pin", 16)} ZIP codes served</h3><p>${esc(l.zips)} · Prince William County, Virginia</p></div>
-        <div class="btn-row mt-3"><a class="btn" href="../contact.html">Check availability in ${esc(l.name)} ${icon("arrow", 16)}</a><a class="btn ghost" href="../pricing.html">See rates</a></div>
+        <div class="btn-row mt-3"><a class="btn" href="../contact.html">Check availability in ${esc(l.name)} ${icon("arrow", 16)}</a><a class="btn ghost" href="../cost.html">How we quote care</a></div>
       </div>
       <aside class="toc">
         <h4>Nearby communities</h4>
@@ -635,7 +636,7 @@ function aboutPage(t) {
   <main id="main">
     ${pageHero(t, {
       title: "A smaller agency, built for the parts of care that get skipped.",
-      lede: "Hearth & Harbor is a concept for a licensed, locally owned home care organization in Prince William County. The operating model is deliberately narrow: fewer clients, named coordinators, and written communication.",
+      lede: "Heart & Harbor Homecare is a concept for a licensed, locally owned home care organization in Prince William County. The operating model is deliberately narrow: fewer clients, named coordinators, and written communication.",
       crumbs: [{ label: "Home", href: "index.html" }, { label: "Why us" }],
       kicker: "Our approach",
     })}
@@ -663,36 +664,29 @@ function aboutPage(t) {
       <aside class="toc">
         <h4>At a glance</h4>
         <ul><li><strong>Focus:</strong> non-medical home care</li><li><strong>Area:</strong> Prince William County, VA</li><li><strong>Minimum:</strong> 4-hour visit</li><li><strong>Contract:</strong> none; 7-day notice</li><li><strong>Model:</strong> licensed HCO in progress</li></ul>
-        <hr><h4>Read next</h4><ul><li><a href="pricing.html">Pricing &amp; payment</a></li><li><a href="resources/questions-before-hiring-agency.html">12 questions to ask</a></li><li><a href="privacy.html">Privacy practices</a></li></ul>
+        <hr><h4>Read next</h4><ul><li><a href="cost.html">Cost &amp; payment</a></li><li><a href="resources/questions-before-hiring-agency.html">12 questions to ask</a></li><li><a href="privacy.html">Privacy practices</a></li></ul>
       </aside>
     </div></section>
     ${commitmentsSection(t)}
     ${ctaSection(t)}
   `;
-  return head(t, { title: `Why ${B.shortName} | Locally Focused Home Care`, description: "A transparent, locally focused home care model for Prince William County: named coordinators, trained backups, published rates, and no clinical overreach.", page: "about.html", schema: [baseSchema(t, "about.html"), breadcrumbSchema(t, "about.html", [{ label: "Home", href: "index.html" }, { label: "Why us", href: "about.html" }])] }) + body + footer(t, 0);
+  return head(t, { title: `Why ${B.shortName} | Locally Focused Home Care`, description: "A transparent, locally focused home care model for Prince William County: named coordinators, trained backups, a written quote before care begins, and no clinical overreach.", page: "about.html", schema: [baseSchema(t, "about.html"), breadcrumbSchema(t, "about.html", [{ label: "Home", href: "index.html" }, { label: "Why us", href: "about.html" }])] }) + body + footer(t, 0);
 }
 
-function pricingPage(t) {
-  const body = `${header(t, "pricing.html", 0)}
+function costPage(t) {
+  const body = `${header(t, "cost.html", 0)}
   <main id="main">
     ${pageHero(t, {
-      title: "Published rates. A four-hour minimum. No long-term contract.",
-      lede: "Illustrative launch pricing for a Prince William County agency. The final rates must be built from real wage, tax, insurance, supervision, and travel costs.",
-      crumbs: [{ label: "Home", href: "index.html" }, { label: "Pricing" }],
-      kicker: "Pricing & payment",
+      title: "A written quote, not a rate card.",
+      lede: "We do not publish a single hourly figure, because the honest number depends on the schedule, the level of support, and travel. After a no-cost conversation we send an itemized written quote.",
+      crumbs: [{ label: "Home", href: "index.html" }, { label: "Cost & payment" }],
+      kicker: "Cost & payment",
     })}
     <section class="section"><div class="container">
-      <div class="callout warn"><h3>${icon("alert", 16)} Demo pricing notice</h3><p>These figures are placeholders for design and business planning. They are not an offer, a quote, or a guarantee of availability. Virginia market data suggests roughly $35–$42 per hour for non-medical care in 2025–2026.</p></div>
-      <div class="price-card mt-2">
-        <table class="price-table">
-          <caption class="visually-hidden">Illustrative home care rates</caption>
-          <thead><tr><th scope="col">Service</th><th scope="col">Notes</th><th scope="col">Rate</th></tr></thead>
-          <tbody>${pricing.map((p) => `<tr><td><strong>${esc(p.service)}</strong></td><td>${esc(p.notes)}</td><td class="rate">${p.rate} <small class="muted">${esc(p.unit)}</small></td></tr>`).join("")}</tbody>
-        </table>
-      </div>
+      <div class="callout warn"><h3>${icon("alert", 16)} Demo cost notice</h3><p>Any cost information on this concept site is illustrative and for design and business planning. It is not an offer, a quote, or a guarantee of availability. Final rates must be built from real wage, tax, insurance, supervision, and travel costs.</p></div>
       <div class="grid cols-3 mt-3">
         <div class="card"><h3>What is included</h3><p>Caregiver wages and payroll taxes, supervision, the written care plan, scheduling, background checks, routine family updates, and ordinary supplies used during the visit.</p></div>
-        <div class="card"><h3>What costs extra</h3><p>Holiday visits, awake overnight shifts, mileage for transportation, event tickets, and specialized supplies. Every premium is disclosed before the visit is scheduled.</p></div>
+        <div class="card"><h3>What costs extra</h3><p>Weekend, overnight, and holiday visits, awake overnight shifts, mileage for transportation, event tickets, and specialized supplies. Every premium is disclosed before the visit is scheduled.</p></div>
         <div class="card"><h3>How to cancel</h3><p>Seven days' written notice to end service. Twenty-four hours' notice to cancel an individual visit without charge, except in an emergency.</p></div>
       </div>
       <h2 class="mt-3">Ways families pay</h2>
@@ -706,15 +700,8 @@ function pricingPage(t) {
           <p>Medicare generally covers short-term skilled home health ordered by a physician, not custodial or companion care. Virginia's CCC Plus waiver can cover personal care and respite for eligible adults through enrolled providers. This concept business is not enrolled and makes no coverage claim.</p>
         </div>
         <div class="card">
-          <h3>${icon("receipt", 18)} Sample weekly budget</h3>
-          <p class="muted">Illustrative only — 12 hours of companion care per week at $32/hour.</p>
-          <table class="price-table"><tbody>
-            <tr><td>12 hours × $32</td><td class="rate">$384</td></tr>
-            <tr><td>Four weeks</td><td class="rate">$1,536</td></tr>
-            <tr><td>Assessment fee</td><td class="rate">$0</td></tr>
-            <tr><td>Long-term contract</td><td class="rate">None</td></tr>
-          </tbody></table>
-          <p class="price-note">Holiday, overnight, and mileage charges are excluded.</p>
+          <h3>${icon("receipt", 18)} How we quote</h3>
+          <p class="muted">After a no-cost conversation we send an itemized written quote covering hours, premiums, and mileage. The rate you sign is the rate we bill.</p>
           <a class="btn mt-1" href="contact.html">Talk through a realistic budget</a>
         </div>
       </div>
@@ -722,7 +709,7 @@ function pricingPage(t) {
     ${faqSection(t)}
     ${ctaSection(t)}
   `;
-  return head(t, { title: `Home Care Pricing in Prince William County | ${B.shortName}`, description: "Illustrative home care rates for Prince William County, VA. Published hourly pricing, a four-hour minimum, no long-term contract, and plain-language payment options.", page: "pricing.html", schema: [baseSchema(t, "pricing.html"), breadcrumbSchema(t, "pricing.html", [{ label: "Home", href: "index.html" }, { label: "Pricing", href: "pricing.html" }])] }) + body + footer(t, 0);
+  return head(t, { title: `Home Care Cost & Payment in Prince William County | ${B.shortName}`, description: "How home care is quoted and paid for in Prince William County, VA: written quotes, a four-hour minimum, no long-term contract, and plain-language payment options.", page: "cost.html", schema: [baseSchema(t, "cost.html"), breadcrumbSchema(t, "cost.html", [{ label: "Home", href: "index.html" }, { label: "Cost & payment", href: "cost.html" }])] }) + body + footer(t, 0);
 }
 
 function contactPage(t) {
@@ -815,7 +802,7 @@ function articlePage(t, a) {
         <span class="pill neutral">${esc(a.category)}</span>
         <h1 class="mt-1">${esc(a.title)}</h1>
         <p class="lede">${esc(a.description)}</p>
-        <div class="article-meta"><span>${icon("calendar", 14)} ${esc(a.date)}</span><span>${icon("clock", 14)} ${esc(a.read)}</span><span>By the Hearth &amp; Harbor editorial team</span></div>
+        <div class="article-meta"><span>${icon("calendar", 14)} ${esc(a.date)}</span><span>${icon("clock", 14)} ${esc(a.read)}</span><span>By the Heart &amp; Harbor Homecare editorial team</span></div>
       </div></header>
       <div class="container article-layout section tight">
         <div class="article-body">
@@ -908,7 +895,7 @@ function accessibilityPage(t) {
       <p>If something is hard to use, call ${esc(B.phone)} or email ${esc(B.email)} (placeholders). A live agency should commit to a response time and a remediation process.</p>
     </div></section>
   `;
-  return head(t, { title: `Accessibility | ${B.shortName}`, description: "Accessibility commitments and known limitations for the Hearth & Harbor home care website.", page: "accessibility.html" }) + body + footer(t, 0);
+  return head(t, { title: `Accessibility | ${B.shortName}`, description: "Accessibility commitments and known limitations for the Heart & Harbor Homecare home care website.", page: "accessibility.html" }) + body + footer(t, 0);
 }
 
 function notFoundPage(t) {
@@ -928,7 +915,7 @@ function sitemapPage(t) {
     ...services.map((s) => ({ href: `services/${s.slug}.html`, label: s.name })),
     { href: "locations.html", label: "Service area" },
     ...locations.map((l) => ({ href: `locations/${l.slug}.html`, label: `Home care in ${l.name}` })),
-    { href: "pricing.html", label: "Pricing" },
+    { href: "cost.html", label: "Cost & payment" },
     { href: "about.html", label: "Why us" },
     { href: "resources.html", label: "Resources" },
     ...articles.map((a) => ({ href: `resources/${a.slug}.html`, label: a.title })),
@@ -940,7 +927,7 @@ function sitemapPage(t) {
   <main id="main">
     ${pageHero(t, { title: "Sitemap", lede: "Every page in this site.", crumbs: [{ label: "Home", href: "index.html" }, { label: "Sitemap" }] })}
     <section class="section"><div class="container"><ul class="sitemap-list">${pages.map((p) => `<li><a href="${p.href}">${esc(p.label)}</a></li>`).join("")}</ul></div></section>`;
-  return head(t, { title: `Sitemap | ${B.shortName}`, description: "Sitemap for the Hearth & Harbor home care website.", page: "sitemap.html" }) + body + footer(t, 0);
+  return head(t, { title: `Sitemap | ${B.shortName}`, description: "Sitemap for the Heart & Harbor Homecare home care website.", page: "sitemap.html" }) + body + footer(t, 0);
 }
 
 /* ------------------------------ assets ---------------------------------- */
@@ -965,8 +952,8 @@ function ogImage(t) {
   <text x="80" y="326" font-family="Georgia, serif" font-size="66" font-weight="700" fill="${p.ink}">care for a parent at home.</text>
   <text x="80" y="400" font-family="Arial, sans-serif" font-size="28" fill="${p.muted}">Non-medical home care · Prince William County, Virginia</text>
   <rect x="80" y="452" width="320" height="4" fill="${p.primary}"/>
-  <text x="80" y="530" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="${p.primary}">Hearth &amp; Harbor Home Care</text>
-  <text x="80" y="570" font-family="Arial, sans-serif" font-size="22" fill="${p.muted}">HearthandHarborCare.com · (703) 555-0100 · concept site</text>
+  <text x="80" y="530" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="${p.primary}">Heart &amp; Harbor Homecare</text>
+  <text x="80" y="570" font-family="Arial, sans-serif" font-size="22" fill="${p.muted}">HeartandHarborHomecare.com · (703) 555-0100 · concept site</text>
 </svg>`;
 }
 
@@ -1019,7 +1006,7 @@ function sitemapXML(t) {
     ...services.map((s) => `services/${s.slug}.html`),
     "locations.html",
     ...locations.map((l) => `locations/${l.slug}.html`),
-    "pricing.html",
+    "cost.html",
     "about.html",
     "resources.html",
     ...articles.map((a) => `resources/${a.slug}.html`),
@@ -1063,7 +1050,7 @@ for (const t of themes) {
     "services.html": servicesPage(t),
     "locations.html": locationsPage(t),
     "about.html": aboutPage(t),
-    "pricing.html": pricingPage(t),
+    "cost.html": costPage(t),
     "contact.html": contactPage(t),
     "resources.html": resourcesPage(t),
     "privacy.html": privacyPage(t),

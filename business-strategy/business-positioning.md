@@ -1,4 +1,4 @@
-# Business Positioning — Hearth & Harbor Home Care
+# Business Positioning — Heart & Harbor Homecare
 
 **Prepared:** 23 November 2026
 **Status:** Recommended positioning for launch. All business identifiers remain placeholders until licensure and legal review.
@@ -7,7 +7,7 @@
 
 ## 1. The one-sentence position
 
-> **Hearth & Harbor is the communication-first home care agency for Prince William County: a named coordinator, a trained backup, published rates, and a written family update every week.**
+> **Heart & Harbor Homecare is the communication-first home care agency for Prince William County: a named coordinator, a trained backup, published rates, and a written family update every week.**
 
 That sentence is the business. Everything else — services, website, brochures, scripts — exists to make it credible and repeatable.
 
@@ -31,17 +31,17 @@ A small agency cannot outspend a franchise. It can out-operate one on these thre
 
 | Element | Recommendation |
 |---|---|
-| **Name** | Hearth & Harbor Home Care |
+| **Name** | Heart & Harbor Homecare |
 | **Why it works** | "Hearth" signals home, warmth, and the kitchen table. "Harbor" signals safety and the Potomac/Occoquan geography. It is warm without being clinical, and it does not sound like a hospital department. |
 | **Descriptor** | Home Care · Prince William |
 | **Tagline** | *Care that keeps home within reach.* |
 | **Operating promise** | *You will always know who is coming, what they will do, and how your family is doing.* |
 | **Category** | Non-medical home care (companion, homemaker, personal care, respite) |
-| **Legal name** | Hearth & Harbor Home Care LLC (placeholder) |
-| **Domain** | hearthandharborcare.com (placeholder — verify availability before purchase) |
+| **Legal name** | Heart & Harbor Homecare LLC (placeholder) |
+| **Domain** | heartandharborhomecare.com (placeholder — verify availability before purchase) |
 | **Service mark** | Conduct a USPTO and Virginia SCC search before adopting the name commercially |
 
-**Naming caution.** "Cardinal Care" was rejected because Virginia's Medicaid program is branded Cardinal Care. "Hearth & Harbor" should still be cleared by counsel; common-law and registered marks may exist in other states.
+**Naming caution.** "Cardinal Care" was rejected because Virginia's Medicaid program is branded Cardinal Care. "Heart & Harbor Homecare" should still be cleared by counsel; common-law and registered marks may exist in other states.
 
 ---
 

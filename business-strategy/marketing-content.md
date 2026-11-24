@@ -1,7 +1,7 @@
 # Marketing Content — Copy, Campaigns, and Channel Assets
 
 **Prepared:** 23 November 2026
-**Brand:** Hearth & Harbor Home Care
+**Brand:** Heart & Harbor Homecare
 **Tagline:** *Care that keeps home within reach.*
 **Voice:** calm, specific, honest, locally rooted.
 
@@ -41,7 +41,7 @@
 **Headline:** Most families do not need more options. They need one reliable answer.
 **Body:** Home care in Northern Virginia is crowded, and much of it sounds identical. The difference shows up after the contract: whether the same caregiver arrives, whether the coordinator answers, and whether anyone tells you the truth when a plan stops working.
 
-Hearth & Harbor is built around a narrower promise: a named coordinator, a trained backup, published rates, and a written update every week. No clinical overreach. No long-term contract. No surprises on the invoice.
+Heart & Harbor Homecare is built around a narrower promise: a named coordinator, a trained backup, published rates, and a written update every week. No clinical overreach. No long-term contract. No surprises on the invoice.
 
 ### Services
 **Headline:** Help with the parts of the day that have become hard.
@@ -107,7 +107,7 @@ Every service page follows the same structure:
 ### 5.1 Inquiry follow-up (5 emails over 14 days)
 
 **Email 1 — immediately**
-Subject: Your call with Hearth & Harbor
+Subject: Your call with Heart & Harbor Homecare
 Body: Thank you for reaching out. Here is what happens next, who your coordinator is, and how to reach us. Attach the resource map.
 
 **Email 2 — day 2**
@@ -167,7 +167,7 @@ Body: Offer a 15-minute call with no assessment. Leave the door open.
 ### 7.1 Tri-fold brochure
 
 **Panel 1 (cover)**
-Hearth & Harbor Home Care
+Heart & Harbor Homecare
 Care that keeps home within reach.
 Non-medical home care in Prince William County
 [Logo] [Phone] [Website]
@@ -254,8 +254,8 @@ Serving Woodbridge, Manassas, Manassas Park, Gainesville, Haymarket, Dumfries, O
 
 ### 7.5 Referral cards (business card size)
 
-**Front:** Hearth & Harbor Home Care · Care that keeps home within reach.
-**Back:** [Name], Care Coordinator · [Phone] · [Email] · hearthandharborcare.com
+**Front:** Heart & Harbor Homecare · Care that keeps home within reach.
+**Back:** [Name], Care Coordinator · [Phone] · [Email] · heartandharborhomecare.com
 Note: "Ask about our 72-hour hospital-to-home bridge."
 
 ---

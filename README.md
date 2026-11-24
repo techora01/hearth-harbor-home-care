@@ -1,4 +1,4 @@
-# Hearth & Harbor Home Care — Launch Package
+# Heart & Harbor Homecare — Launch Package
 
 A complete, research-backed launch package for a fictional-but-realistic non-medical home care agency in **Prince William County, Virginia**: market research, positioning, a Virginia compliance plan, print marketing, and **nine independently designed static websites** built from one shared factual foundation.
 
@@ -184,7 +184,7 @@ node site-builder/check-links.mjs
 git add -A && git commit -m "Rebuild sites" && git push
 ```
 
-`SITE_ORIGIN` and `PAGES_BASE` are optional environment variables; without them the build uses the production domain `https://hearthandharborcare.com`.
+`SITE_ORIGIN` and `PAGES_BASE` are optional environment variables; without them the build uses the production domain `https://heartandharborhomecare.com`.
 
 `reference-themes/` is gitignored and never deployed. It exists only as local design reference; each upstream repository has its own license and must be reviewed before any code reuse.
 
@@ -215,14 +215,14 @@ All site code in `sites/` is original, generated from `site-builder/`. The illus
 | Item | Current placeholder | Replace before launch |
 |---|---|---|
 | Phone | (703) 555-0100 | Real business line |
-| Email | hello@hearthandharborcare.com | Real monitored inbox |
+| Email | hello@heartandharborhomecare.com | Real monitored inbox |
 | Address | 12345 Placeholder Plaza, Suite 200, Woodbridge, VA 22192 | Real office or service-area address |
 | License | "Pending — placeholder" | VDH HCO license number |
 | Insurance | Not claimed as active | Bound coverage at required limits |
 | Rates | Illustrative ($32–$42/hr) | Validated cost model |
 | Staff | None published | Verified hires only |
 | Testimonials | None (intentional) | Verified reviews with consent |
-| Domain | hearthandharborcare.com | Verified and purchased |
+| Domain | heartandharborhomecare.com | Verified and purchased |
 
 The footer disclosure must remain on every page until all placeholders are replaced and verified.
 
@@ -230,7 +230,7 @@ The footer disclosure must remain on every page until all placeholders are repla
 
 ## Disclaimer
 
-Hearth & Harbor Home Care is a **concept** created for research, design, and business-planning purposes. It is not an operating agency. It holds no Virginia home care organization license, no insurance, and no clinical credentials. It does not provide skilled nursing, physical therapy, occupational therapy, wound care, medication administration, or any other clinical service.
+Heart & Harbor Homecare is a **concept** created for research, design, and business-planning purposes. It is not an operating agency. It holds no Virginia home care organization license, no insurance, and no clinical credentials. It does not provide skilled nursing, physical therapy, occupational therapy, wound care, medication administration, or any other clinical service.
 
 All names, contact details, addresses, license numbers, prices, staff biographies, and testimonials are placeholders or omitted. Nothing on these sites is medical, legal, financial, or tax advice. Regulations and program rules change; verify with the Virginia Department of Health, DMAS, and qualified counsel.
 

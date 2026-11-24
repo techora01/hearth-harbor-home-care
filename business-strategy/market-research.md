@@ -1,7 +1,7 @@
 # Market Research — Home Care in Prince William County, Virginia
 
 **Prepared:** 23 November 2026
-**Prepared for:** Hearth & Harbor Home Care (concept)
+**Prepared for:** Heart & Harbor Homecare (concept)
 **Geography:** Prince William County, Manassas, Manassas Park, Woodbridge, Gainesville, Haymarket, Dumfries, Occoquan, Lake Ridge, Dale City, Bristow
 **Status:** Secondary research synthesis. Figures are current as of the cited publication date; re-verify before fundraising or launch.
 
